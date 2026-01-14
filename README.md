@@ -45,17 +45,17 @@
 # 规则订阅📃
 合并规则
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/Cat/main/all.txt
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/all.txt
 ```
 
 lite规则
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/Cat/main/lite.txt
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/lite.txt
 ```
 
 DNS规则
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/Cat/main/DNS.TXT
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/DNS.txt
 ```
 
 
