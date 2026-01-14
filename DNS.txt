@@ -528,10 +528,6 @@ sofire.baidu.com
 ||adsdk.*^$important
 #拦截腾讯微信相关域名
 ||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
-#针对两步路户外助手广告拦截
-||shop45920354.m.youzan.com^$important
-||ad.*^$important
-||admobile.top^$important
 #针对车来了APP的拦截规则
 ||image3.chelaile.net.cn^$important
 ||pic1.chelaile.net.cn^$important
