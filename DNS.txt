@@ -118,12 +118,6 @@
 ||tieba-ares.cdn.bcebos.com^
 ||sp0.baidu.com^
 ||factors.sofire.baidu.com^
-sa4.tuisong.baidu.com
-pimlog.baidu.com
-afd.baidu.com
-adse.wsa.ximalaya.com
-tcbox.baidu.com
-sofire.baidu.com
 ||browserkernel.baidu.com^
 ||nsclick.baidu.com^
 ||*video.baidu.com^
@@ -143,7 +137,7 @@ sofire.baidu.com
 #淘宝广告
 ||wcp.taobao.com^
 ||adashx.m.taobao.com^
-||acs.m.taobao.com^
+@@||acs.m.taobao.com^
 ||h-adashx.ut.taobao.com^
 ||audid-api.taobao.com^
 #知乎广告
