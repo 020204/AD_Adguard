@@ -8,7 +8,7 @@
 <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnhzdXFpamo4ZDFudHNqeTFkcXdzYzM1OGxtdWZzd2Zhc2EwazA0bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6XxOACn4darEj15r5v/giphy.gif?raw=true" href="https://github.com/sp-xd" alt="CoDiNg RocKs"  width="60%"/>
   
 
-# 适用于AdGuard客户端的广告规则
+# 适用于AdGuard客户端和Clash的广告规则
 
 </div>
 
@@ -37,20 +37,41 @@
 
 
 
-# 规则订阅📃
-合并规则
+# 清雅规则订阅📃
+Adguard
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/all.txt
+http://rssv.cn/adguard/config/black.txt
+```
+或者
+```
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/adguard.txt
 ```
 
-lite规则
+clash
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/lite.txt
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml
 ```
 
-DNS规则
+# mine规则订阅📃
+Adguard
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/DNS.txt
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/me.txt
+```
+
+clash
+```
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
+```
+
+# AWAvenue-Ads-Rule友情规则订阅📃
+ADguard
+```
+https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
+```
+
+clash
+```
+https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/refs/heads/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
 ```
 
 
