@@ -1,239 +1,36 @@
-name: Convert and Update Rules
+name: Update Clash Rules
 
 on:
-  # 触发条件
   schedule:
-    # 每天 UTC 时间 0 点运行（北京时间 8 点）
-    - cron: '0 0 * * *'
-  
-  # 当以下文件有变化时触发
+    - cron: '0 22 * * *' # 每天北京时间早上 6 点运行 (UTC 22:00)
+  workflow_dispatch:      # 允许手动触发
   push:
     paths:
-      - 'me.txt'
       - 'adguard.txt'
+      - 'me.txt'
       - 'convert.sh'
-      - '.github/workflows/build.yml'
-  
-  # 手动触发
-  workflow_dispatch:
-    inputs:
-      force_update:
-        description: '强制更新（忽略内容无变化）'
-        required: false
-        default: 'false'
 
 jobs:
-  convert-rules:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # 允许写入仓库
-    
     steps:
-      # 1. 检出代码
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0  # 获取完整历史记录
-      
-      # 2. 设置环境
-      - name: Setup environment
+
+      - name: Make Script Executable
+        run: chmod +x convert.sh
+
+      - name: Run Converter
+        run: ./convert.sh
+
+      - name: Commit and Push Changes
         run: |
-          echo "GITHUB_REPOSITORY: ${{ github.repository }}"
-          echo "GITHUB_REF: ${{ github.ref }}"
-          echo "GITHUB_SHA: ${{ github.sha }}"
-          date
-      
-      # 3. 显示仓库结构
-      - name: Show repository structure
-        run: |
-          echo "📁 仓库结构:"
-          find . -type f -name "*.txt" -o -name "*.yaml" -o -name "*.yml" -o -name "*.sh" | sort
-          echo ""
-          echo "📄 文件信息:"
-          ls -la *.txt *.sh 2>/dev/null || true
-      
-      # 4. 运行转换脚本
-      - name: Convert rules
-        id: convert
-        run: |
-          echo "🚀 开始转换规则..."
-          
-          # 检查必要文件是否存在
-          if [ ! -f "me.txt" ]; then
-            echo "❌ 错误: me.txt 不存在"
-            echo "📁 当前目录文件:"
-            ls -la
-            exit 1
-          fi
-          
-          if [ ! -f "adguard.txt" ]; then
-            echo "❌ 错误: adguard.txt 不存在"
-            exit 1
-          fi
-          
-          if [ ! -f "convert.sh" ]; then
-            echo "❌ 错误: convert.sh 不存在"
-            exit 1
-          fi
-          
-          # 给脚本执行权限
-          chmod +x convert.sh
-          
-          # 显示脚本信息
-          echo "📋 脚本信息:"
-          head -20 convert.sh | grep -E "^#"
-          
-          # 运行转换脚本
-          echo "🔄 执行转换..."
-          ./convert.sh
-          
-          # 检查输出文件
-          echo "📊 转换结果:"
-          if [ -f "me_clash.txt" ]; then
-            RULES_COUNT=$(grep -c "^  - " me_clash.txt)
-            echo "✅ me_clash.txt: ${RULES_COUNT} 条规则"
-          else
-            echo "❌ me_clash.txt 未生成"
-          fi
-          
-          if [ -f "clash.yaml" ]; then
-            RULES_COUNT=$(grep -c "^  - " clash.yaml)
-            echo "✅ clash.yaml: ${RULES_COUNT} 条规则"
-          else
-            echo "❌ clash.yaml 未生成"
-          fi
-          
-          # 生成统计信息
-          echo "me_clash_rules=$RULES_COUNT" >> $GITHUB_OUTPUT
-      
-      # 5. 检查文件变化
-      - name: Check for changes
-        id: check_changes
-        run: |
-          echo "🔍 检查文件变化..."
-          
-          # 检查是否有未提交的更改
-          git status --porcelain
-          
-          CHANGED_FILES=$(git status --porcelain | wc -l)
-          echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_OUTPUT
-          
-          if [ $CHANGED_FILES -gt 0 ]; then
-            echo "📈 发现 $CHANGED_FILES 个文件有变化"
-            echo "HAS_CHANGES=true" >> $GITHUB_OUTPUT
-            
-            # 显示具体变化
-            echo "📄 变化的文件:"
-            git status --porcelain
-            
-            # 显示文件差异（前10行）
-            for file in $(git diff --name-only); do
-              echo ""
-              echo "🔸 文件: $file"
-              echo "📊 差异统计:"
-              git diff --stat "$file" | head -5
-            done
-          else
-            echo "✅ 没有文件变化"
-            echo "HAS_CHANGES=false" >> $GITHUB_OUTPUT
-          fi
-      
-      # 6. 提交更改
-      - name: Commit and push changes
-        if: steps.check_changes.outputs.HAS_CHANGES == 'true' || github.event.inputs.force_update == 'true'
-        run: |
-          echo "📝 提交更改..."
-          
-          # 配置 Git
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # 添加生成的文件
-          git add me_clash.txt clash.yaml
-          
-          # 生成提交信息
-          COMMIT_DATE=$(date '+%Y-%m-%d %H:%M:%S')
-          if [ -f "me_clash.txt" ] && [ -f "clash.yaml" ]; then
-            ME_RULES=$(grep -c "^  - " me_clash.txt)
-            CLASH_RULES=$(grep -c "^  - " clash.yaml)
-            COMMIT_MSG="🤖 自动更新规则集 ($COMMIT_DATE)
-            
-            📊 规则统计:
-            - me_clash.txt: $ME_RULES 条规则
-            - clash.yaml: $CLASH_RULES 条规则"
+          git add me_clash.txt clash.txt
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
           else
-            COMMIT_MSG="🤖 自动更新规则集 ($COMMIT_DATE)"
+            git commit -m "chore: 📅 自动更新规则集 ($(date +'%Y-%m-%d %H:%M'))"
+            git push
           fi
-          
-          # 提交
-          git commit -m "$COMMIT_MSG"
-          
-          # 推送到仓库
-          echo "🚀 推送到 GitHub..."
-          git push
-          
-          echo "✅ 更改已提交"
-      
-      # 7. 无变化时的处理
-      - name: No changes detected
-        if: steps.check_changes.outputs.HAS_CHANGES == 'false' && github.event.inputs.force_update == 'false'
-        run: |
-          echo "🎯 规则无变化，无需更新"
-          echo "📅 下次运行时间: 明天 UTC 0 点"
-          echo "⏰ 当前时间: $(date)"
-      
-      # 8. 生成运行报告
-      - name: Generate report
-        run: |
-          echo ""
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "📊 GitHub Actions 运行报告"
-          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "🔧 工作流: ${{ github.workflow }}"
-          echo "📅 运行时间: $(date '+%Y-%m-%d %H:%M:%S UTC')"
-          echo "🏃 运行器: ${{ runner.os }}"
-          echo "📁 仓库: ${{ github.repository }}"
-          echo "🌿 分支: ${{ github.ref_name }}"
-          
-          if [ -f "me_clash.txt" ]; then
-            ME_RULES=$(grep -c "^  - " me_clash.txt)
-            ME_SIZE=$(wc -c < me_clash.txt | awk '{print $1}')
-            echo "📄 me_clash.txt: $ME_RULES 条规则, ${ME_SIZE}字节"
-          fi
-          
-          if [ -f "clash.yaml" ]; then
-            CLASH_RULES=$(grep -c "^  - " clash.yaml)
-            CLASH_SIZE=$(wc -c < clash.yaml | awk '{print $1}')
-            echo "📄 clash.yaml: $CLASH_RULES 条规则, ${CLASH_SIZE}字节"
-          fi
-          
-          echo ""
-          echo "🔗 生成的文件链接:"
-          echo "  - https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/me_clash.txt"
-          echo "  - https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/clash.yaml"
-          
-          echo ""
-          echo "📋 Clash 使用示例:"
-          cat << 'EOF'
-          
-          # 在 Clash 配置中添加:
-          rule-providers:
-            me-rules:
-              type: http
-              behavior: domain
-              url: "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/me_clash.txt"
-              path: ./ruleset/me_clash.yaml
-              interval: 86400
-            
-            adguard-rules:
-              type: http
-              behavior: domain
-              url: "https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/clash.yaml"
-              path: ./ruleset/adguard.yaml
-              interval: 86400
-          
-          rules:
-            - RULE-SET,me-rules,REJECT
-            - RULE-SET,adguard-rules,REJECT
-          EOF
