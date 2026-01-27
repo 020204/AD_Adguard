@@ -19,8 +19,8 @@ GITHUB_BRANCH="main"
 #━━━━━━━━━━━━━━━━━━━
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目录）
 FILE_PAIRS=(
-    "$REPO_DIR/me.txt:$REPO_DIR/me_clash.txt"
-    "$REPO_DIR/adguard.txt:$REPO_DIR/clash.txt"
+    "$REPO_DIR/me.txt:$REPO_DIR/me_clash.yaml"
+    "$REPO_DIR/adguard.txt:$REPO_DIR/clash.yaml"
 )
 
 NOW=$(date "+%Y-%m-%d %H:%M:%S UTC+8")
