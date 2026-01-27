@@ -36,12 +36,7 @@
 ![Neovim](https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=flat&logo=neovim&logoColor=white)
 
 
-### 嗨！👋,我是TTDNS .<img align="right" src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Penguin.png" alt="Penguin" width="18%" /><br>
-- 🔭 我目前正在做一些很酷的事情。
-- 🌱 我目前正在学习我喜欢的一切。
-- 💬 向我询问与AdGuard相关的任何事情.
-- 🤗 阅读更多关于我的规则收集信息：[这里](https://github.com/TTDNS/Collection-of-Advertising-Rules)
-- 😄 有趣的事实：平均而言，惯用右手的人比惯用左手的人多活九年.
+
 # 规则订阅📃
 合并规则
 ```
