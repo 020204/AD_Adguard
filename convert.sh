@@ -6,7 +6,7 @@
 
 set -e
 export LC_ALL=C
-
+REPO_DIR="$(cd "$(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目录）
 # ━━━━━━━━━━━━━━━━━━━
 # 新增：日志配置
 # ━━━━━━━━━━━━━━━━━━━
@@ -28,7 +28,7 @@ GITHUB_BRANCH="main"
 #━━━━━━━━━━━━━━━━━━━
 # 本地文件路径（仓库根目录）
 #━━━━━━━━━━━━━━━━━━━
-REPO_DIR="$(cd "$(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目录）
+
 FILE_PAIRS=(
     "$REPO_DIR/me.txt:$REPO_DIR/me_clash.yaml"
     "$REPO_DIR/adguard.txt:$REPO_DIR/clash.yaml"
