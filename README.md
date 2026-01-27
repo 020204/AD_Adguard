@@ -37,7 +37,7 @@
 
 
 
-# 清雅规则订阅📃
+# 晴雅规则订阅📃
 Adguard
 ```
 http://rssv.cn/adguard/config/black.txt
@@ -63,7 +63,7 @@ clash
 https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 ```
 
-# AWAvenue-Ads-Rule友情规则订阅📃
+# AWAvenue规则订阅📃
 ADguard
 ```
 https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
