@@ -1,0 +1,121 @@
+📝 日志将保存至: /home/runner/work/AD_Adguard/AD_Adguard/convert_log.txt
+🚀 AdGuard → Clash Meta 转换器
+📅 时间: 2026-01-28 00:17:14 UTC+8
+📁 仓库目录: /home/runner/work/AD_Adguard/AD_Adguard
+📄 需要处理 2 个文件
+
+⚙️  GitHub 配置:
+   用户: 020204
+   仓库: AD_Adguard
+   分支: main
+   目录: /home/runner/work/AD_Adguard/AD_Adguard
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📂 输入文件: me.txt
+📤 输出文件: me_clash.yaml
+🌐 GitHub URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 文件信息:
+   大小: 17234 字节
+   行数: 617 行
+🧹 清洗规则中...
+📊 有效规则数: 475
+🚀 规则分类中...
+📈 分类统计:
+   🔸 DOMAIN: 296
+   🔹 DOMAIN-SUFFIX: 84
+   🔠 DOMAIN-KEYWORD: 65
+   📡 IP-CIDR: 11
+   🚫 跳过路径规则: 19
+🧹 排序去重中...
+✅ 去重: 移除了 15 条重复
+🔧 子域压缩中...
+📊 最终统计:
+   ✅ 总计: 437 条
+   🔸 DOMAIN: 285
+   🔹 DOMAIN-SUFFIX: 78
+   🔠 DOMAIN-KEYWORD: 63
+   📡 IP-CIDR: 11
+   🔽 压缩优化: 移除了 4 条冗余子域
+📄 生成 Clash 配置文件...
+📈 规则有变化，准备更新
+✅ 文件已更新: /home/runner/work/AD_Adguard/AD_Adguard/me_clash.yaml
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📂 输入文件: adguard.txt
+📤 输出文件: clash.yaml
+🌐 GitHub URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 文件信息:
+   大小: 17193 字节
+   行数: 701 行
+🧹 清洗规则中...
+📊 有效规则数: 697
+🚀 规则分类中...
+📈 分类统计:
+   🔸 DOMAIN: 612
+   🔹 DOMAIN-SUFFIX: 36
+   🔠 DOMAIN-KEYWORD: 42
+   📡 IP-CIDR: 3
+   🚫 跳过路径规则: 4
+🧹 排序去重中...
+✅ 去重: 移除了 0 条重复
+🔧 子域压缩中...
+📊 最终统计:
+   ✅ 总计: 671 条
+   🔸 DOMAIN: 590
+   🔹 DOMAIN-SUFFIX: 36
+   🔠 DOMAIN-KEYWORD: 42
+   📡 IP-CIDR: 3
+   🔽 压缩优化: 移除了 22 条冗余子域
+📄 生成 Clash 配置文件...
+📈 规则有变化，准备更新
+✅ 文件已更新: /home/runner/work/AD_Adguard/AD_Adguard/clash.yaml
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 转换汇总报告
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ 成功: 2 个文件
+❌ 失败: 0 个文件
+📅 完成时间: 2026-01-28 00:17:14 UTC+8
+
+🎉 所有文件转换成功！
+
+📁 生成的文件:
+  📄 me_clash.yaml
+     🔢 规则: 437条
+     📏 大小: 14380字节
+     🔗 URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
+  📄 clash.yaml
+     🔢 规则: 671条
+     📏 大小: 22713字节
+     🔗 URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml
+
+📋 Clash 配置示例:
+
+# me_clash 规则集
+rule-providers:
+  me_clash:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml"
+    path: ./ruleset/me_clash.yaml
+    interval: 86400
+
+# clash 规则集
+rule-providers:
+  clash:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml"
+    path: ./ruleset/clash.yaml
+    interval: 86400
+
+
+💡 提示:
+1. 确保 .gitignore 包含临时文件:
+   /tmp/clash_convert_*
+2. 提交生成的文件到 GitHub:
+   git add me_clash.txt clash.txt
+   git commit -m '更新规则集'
+   git push

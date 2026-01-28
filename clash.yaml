@@ -1,17 +1,18 @@
-#Title: 安妮
+#Title: clash 规则集
+#Source: adguard.txt
+#Author: 020204
+#GitHub: https://github.com/020204/AD_Adguard
+#Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml
 #--------------------------------------
-#Source: AdGuard Rules
-#Original rules: 697
-#Final rules: 671
+#原始规则数: 697
+#最终规则数: 671
 #DOMAIN: 590
 #DOMAIN-SUFFIX: 36
 #DOMAIN-KEYWORD: 42
 #IP-CIDR: 3
-#Duplicates removed: 0
-#Subdomains compressed: 22
-#Update time: 2026-01-28 06:27:37 UTC+8
-#Homepage: https://github.com/020204/AD_Adguard
-#Update url: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.txt
+#移除重复: 0
+#压缩子域: 22
+#更新时间: 2026-01-28 00:17:14 UTC+8
 
 payload:
   - DOMAIN,sumdiff.vivo.com.cn

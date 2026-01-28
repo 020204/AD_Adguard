@@ -1,17 +1,18 @@
-#Title: 安妮
+#Title: me_clash 规则集
+#Source: me.txt
+#Author: 020204
+#GitHub: https://github.com/020204/AD_Adguard
+#Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#Source: AdGuard Rules
-#Original rules: 475
-#Final rules: 437
+#原始规则数: 475
+#最终规则数: 437
 #DOMAIN: 285
 #DOMAIN-SUFFIX: 78
 #DOMAIN-KEYWORD: 63
 #IP-CIDR: 11
-#Duplicates removed: 15
-#Subdomains compressed: 4
-#Update time: 2026-01-28 06:36:43 UTC+8
-#Homepage: https://github.com/020204/AD_Adguard
-#Update url: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.txt
+#移除重复: 15
+#压缩子域: 4
+#更新时间: 2026-01-28 00:17:14 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
