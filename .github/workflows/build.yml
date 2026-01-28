@@ -2,8 +2,8 @@ name: Update Clash Rules
 
 on:
   schedule:
-    - cron: '0 22 * * *' # 每天北京时间早上 6 点运行
-  workflow_dispatch:      # 允许手动触发
+    - cron: '0 22 * * *'
+  workflow_dispatch:
   push:
     paths:
       - 'adguard.txt'
@@ -14,19 +14,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write    # 赋予推送到仓库的权限
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Fix Script Format and Path
+      - name: Fix Script Format
         run: |
-          # 1. 强制将 Windows 换行符 (CRLF) 转为 Linux 换行符 (LF)
           sed -i 's/\r$//' convert.sh
-          # 2. 强制修复第一行的 Shebang 路径为 Linux 通用路径
           sed -i '1s|.*|#!/bin/bash|' convert.sh
-          # 3. 赋予执行权限
           chmod +x convert.sh
 
       - name: Run Converter
@@ -37,12 +34,12 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # 添加生成的规则文件和日志文件
-          git add me_clash.txt clash.txt convert_log.txt
+          # 使用通配符添加所有 yaml 和日志文件，忽略不存在的错误
+          git add *.yaml convert_log.txt 2>/dev/null || true
           
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: 📅 自动更新规则及执行日志 ($(date +'%Y-%m-%d %H:%M'))"
+            git commit -m "chore: 📅 自动更新规则集 ($(date +'%Y-%m-%d %H:%M'))"
             git push
           fi
