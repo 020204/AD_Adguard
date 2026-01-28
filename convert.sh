@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/bin/bash
 # Ultimate AdGuard → Clash Meta payload converter (GitHub Repository Edition)
 # Author: chatgpt
 # GitHub: https://github.com/020204/AD_Adguard
