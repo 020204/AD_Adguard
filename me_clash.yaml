@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 475
-#最终规则数: 437
-#DOMAIN: 285
+#原始规则数: 485
+#最终规则数: 445
+#DOMAIN: 293
 #DOMAIN-SUFFIX: 78
 #DOMAIN-KEYWORD: 63
 #IP-CIDR: 11
-#移除重复: 15
+#移除重复: 17
 #压缩子域: 4
-#更新时间: 2026-01-28 00:17:14 UTC+8
+#更新时间: 2026-01-28 03:32:06 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
@@ -20,6 +20,7 @@ payload:
   - DOMAIN,luimg.baidu.com
   - DOMAIN,appstoreort-stsdk.vivo.com.cn
   - DOMAIN,a.ac.qq.com
+  - DOMAIN,metrics.icloud.com
   - DOMAIN,tbexpand.alicdn.com
   - DOMAIN,pitaya.bytedance.com
   - DOMAIN,img-x.jd.com
@@ -198,6 +199,7 @@ payload:
   - DOMAIN,adx-data.yfanads.com
   - DOMAIN,www.bytedance.com
   - DOMAIN,acs4baichuan.m.taobao.com
+  - DOMAIN,d.reddit.com
   - DOMAIN,dot.api.idmzj.com
   - DOMAIN,fclickv4.baidu.com
   - DOMAIN-SUFFIX,volcsiriusbd.com
@@ -209,6 +211,8 @@ payload:
   - DOMAIN,staticsns.cdn.bcebos.com
   - DOMAIN-SUFFIX,microfun.cn
   - DOMAIN,mos.m.taobao.com
+  - DOMAIN,ads.reddit.com
+  - DOMAIN,advertising.twitter.com
   - DOMAIN,gc.zgo.at
   - IP-CIDR,58.242.130.102/32,no-resolve
   - DOMAIN-KEYWORD,tnc-alisc.zijieapi.com
@@ -250,6 +254,7 @@ payload:
   - DOMAIN,h-adashx.ut.taobao.com
   - DOMAIN,mcdn.kandian.qq.com
   - DOMAIN-KEYWORD,-luckycatopen.byteimg.com
+  - DOMAIN,affiliationjs.s3.amazonaws.com
   - DOMAIN,feed-image.baidu.com
   - DOMAIN,life-service-open.zijieapi.com
   - DOMAIN-KEYWORD,p-ad-sign.byteimg.com^important
@@ -287,6 +292,7 @@ payload:
   - IP-CIDR,129.227.17.145/32,no-resolve
   - DOMAIN,ug-data.mihoyo.com
   - DOMAIN,v4-lm.adukwai.com
+  - DOMAIN,ads.facebook.com
   - DOMAIN-SUFFIX,magicacid.cn
   - DOMAIN-SUFFIX,mobrtb.com
   - DOMAIN,adx.dictapis.cn
@@ -387,6 +393,7 @@ payload:
   - IP-CIDR,13.213.183.160/32,no-resolve
   - DOMAIN,open.snssdk.com
   - DOMAIN-SUFFIX,billowlink.com
+  - DOMAIN,ads-dev.pinterest.com
   - DOMAIN,integralwall.baidu.com
   - DOMAIN-SUFFIX,ymatuhin.ru
   - DOMAIN-KEYWORD,report..com
@@ -398,6 +405,7 @@ payload:
   - DOMAIN,open.e.kuaishou.cn
   - DOMAIN-KEYWORD,p-pro.a.yximgs.com
   - DOMAIN,wn.pos.baidu.com
+  - DOMAIN,app.getsentry.com
   - DOMAIN-SUFFIX,365dmp.com
   - DOMAIN-SUFFIX,zhema1688.com
   - DOMAIN-KEYWORD,download.ctrip.com
