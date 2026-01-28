@@ -615,3 +615,13 @@
 ||appupdate.189.cn^$important
 ||appupdates.189.cn^$important
 ||bkappad.189.cn^$important
+||affiliationjs.s3.amazonaws.com^
+||app.getsentry.com^
+||browser.sentry-cdn.com^
+||ads.facebook.com^
+||advertising.twitter.com^
+||ads-dev.pinterest.com^
+||d.reddit.com^
+||ads.reddit.com^
+||tracking.india.miui.com^
+||metrics.icloud.com^
