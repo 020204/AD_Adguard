@@ -1,5 +1,5 @@
 ! Description: 反馈群538268498
-! Homepage: http://rssv.cn/adguard/
+! Homepage: https://github.com/020204/AD_Adguard
 ! Title: 晴雅广告拦截规则重置版支持IOS🐧538268498
 ! Version: 1.7.1
 ||789.kakamobi.cn^
