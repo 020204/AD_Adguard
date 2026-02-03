@@ -40,11 +40,6 @@
 # 晴雅规则订阅📃
 Adguard
 ```
-~~http://rssv.cn/adguard/config/black.txt~~
-
-```
-或者
-```
 https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/adguard.txt
 ```
 
