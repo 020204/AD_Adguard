@@ -68,6 +68,38 @@
 @@||xn--4gqu8tcnnope.com^$important
 #KiMi
 @@||prod-chat-kimi.tos-cn-beijing.volces.com^$importat
+# 番茄
+||*^$all,app=com.dragon.read
+! 自己的历史评论中的图片
+@@||p*-reading-private.fqnovel.com^$app=com.dragon.read
+@@||lf*-reading.fqnovelstatic.com^$app=com.dragon.read
+@@||api*-normal.fqnovel.com^$app=com.dragon.read
+@@||ichannel.snssdk.com^$app=com.dragon.read
+! 漫画
+@@||p*-novel1-sign.byteimg.com^$app=com.dragon.read
+! 出版读物图片
+@@||p*-novel-sign.byteimg.com^$app=com.dragon.read
+! 抖音账号登录
+@@||security.snssdk.com^$app=com.dragon.read
+! 完整排行榜
+@@||lf-normal-gr-sourcecdn.bytegecko.com^$app=com.dragon.read
+! 我的信息提示
+@@||reading.snssdk.com^$app=com.dragon.read
+@@||lf-fe.fqnovelstatic.com^$app=com.dragon.read
+! 评论
+@@||tnc*-*.zijieapi.com^$app=com.dragon.read
+! 忘了，好像是消息图片
+@@||p*-reading-sign.fqnovelpic.com^$app=com.dragon.read
+! 首页
+@@||api*-normal-sinfonline*.fqnovel.com^$app=com.dragon.read
+@@||api*-sinfnormal.fqnovel.com^$app=com.dragon.read
+! 金币福利页面
+@@||lf-sourcecdn-tos.bytegecko.com^$app=com.dragon.read
+! 听书
+@@||*-novelapp.fqnovelvod.com^$app=com.dragon.read
+@@||*-fq-tts.fqnovelvod.com^$app=com.dragon.read
+! 短剧
+@@||v*-reading-video.fqnovelvod.com^$app=com.dragon.read
 #-------------------------分割线-----------------------------------------------------------------------#
 #---------------------------------------------------------------------分割线---------------------------#
 #快手广告
