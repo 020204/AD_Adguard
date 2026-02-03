@@ -1,6 +1,6 @@
 📝 日志将保存至: /home/runner/work/AD_Adguard/AD_Adguard/convert_log.txt
 🚀 AdGuard → Clash Meta 转换器
-📅 时间: 2026-02-03 03:52:37 UTC+8
+📅 时间: 2026-02-03 20:41:55 UTC+8
 📁 仓库目录: /home/runner/work/AD_Adguard/AD_Adguard
 📄 需要处理 2 个文件
 
@@ -16,10 +16,10 @@
 🌐 GitHub URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📊 文件信息:
-   大小: 17470 字节
-   行数: 627 行
+   大小: 18660 字节
+   行数: 659 行
 🧹 清洗规则中...
-📊 有效规则数: 485
+📊 有效规则数: 486
 🚀 规则分类中...
 📈 分类统计:
    🔸 DOMAIN: 306
@@ -77,7 +77,7 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ 成功: 2 个文件
 ❌ 失败: 0 个文件
-📅 完成时间: 2026-02-03 03:52:37 UTC+8
+📅 完成时间: 2026-02-03 20:41:55 UTC+8
 
 🎉 所有文件转换成功！
 
