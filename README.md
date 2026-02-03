@@ -40,7 +40,7 @@
 # 晴雅规则订阅📃
 Adguard
 ```
-http://rssv.cn/adguard/config/black.txt
+~~http://rssv.cn/adguard/config/black.txt~~
 ```
 或者
 ```
