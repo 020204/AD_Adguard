@@ -647,17 +647,10 @@
 ||appupdate.189.cn^$important
 ||appupdates.189.cn^$important
 ||bkappad.189.cn^$important
-! Ad Blocker Test
-||affiliationjs.s3.amazonaws.com^
-||app.getsentry.com^
-||browser.sentry-cdn.com^
-||ads.facebook.com^
-||advertising.twitter.com^
-||ads-dev.pinterest.com^
-||d.reddit.com^
-||ads.reddit.com^
-||tracking.india.miui.com^
-||metrics.icloud.com^
+! Ad Blocker Test 
+||pagead2.googlesyndication.com^
+||adservice.google.com^
+||pagead2.googleadservices.com^
 ||affiliationjs.s3.amazonaws.com^
 ||app.getsentry.com^
 ||browser.sentry-cdn.com^
@@ -701,9 +694,3 @@
 ||appmetrica.yandex.ru^
 ||adfstat.yandex.ru^
 ||adfox.yandex.ru^
-! --- 拦截脚本与广告注入 ---
-||partnerads.ysm.yahoo.com^
-||pagead2.googlesyndication.com^
-||pagead2.googleadservices.com^
-||adservice.google.com^
-
