@@ -701,3 +701,13 @@
 ||appmetrica.yandex.ru^
 ||adfstat.yandex.ru^
 ||adfox.yandex.ru^
+! --- 拦截脚本与广告注入 ---
+||partnerads.ysm.yahoo.com^
+||pagead2.googlesyndication.com^
+||pagead2.googleadservices.com^
+||adservice.google.com^
+! --- 强制拦截特定关键词的脚本 ---
+*/ads.js$script
+*/pagead.js$script
+*/partnerads.js$script
+
