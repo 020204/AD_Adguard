@@ -647,6 +647,7 @@
 ||appupdate.189.cn^$important
 ||appupdates.189.cn^$important
 ||bkappad.189.cn^$important
+! Ad Blocker Test
 ||affiliationjs.s3.amazonaws.com^
 ||app.getsentry.com^
 ||browser.sentry-cdn.com^
@@ -692,3 +693,11 @@
 ||open.oneplus.net^
 ||business.samsungusa.com^
 ||media.fastclick.net^
+! AdGuard Format for missed trackers
+||events3alt.adcolony.com^
+||ads30.adcolony.com^
+||wd.adcolony.com^
+||adc3-launch.adcolony.com^
+||appmetrica.yandex.ru^
+||adfstat.yandex.ru^
+||adfox.yandex.ru^
