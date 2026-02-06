@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 487
-#最终规则数: 445
-#DOMAIN: 293
-#DOMAIN-SUFFIX: 78
+#原始规则数: 520
+#最终规则数: 468
+#DOMAIN: 310
+#DOMAIN-SUFFIX: 84
 #DOMAIN-KEYWORD: 63
 #IP-CIDR: 11
-#移除重复: 18
+#移除重复: 28
 #压缩子域: 4
-#更新时间: 2026-02-06 03:30:15 UTC+8
+#更新时间: 2026-02-06 03:51:24 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
@@ -20,20 +20,23 @@ payload:
   - DOMAIN,luimg.baidu.com
   - DOMAIN,appstoreort-stsdk.vivo.com.cn
   - DOMAIN,a.ac.qq.com
+  - DOMAIN,cdn.luckyorange.com
   - DOMAIN,metrics.icloud.com
   - DOMAIN,tbexpand.alicdn.com
   - DOMAIN,pitaya.bytedance.com
+  - DOMAIN,appmetrica.yandex.com
   - DOMAIN,img-x.jd.com
   - DOMAIN,lp.pinduoduo.com
   - DOMAIN,toblog.volceapplog.com
   - DOMAIN,mktm.jd.com
   - DOMAIN,sptest.baidu.com
   - DOMAIN,fxgate.baidu.com
+  - DOMAIN,upload.luckyorange.net
   - DOMAIN,mapi.m.jd.com
   - DOMAIN,tieba-ares.cdn.bcebos.com
   - DOMAIN,gameresource.itop.qq.com
-  - DOMAIN,bjb.openstorage.cn
   - DOMAIN-SUFFIX,aligames.com
+  - DOMAIN,bjb.openstorage.cn
   - DOMAIN-SUFFIX,sealaly.net
   - IP-CIDR,129.227.29.192/32,no-resolve
   - IP-CIDR,106.38.236.63/32,no-resolve
@@ -41,6 +44,7 @@ payload:
   - DOMAIN,xcdn.rltdxt.com
   - DOMAIN,tsearch.snssdk.com
   - DOMAIN,vip.huijujiavip.com
+  - DOMAIN-SUFFIX,yandexadexchange.net
   - DOMAIN,adult-movie.bidobido.xyz
   - DOMAIN,zhiyan.monitor.tencent-cloud.net
   - DOMAIN,dsp-x.jd.com
@@ -58,8 +62,10 @@ payload:
   - DOMAIN,gosspublic.alicdn.com
   - DOMAIN,abtestvm.bytedance.com
   - DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com
+  - DOMAIN,trk.pinterest.com
   - DOMAIN,tam.cdn-go.cn
   - DOMAIN,b.qchannel03.cn
+  - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,open.douyin.com
   - DOMAIN,activity.baidu.com
   - DOMAIN-SUFFIX,unioncom.cc
@@ -85,12 +91,14 @@ payload:
   - DOMAIN-KEYWORD,abtest-misc-.zijieapi.com
   - DOMAIN,a.qchannel03.cn
   - DOMAIN,sd-gl.xycdn.com
+  - DOMAIN-SUFFIX,rereddit.com
   - DOMAIN,as.yyymvp.com
+  - DOMAIN-SUFFIX,freshmarketer.com
   - DOMAIN-SUFFIX,amazonclix.com
   - DOMAIN,xj.gtimg.cn
   - DOMAIN,api.ssp.xcultur.com
-  - DOMAIN,kde.qq.com
   - DOMAIN-SUFFIX,ahdohpiechei.com
+  - DOMAIN,kde.qq.com
   - DOMAIN,sdkapp.uve.weibo.com
   - DOMAIN,tdid.m.qq.com
   - DOMAIN,punch.p2p.qq.com
@@ -124,6 +132,7 @@ payload:
   - DOMAIN,tap-dsp.iem.taptap.cn
   - DOMAIN-SUFFIX,oschina.net
   - DOMAIN,wq.jd.com
+  - DOMAIN,w1.luckyorange.com
   - DOMAIN-SUFFIX,huixuanjiasu.com
   - DOMAIN,doh.ptqy.gitv.tv
   - DOMAIN,sdk.open.phone.igexin.com
@@ -138,8 +147,8 @@ payload:
   - DOMAIN,mvads.kugou.com
   - DOMAIN-KEYWORD,-fileserverpcdn.cdn.huya
   - DOMAIN-KEYWORD,analytics.
-  - DOMAIN,static-s.iqiyi.com
   - DOMAIN-SUFFIX,bdxiguaimg.com
+  - DOMAIN,static-s.iqiyi.com
   - DOMAIN,ggx01.miguvideo.com
   - DOMAIN,browser.sentry-cdn.com
   - DOMAIN-KEYWORD,gfzpt.cn
@@ -158,6 +167,7 @@ payload:
   - DOMAIN,status-ipv6.jpush.cn
   - DOMAIN,pcdn-tracker.baidu.com
   - DOMAIN,v1.keepcdn.com
+  - DOMAIN,static.media.net
   - DOMAIN,lf-fe.fqnovelstatic.com
   - DOMAIN-KEYWORD,-pitaya.bytetos.com
   - DOMAIN,hubcloud.com.cn
@@ -177,6 +187,7 @@ payload:
   - DOMAIN,api-p4.mobsurl.com
   - DOMAIN-SUFFIX,kskwai.com
   - DOMAIN-SUFFIX,aiclk.com
+  - DOMAIN,app.bugsnag.com
   - DOMAIN,gdt.qq.com
   - DOMAIN-SUFFIX,ctobsnssdk.com
   - DOMAIN,hydlpcdn.cdn.huya.com
@@ -195,6 +206,7 @@ payload:
   - DOMAIN,hm.baidu.com
   - DOMAIN-SUFFIX,shuidi5g.com
   - DOMAIN,vip.cqtnfs.com
+  - DOMAIN,tracking.intl.miui.com
   - DOMAIN-SUFFIX,irs03.com
   - DOMAIN,adx-data.yfanads.com
   - DOMAIN,www.bytedance.com
@@ -212,6 +224,7 @@ payload:
   - DOMAIN-SUFFIX,microfun.cn
   - DOMAIN,mos.m.taobao.com
   - DOMAIN,ads.reddit.com
+  - DOMAIN,notify.bugsnag.com
   - DOMAIN,advertising.twitter.com
   - DOMAIN,gc.zgo.at
   - IP-CIDR,58.242.130.102/32,no-resolve
@@ -227,6 +240,7 @@ payload:
   - DOMAIN,sysdk.cl2009.com
   - DOMAIN,dns.qq.com
   - DOMAIN-SUFFIX,oceanengine.com
+  - DOMAIN-SUFFIX,mouseflow.com
   - DOMAIN-KEYWORD,-luckycat.byteimg.com
   - DOMAIN,hpd.baidu.com
   - DOMAIN,cache-verify.dutils.com
@@ -258,6 +272,7 @@ payload:
   - DOMAIN,feed-image.baidu.com
   - DOMAIN,life-service-open.zijieapi.com
   - DOMAIN-KEYWORD,p-ad-sign.byteimg.com^important
+  - DOMAIN,analytics-sg.tiktok.com
   - DOMAIN,data-sdk-uuid-log.d.meituan.net
   - DOMAIN-SUFFIX,domobcdn.com
   - DOMAIN-KEYWORD,.video.qq.com
@@ -273,6 +288,7 @@ payload:
   - DOMAIN,pv.sohu.com
   - DOMAIN,e.kuaishou.com
   - DOMAIN,mo.m.taobao.com
+  - DOMAIN,pixel.facebook.com
   - DOMAIN-KEYWORD,v-default.ixigua.com
   - DOMAIN-SUFFIX,siomxity.com
   - DOMAIN,qzs.gdtimg.com
@@ -301,6 +317,7 @@ payload:
   - DOMAIN-SUFFIX,qttunion.com
   - DOMAIN-KEYWORD,-cdn-tos.bytegeckoext.com
   - DOMAIN-KEYWORD,httpdns.
+  - DOMAIN,open.oneplus.net
   - IP-CIDR,129.227.17.142/32,no-resolve
   - DOMAIN,xlog.jd.com
   - DOMAIN,wxsmw.wxs.qq.com
@@ -316,11 +333,13 @@ payload:
   - DOMAIN-SUFFIX,yuanbaobaoxian.com
   - DOMAIN,da.qiyukf.com
   - DOMAIN,stats.jpush.cn
-  - DOMAIN,pgdt.gtimg.cn
   - DOMAIN-SUFFIX,biliapi.com
+  - DOMAIN,pgdt.gtimg.cn
   - DOMAIN,c.sayhi.360.cn
   - DOMAIN-SUFFIX,qiezibenpao.com
+  - DOMAIN,api.bugsnag.com
   - DOMAIN-SUFFIX,voiceads.cn
+  - DOMAIN,settings.luckyorange.net
   - DOMAIN,api.umengcn.org
   - DOMAIN,pages.c-ctrip.com
   - DOMAIN,ipm.atm.youku.com
@@ -405,6 +424,7 @@ payload:
   - DOMAIN,open.e.kuaishou.cn
   - DOMAIN-KEYWORD,p-pro.a.yximgs.com
   - DOMAIN,wn.pos.baidu.com
+  - DOMAIN-SUFFIX,luckyorange.com
   - DOMAIN,app.getsentry.com
   - DOMAIN-SUFFIX,365dmp.com
   - DOMAIN-SUFFIX,zhema1688.com
@@ -413,6 +433,7 @@ payload:
   - DOMAIN-KEYWORD,tnc-bjlgy.zijieapi.com
   - DOMAIN,log.snssdk.com
   - DOMAIN,wjz-cdn.baidu.com
+  - DOMAIN,cs.luckyorange.net
   - DOMAIN,tmfmazuhttp-wangka.m.qq.com
   - DOMAIN-KEYWORD,adbehavior..com
   - DOMAIN,wxa.wxs.qq.com
@@ -429,6 +450,7 @@ payload:
   - DOMAIN,site.u-mob.cn
   - DOMAIN,dns.m.sm.cn
   - DOMAIN-SUFFIX,ugsdk.cn
+  - DOMAIN-SUFFIX,media.net
   - DOMAIN,uisong.baidu.com
   - DOMAIN,ffilelogapp.huya.com
   - DOMAIN,abroad-sdk-push.dutils.com
@@ -449,6 +471,7 @@ payload:
   - DOMAIN-SUFFIX,wkanx.com
   - DOMAIN,tapad-platform.tapimg.com
   - DOMAIN-SUFFIX,anythinktech.com
+  - DOMAIN,business.samsungusa.com
   - DOMAIN,hdns.ksyun.com
   - DOMAIN-SUFFIX,sm.cn
   - DOMAIN,sa.api.intl.miui.com
