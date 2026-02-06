@@ -484,3 +484,4 @@ payload:
   - DOMAIN,compliance.tdos.qq.com
   - DOMAIN,doh.dns.apple.com
   - DOMAIN-SUFFIX,assoc-amazon.com
+  - DOMAIN-SUFFIX,fastclick.net
