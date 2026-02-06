@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 521
-#最终规则数: 469
-#DOMAIN: 311
+#原始规则数: 528
+#最终规则数: 476
+#DOMAIN: 318
 #DOMAIN-SUFFIX: 84
 #DOMAIN-KEYWORD: 63
 #IP-CIDR: 11
 #移除重复: 28
 #压缩子域: 4
-#更新时间: 2026-02-06 03:54:04 UTC+8
+#更新时间: 2026-02-06 04:09:59 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
@@ -23,6 +23,7 @@ payload:
   - DOMAIN,cdn.luckyorange.com
   - DOMAIN,metrics.icloud.com
   - DOMAIN,tbexpand.alicdn.com
+  - DOMAIN,events3alt.adcolony.com
   - DOMAIN,pitaya.bytedance.com
   - DOMAIN,appmetrica.yandex.com
   - DOMAIN,img-x.jd.com
@@ -41,6 +42,7 @@ payload:
   - IP-CIDR,129.227.29.192/32,no-resolve
   - IP-CIDR,106.38.236.63/32,no-resolve
   - DOMAIN-KEYWORD,abtest-misc.zijieapi.com
+  - DOMAIN,appmetrica.yandex.ru
   - DOMAIN,xcdn.rltdxt.com
   - DOMAIN,tsearch.snssdk.com
   - DOMAIN,vip.huijujiavip.com
@@ -62,6 +64,7 @@ payload:
   - DOMAIN,gosspublic.alicdn.com
   - DOMAIN,abtestvm.bytedance.com
   - DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com
+  - DOMAIN,ads30.adcolony.com
   - DOMAIN,trk.pinterest.com
   - DOMAIN,tam.cdn-go.cn
   - DOMAIN,b.qchannel03.cn
@@ -87,6 +90,7 @@ payload:
   - DOMAIN,ggic01.miguvideo.com
   - DOMAIN,adse.ximalaya.com
   - DOMAIN,w1.kskwai.com
+  - DOMAIN,adfox.yandex.ru
   - DOMAIN-SUFFIX,[Adblock Plus 2.0]
   - DOMAIN-KEYWORD,abtest-misc-.zijieapi.com
   - DOMAIN,a.qchannel03.cn
@@ -270,6 +274,7 @@ payload:
   - DOMAIN-KEYWORD,-luckycatopen.byteimg.com
   - DOMAIN,affiliationjs.s3.amazonaws.com
   - DOMAIN,feed-image.baidu.com
+  - DOMAIN,adfstat.yandex.ru
   - DOMAIN,life-service-open.zijieapi.com
   - DOMAIN-KEYWORD,p-ad-sign.byteimg.com^important
   - DOMAIN,analytics-sg.tiktok.com
@@ -472,6 +477,7 @@ payload:
   - DOMAIN-SUFFIX,wkanx.com
   - DOMAIN,tapad-platform.tapimg.com
   - DOMAIN-SUFFIX,anythinktech.com
+  - DOMAIN,wd.adcolony.com
   - DOMAIN,business.samsungusa.com
   - DOMAIN,hdns.ksyun.com
   - DOMAIN-SUFFIX,sm.cn
@@ -483,5 +489,5 @@ payload:
   - DOMAIN,image3.chelaile.net.cn
   - DOMAIN,compliance.tdos.qq.com
   - DOMAIN,doh.dns.apple.com
+  - DOMAIN,adc3-launch.adcolony.com
   - DOMAIN-SUFFIX,assoc-amazon.com
-  - DOMAIN-SUFFIX,fastclick.net
