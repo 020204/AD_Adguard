@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 532
-#最终规则数: 480
-#DOMAIN: 322
+#原始规则数: 521
+#最终规则数: 479
+#DOMAIN: 321
 #DOMAIN-SUFFIX: 84
 #DOMAIN-KEYWORD: 63
 #IP-CIDR: 11
-#移除重复: 28
+#移除重复: 18
 #压缩子域: 4
-#更新时间: 2026-02-06 04:46:43 UTC+8
+#更新时间: 2026-02-06 04:59:46 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
@@ -477,7 +477,6 @@ payload:
   - DOMAIN-SUFFIX,telecome.cn
   - DOMAIN,mobads.baidu.com
   - DOMAIN,mapi.bestpay.com.cn
-  - DOMAIN,partnerads.ysm.yahoo.com
   - DOMAIN-SUFFIX,wkanx.com
   - DOMAIN,tapad-platform.tapimg.com
   - DOMAIN-SUFFIX,anythinktech.com
