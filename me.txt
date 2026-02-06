@@ -657,3 +657,4 @@
 ||ads.reddit.com^
 ||tracking.india.miui.com^
 ||metrics.icloud.com^
+||affiliationjs.s3.amazonaws.com^
