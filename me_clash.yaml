@@ -4,48 +4,53 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 41
-#最终规则数: 34
-#DOMAIN: 13
+#原始规则数: 50
+#最终规则数: 39
+#DOMAIN: 16
 #DOMAIN-SUFFIX: 9
-#DOMAIN-KEYWORD: 12
+#DOMAIN-KEYWORD: 14
 #IP-CIDR: 0
-#移除重复: 0
+#移除重复: 4
 #压缩子域: 0
-#更新时间: 2026-02-16 06:15:48 UTC+8
+#更新时间: 2026-02-16 06:22:48 UTC+8
 
 payload:
-  - DOMAIN-KEYWORD,abtest.zijieapi.com
-  - DOMAIN-SUFFIX,oceanengine.com
-  - DOMAIN,adashx.m.taobao.com
-  - DOMAIN-KEYWORD,pangle.com
-  - DOMAIN-KEYWORD,.yksdks.com
-  - DOMAIN,adservice.google.com
-  - DOMAIN,mobads.baidu.com
-  - DOMAIN,hmma.baidu.com
-  - DOMAIN-SUFFIX,ugsdk.cn
+  - DOMAIN-SUFFIX,hotjar.com
   - DOMAIN-KEYWORD,mssdk.zijieapi.com
-  - DOMAIN,pgdt.ugdtimg.com
-  - DOMAIN-KEYWORD,gecko.zijieapi.com
+  - DOMAIN,pixel.facebook.com
+  - DOMAIN,adashx.m.taobao.com
+  - DOMAIN,events3alt.adcolony.com
+  - DOMAIN-KEYWORD,.bugsnag.com
+  - DOMAIN-SUFFIX,tanx.com
+  - DOMAIN,mobads.baidu.com
+  - DOMAIN,wn.pos.baidu.com
   - DOMAIN-KEYWORD,umeng.com^   ! 有放行，视情况测试
-  - DOMAIN-KEYWORD,.gdt.qq.com
   - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN,hmma.baidu.com
   - DOMAIN-SUFFIX,aiclk.com
-  - DOMAIN-KEYWORD,log.
+  - DOMAIN,sdk.e.qq.com
+  - DOMAIN-SUFFIX,oceanengine.com
+  - DOMAIN,luckycat.byteimg.com
+  - DOMAIN-KEYWORD,ads.zijieapi.com
+  - DOMAIN-KEYWORD,gecko.zijieapi.com
+  - DOMAIN-KEYWORD,.gdt.qq.com
+  - DOMAIN-KEYWORD,.yksdks.com
+  - DOMAIN-KEYWORD,pangle.com
+  - DOMAIN,wcp.taobao.com
+  - DOMAIN-SUFFIX,jpush.cn
   - DOMAIN-KEYWORD,bytegecko.com
+  - DOMAIN-KEYWORD,.luckyorange.com
+  - DOMAIN,pgdt.ugdtimg.com
   - DOMAIN-KEYWORD,.kuaishou.com
   - DOMAIN,nsclick.baidu.com
-  - DOMAIN-SUFFIX,tanx.com
-  - DOMAIN-SUFFIX,jpush.cn
-  - DOMAIN-SUFFIX,anythinktech.com
-  - DOMAIN-SUFFIX,[Adblock Plus 2.0]
-  - DOMAIN-KEYWORD,pitaya.bytedance.com
-  - DOMAIN,wcp.taobao.com
-  - DOMAIN,vas-lf-x.snssdk.com
-  - DOMAIN-KEYWORD,ads.zijieapi.com
-  - DOMAIN,wn.pos.baidu.com
-  - DOMAIN,luckycat.byteimg.com
-  - DOMAIN-SUFFIX,hotjar.com
-  - DOMAIN,sdk.e.qq.com
+  - DOMAIN,adservice.google.com
+  - DOMAIN-SUFFIX,ugsdk.cn
+  - DOMAIN-KEYWORD,log.
   - DOMAIN,pagead2.googlesyndication.com
+  - DOMAIN,appmetrica.yandex.ru
+  - DOMAIN,vas-lf-x.snssdk.com
+  - DOMAIN-KEYWORD,pitaya.bytedance.com
   - DOMAIN,log-sdk.ksapisrv.com
+  - DOMAIN-SUFFIX,[Adblock Plus 2.0]
+  - DOMAIN-SUFFIX,anythinktech.com
+  - DOMAIN-KEYWORD,abtest.zijieapi.com
