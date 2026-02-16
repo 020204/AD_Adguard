@@ -1,6 +1,6 @@
 📝 日志将保存至: /home/runner/work/AD_Adguard/AD_Adguard/convert_log.txt
 🚀 AdGuard → Clash Meta 转换器
-📅 时间: 2026-02-15 22:23:40 UTC+8
+📅 时间: 2026-02-16 06:15:48 UTC+8
 📁 仓库目录: /home/runner/work/AD_Adguard/AD_Adguard
 📄 需要处理 2 个文件
 
@@ -16,27 +16,27 @@
 🌐 GitHub URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📊 文件信息:
-   大小: 19531 字节
-   行数: 696 行
+   大小: 2778 字节
+   行数: 110 行
 🧹 清洗规则中...
-📊 有效规则数: 521
+📊 有效规则数: 41
 🚀 规则分类中...
 📈 分类统计:
-   🔸 DOMAIN: 335
-   🔹 DOMAIN-SUFFIX: 90
-   🔠 DOMAIN-KEYWORD: 65
-   📡 IP-CIDR: 11
-   🚫 跳过路径规则: 19
+   🔸 DOMAIN: 13
+   🔹 DOMAIN-SUFFIX: 9
+   🔠 DOMAIN-KEYWORD: 12
+   📡 IP-CIDR: 0
+   🚫 跳过路径规则: 6
 🧹 排序去重中...
-✅ 去重: 移除了 18 条重复
+✅ 去重: 移除了 0 条重复
 🔧 子域压缩中...
 📊 最终统计:
-   ✅ 总计: 479 条
-   🔸 DOMAIN: 321
-   🔹 DOMAIN-SUFFIX: 84
-   🔠 DOMAIN-KEYWORD: 63
-   📡 IP-CIDR: 11
-   🔽 压缩优化: 移除了 4 条冗余子域
+   ✅ 总计: 34 条
+   🔸 DOMAIN: 13
+   🔹 DOMAIN-SUFFIX: 9
+   🔠 DOMAIN-KEYWORD: 12
+   📡 IP-CIDR: 0
+   🔽 压缩优化: 移除了 0 条冗余子域
 📄 生成 Clash 配置文件...
 📈 规则有变化，准备更新
 ✅ 文件已更新: /home/runner/work/AD_Adguard/AD_Adguard/me_clash.yaml
@@ -77,14 +77,14 @@
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ 成功: 2 个文件
 ❌ 失败: 0 个文件
-📅 完成时间: 2026-02-15 22:23:40 UTC+8
+📅 完成时间: 2026-02-16 06:15:48 UTC+8
 
 🎉 所有文件转换成功！
 
 📁 生成的文件:
   📄 me_clash.yaml
-     🔢 规则: 479条
-     📏 大小: 15722字节
+     🔢 规则: 34条
+     📏 大小: 1519字节
      🔗 URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
   📄 clash.yaml
      🔢 规则: 671条
