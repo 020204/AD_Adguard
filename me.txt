@@ -107,14 +107,53 @@
 /.*byteorge.*/
 /.*bytegoofy.*/
 ! 国际通用追踪补充（AdGuard DNS 可能已覆盖，但强制加）
-||doubleclick.net^
+! Ad Blocker Test 
 ||pagead2.googlesyndication.com^
 ||adservice.google.com^
+||pagead2.googleadservices.com^
+||affiliationjs.s3.amazonaws.com^
+||app.getsentry.com^
+||browser.sentry-cdn.com^
+||ads.facebook.com^
+||advertising.twitter.com^
+||ads-dev.pinterest.com^
+||d.reddit.com^
+||ads.reddit.com^
+||tracking.india.miui.com^
+||metrics.icloud.com^
+||affiliationjs.s3.amazonaws.com^
+||static.media.net^
+||media.net^
+||mouseflow.com^
+||freshmarketer.com^
+||luckyorange.com^
+||cdn.luckyorange.com^
+||w1.luckyorange.com^
+||upload.luckyorange.net^
+||cs.luckyorange.net^
+||settings.luckyorange.net^
+||notify.bugsnag.com^
+||api.bugsnag.com^
+||app.bugsnag.com^
 ||pixel.facebook.com^
-||appmetrica.yandex.ru^
+||trk.pinterest.com^
+||rereddit.com^
+||analytics-sg.tiktok.com^
+||appmetrica.yandex.com^
+||yandexadexchange.net^
+||tracking.intl.miui.com^
+||metrics-dra.dt.hicloud.com^
+||open.oneplus.net^
+||business.samsungusa.com^
+||media.fastclick.net^
+! AdGuard Format for missed trackers
 ||events3alt.adcolony.com^
-||*.luckyorange.com^
-||*.bugsnag.com^
-||hotjar.com^
+||ads30.adcolony.com^
+||wd.adcolony.com^
+||adc3-launch.adcolony.com^
+||appmetrica.yandex.ru^
+||adfstat.yandex.ru^
+||adfox.yandex.ru^
+
 
 # ======== 结束 ========
