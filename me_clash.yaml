@@ -4,53 +4,90 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 50
-#最终规则数: 39
-#DOMAIN: 16
-#DOMAIN-SUFFIX: 9
-#DOMAIN-KEYWORD: 14
+#原始规则数: 86
+#最终规则数: 76
+#DOMAIN: 49
+#DOMAIN-SUFFIX: 15
+#DOMAIN-KEYWORD: 12
 #IP-CIDR: 0
-#移除重复: 4
+#移除重复: 3
 #压缩子域: 0
-#更新时间: 2026-02-16 06:22:48 UTC+8
+#更新时间: 2026-02-16 06:25:01 UTC+8
 
 payload:
   - DOMAIN-SUFFIX,hotjar.com
   - DOMAIN-KEYWORD,mssdk.zijieapi.com
+  - DOMAIN,analytics-sg.tiktok.com
+  - DOMAIN,settings.luckyorange.net
   - DOMAIN,pixel.facebook.com
+  - DOMAIN,advertising.twitter.com
   - DOMAIN,adashx.m.taobao.com
+  - DOMAIN,ads30.adcolony.com
+  - DOMAIN-SUFFIX,freshmarketer.com
+  - DOMAIN,pagead2.googleadservices.com
+  - DOMAIN-SUFFIX,luckyorange.com
+  - DOMAIN,static.media.net
   - DOMAIN,events3alt.adcolony.com
-  - DOMAIN-KEYWORD,.bugsnag.com
+  - DOMAIN,media.fastclick.net
   - DOMAIN-SUFFIX,tanx.com
+  - DOMAIN-SUFFIX,rereddit.com
   - DOMAIN,mobads.baidu.com
   - DOMAIN,wn.pos.baidu.com
+  - DOMAIN,ads-dev.pinterest.com
+  - DOMAIN,adfstat.yandex.ru
+  - DOMAIN,notify.bugsnag.com
   - DOMAIN-KEYWORD,umeng.com^   ! 有放行，视情况测试
   - DOMAIN-SUFFIX,doubleclick.net
+  - DOMAIN,tracking.india.miui.com
   - DOMAIN,hmma.baidu.com
+  - DOMAIN,upload.luckyorange.net
   - DOMAIN-SUFFIX,aiclk.com
   - DOMAIN,sdk.e.qq.com
+  - DOMAIN,d.reddit.com
+  - DOMAIN,app.getsentry.com
   - DOMAIN-SUFFIX,oceanengine.com
+  - DOMAIN,tracking.intl.miui.com
+  - DOMAIN,appmetrica.yandex.com
+  - DOMAIN,cdn.luckyorange.com
+  - DOMAIN,open.oneplus.net
+  - DOMAIN,api.bugsnag.com
   - DOMAIN,luckycat.byteimg.com
   - DOMAIN-KEYWORD,ads.zijieapi.com
   - DOMAIN-KEYWORD,gecko.zijieapi.com
+  - DOMAIN,metrics-dra.dt.hicloud.com
+  - DOMAIN,trk.pinterest.com
   - DOMAIN-KEYWORD,.gdt.qq.com
-  - DOMAIN-KEYWORD,.yksdks.com
   - DOMAIN-KEYWORD,pangle.com
-  - DOMAIN,wcp.taobao.com
+  - DOMAIN-KEYWORD,.yksdks.com
   - DOMAIN-SUFFIX,jpush.cn
+  - DOMAIN,wcp.taobao.com
   - DOMAIN-KEYWORD,bytegecko.com
-  - DOMAIN-KEYWORD,.luckyorange.com
+  - DOMAIN,business.samsungusa.com
+  - DOMAIN,browser.sentry-cdn.com
+  - DOMAIN,ads.facebook.com
   - DOMAIN,pgdt.ugdtimg.com
   - DOMAIN-KEYWORD,.kuaishou.com
   - DOMAIN,nsclick.baidu.com
+  - DOMAIN-SUFFIX,mouseflow.com
+  - DOMAIN,wd.adcolony.com
   - DOMAIN,adservice.google.com
   - DOMAIN-SUFFIX,ugsdk.cn
   - DOMAIN-KEYWORD,log.
+  - DOMAIN,affiliationjs.s3.amazonaws.com
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN,appmetrica.yandex.ru
   - DOMAIN,vas-lf-x.snssdk.com
+  - DOMAIN,cs.luckyorange.net
+  - DOMAIN-SUFFIX,yandexadexchange.net
   - DOMAIN-KEYWORD,pitaya.bytedance.com
+  - DOMAIN,ads.reddit.com
+  - DOMAIN,w1.luckyorange.com
+  - DOMAIN,app.bugsnag.com
   - DOMAIN,log-sdk.ksapisrv.com
+  - DOMAIN,adfox.yandex.ru
+  - DOMAIN,metrics.icloud.com
+  - DOMAIN,adc3-launch.adcolony.com
+  - DOMAIN-SUFFIX,media.net
   - DOMAIN-SUFFIX,[Adblock Plus 2.0]
   - DOMAIN-SUFFIX,anythinktech.com
   - DOMAIN-KEYWORD,abtest.zijieapi.com
