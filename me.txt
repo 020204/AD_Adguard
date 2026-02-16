@@ -106,5 +106,15 @@
 /.*adsmind.*/
 /.*byteorge.*/
 /.*bytegoofy.*/
+! 国际通用追踪补充（AdGuard DNS 可能已覆盖，但强制加）
+||doubleclick.net^
+||pagead2.googlesyndication.com^
+||adservice.google.com^
+||pixel.facebook.com^
+||appmetrica.yandex.ru^
+||events3alt.adcolony.com^
+||*.luckyorange.com^
+||*.bugsnag.com^
+||hotjar.com^
 
 # ======== 结束 ========
