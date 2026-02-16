@@ -12,7 +12,7 @@
 #IP-CIDR: 3
 #移除重复: 0
 #压缩子域: 22
-#更新时间: 2026-02-16 06:25:01 UTC+8
+#更新时间: 2026-02-16 22:28:00 UTC+8
 
 payload:
   - DOMAIN,sumdiff.vivo.com.cn
