@@ -12,7 +12,7 @@
 #IP-CIDR: 0
 #移除重复: 3
 #压缩子域: 0
-#更新时间: 2026-02-17 22:31:03 UTC+8
+#更新时间: 2026-02-18 22:32:07 UTC+8
 
 payload:
   - DOMAIN-SUFFIX,hotjar.com
