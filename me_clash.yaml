@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 390
-#最终规则数: 378
+#原始规则数: 386
+#最终规则数: 374
 #DOMAIN: 229
-#DOMAIN-SUFFIX: 70
+#DOMAIN-SUFFIX: 66
 #DOMAIN-KEYWORD: 79
 #IP-CIDR: 0
 #移除重复: 2
 #压缩子域: 0
-#更新时间: 2026-02-27 16:33:13 UTC+8
+#更新时间: 2026-02-27 16:33:59 UTC+8
 
 payload:
   - DOMAIN-SUFFIX,chengzijianzhan.com
@@ -25,7 +25,6 @@ payload:
   - DOMAIN,black.qimo.ink
   - DOMAIN,z23r562938.iask.in
   - DOMAIN-SUFFIX,uril6.com
-  - DOMAIN-SUFFIX,tianshengiot.com
   - DOMAIN,statics.adanxing.com
   - DOMAIN,pluto.sina.cn
   - DOMAIN,app.market.xiaomi.com
@@ -236,7 +235,6 @@ payload:
   - DOMAIN-KEYWORD,tnc-bjlgy.zijieapi.com
   - DOMAIN-KEYWORD,download.ctriprip.com
   - DOMAIN-KEYWORD,129.227..
-  - DOMAIN-SUFFIX,shuidi5g.com
   - DOMAIN-KEYWORD,api-normal-c-lf.amemv.com
   - DOMAIN,sa.api.intl.miui.com
   - DOMAIN,data.mistat.intl.xiaomi.com
@@ -315,7 +313,6 @@ payload:
   - DOMAIN,js.sentry-cdn.com
   - DOMAIN,tapad-platform.tapimg.com
   - DOMAIN,api.nn.ci
-  - DOMAIN-SUFFIX,caihong5g.com
   - DOMAIN-SUFFIX,amazonclix.com
   - DOMAIN-SUFFIX,alistgo.com
   - DOMAIN,metok.sys.miui.com
@@ -347,7 +344,6 @@ payload:
   - DOMAIN-SUFFIX,sm.cn
   - DOMAIN,log-sdk.ksapisrv.com
   - DOMAIN,fileserverpcdn.cdn.huya.com
-  - DOMAIN-SUFFIX,zhema1688.com
   - DOMAIN-KEYWORD,qchannel.cn
   - DOMAIN,musl.nn.ci
   - DOMAIN,apm-a.pinduoduo.com
