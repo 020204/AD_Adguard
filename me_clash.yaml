@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 439
-#最终规则数: 389
-#DOMAIN: 232
-#DOMAIN-SUFFIX: 71
-#DOMAIN-KEYWORD: 86
+#原始规则数: 395
+#最终规则数: 383
+#DOMAIN: 230
+#DOMAIN-SUFFIX: 70
+#DOMAIN-KEYWORD: 83
 #IP-CIDR: 0
-#移除重复: 40
+#移除重复: 2
 #压缩子域: 0
-#更新时间: 2026-02-27 13:38:55 UTC+8
+#更新时间: 2026-02-27 13:41:01 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
@@ -85,7 +85,6 @@ payload:
   - DOMAIN,log-upload-v6.mihoyo.com
   - DOMAIN,yumao.puata.info
   - DOMAIN,rtbapi.douyucdn.cn
-  - DOMAIN,ug.qbimg.qq.com
   - DOMAIN,apm-a.pinduoduo.com
   - DOMAIN,adbehaviorhera.ximalaya.com
   - DOMAIN-KEYWORD,log.
@@ -117,9 +116,9 @@ payload:
   - DOMAIN,appapi.51job.com
   - DOMAIN,mvads.kugou.com
   - DOMAIN-KEYWORD,-fileserverpcdn.cdn.huya
-  - DOMAIN-SUFFIX,yfanads.com
   - DOMAIN-KEYWORD,analytics.
   - DOMAIN,adservice.google.com
+  - DOMAIN-SUFFIX,yfanads.com
   - DOMAIN-SUFFIX,bdxiguaimg.com
   - DOMAIN,ggx01.miguvideo.com
   - DOMAIN,browser.sentry-cdn.com
@@ -185,7 +184,6 @@ payload:
   - DOMAIN,uuad.uyunad.com
   - DOMAIN,staticsns.cdn.bcebos.com
   - DOMAIN,mos.m.taobao.com
-  - DOMAIN-SUFFIX,dmrtb.com
   - DOMAIN,advertising.twitter.com
   - DOMAIN-KEYWORD,58.242..
   - DOMAIN,gc.zgo.at
@@ -287,7 +285,6 @@ payload:
   - DOMAIN-SUFFIX,qiezibenpao.com
   - DOMAIN-SUFFIX,voiceads.cn
   - DOMAIN,api.umengcn.org
-  - DOMAIN,pages.c-ctrip.com
   - DOMAIN-KEYWORD,leads.
   - DOMAIN,djvod.ndcimgs.com
   - DOMAIN,ipm.atm.youku.com
@@ -299,20 +296,18 @@ payload:
   - DOMAIN,app.adjust.io
   - DOMAIN-SUFFIX,birdgesdk.com
   - DOMAIN-KEYWORD,appad.189.cn
-  - DOMAIN-KEYWORD,open.e.kuaishou.
   - DOMAIN,nstool.laiqukankan.com
   - DOMAIN-KEYWORD,tobidad.
-  - DOMAIN-KEYWORD,.dianping.com
   - DOMAIN-KEYWORD,ads.
   - DOMAIN,tracking.india.miui.com
   - DOMAIN,sp0.baidu.com
+  - DOMAIN,ug.qbimg.com
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN,tianshu.gtimg.cn
   - DOMAIN,bc-ad-vod.zdmimg.com
   - DOMAIN-KEYWORD,129.227..
   - DOMAIN,h5retry.kugou.com
   - DOMAIN,gecko5-lq.zijieapi.com
-  - DOMAIN-KEYWORD,analytics-api-.smzdm.com
   - DOMAIN-SUFFIX,hotjar-analytics.com
   - DOMAIN,kad.gotokeep.com
   - DOMAIN,applogapi.autohome.com.cn
@@ -387,7 +382,6 @@ payload:
   - DOMAIN,mobads.baidu.com
   - DOMAIN,mapi.bestpay.com.cn
   - DOMAIN,news.app.autohome.com.cn
-  - DOMAIN,sdk-log.partner.sm.cn
   - DOMAIN-SUFFIX,wkanx.com
   - DOMAIN,tapad-platform.tapimg.com
   - DOMAIN,appdownload.ys7.com
