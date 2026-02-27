@@ -234,7 +234,6 @@
 ||52.77.*.*^$important
 ||13.213.*.*^$important
 ||13.214.*.*^$important
-||106.3.*.*^$important
 ||58.242.*.*^$important
 ||developer.xiaomi.com^$important
 ||tracking.india.miui.com^$important
