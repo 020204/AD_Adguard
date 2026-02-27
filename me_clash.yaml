@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 386
-#最终规则数: 374
+#原始规则数: 385
+#最终规则数: 373
 #DOMAIN: 229
 #DOMAIN-SUFFIX: 66
-#DOMAIN-KEYWORD: 79
+#DOMAIN-KEYWORD: 78
 #IP-CIDR: 0
 #移除重复: 2
 #压缩子域: 0
-#更新时间: 2026-02-27 16:33:59 UTC+8
+#更新时间: 2026-02-27 18:41:07 UTC+8
 
 payload:
   - DOMAIN-SUFFIX,chengzijianzhan.com
@@ -86,7 +86,6 @@ payload:
   - DOMAIN,ggx01.miguvideo.com
   - DOMAIN,chat.bilibili.com
   - DOMAIN,pages.suanya.com
-  - DOMAIN-KEYWORD,106.3..
   - DOMAIN,recommend_list.baidu.com
   - DOMAIN,mvads.kugou.com
   - DOMAIN,da.qiyukf.com
