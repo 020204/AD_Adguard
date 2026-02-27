@@ -204,12 +204,6 @@
 ||logconf.iflytek.com^$important
 ||info.mina.xiaoaisound.com^$important
 
-! 物联卡广告
-||shuidi5g.com^$important
-||caihong5g.com^$important
-||tianshengiot.com^$important
-||zhema1688.com^$important
-
 ! 广告联盟
 ||anythinktech.com^$important
 ||domob.cn^$important
