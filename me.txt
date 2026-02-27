@@ -258,13 +258,6 @@
 ||bigdata.ssp.samsung.com^$important
 ||click.oneplus.com^$important
 
-! HTTPDNS 防跳过广告
-||httpdns.*^$important
-||dns*.qq.com^$important
-||dns*.weixin.qq.com^$important
-||doh.dns.apple.com^$important
-||dns.*^$important
-
 ! 微博/美团/携程/什么值得买
 ||*.weibo.cn^$important
 ||forecast.sina.cn^$important
