@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml
 #--------------------------------------
-#原始规则数: 697
-#最终规则数: 671
-#DOMAIN: 590
+#原始规则数: 695
+#最终规则数: 669
+#DOMAIN: 588
 #DOMAIN-SUFFIX: 36
 #DOMAIN-KEYWORD: 42
 #IP-CIDR: 3
 #移除重复: 0
 #压缩子域: 22
-#更新时间: 2026-03-02 19:25:19 UTC+8
+#更新时间: 2026-03-02 20:19:22 UTC+8
 
 payload:
   - DOMAIN,sumdiff.vivo.com.cn
@@ -410,7 +410,6 @@ payload:
   - DOMAIN,isrpt-vn.gdt.qq.com
   - DOMAIN,services.xiangji.qq.com
   - DOMAIN,zlink.toutiao.com
-  - DOMAIN,m-adnet.dutils.com
   - DOMAIN,isrpt-in.gdt.qq.com
   - DOMAIN-SUFFIX,getui.net
   - DOMAIN,ib-hl.snssdk.com
@@ -474,7 +473,6 @@ payload:
   - DOMAIN-KEYWORD,pagead.googleadservices-cn.com
   - DOMAIN-SUFFIX,getui.com
   - DOMAIN,trpcpb.imtt.qq.com
-  - DOMAIN,m-adnet.hiaiabc.com
   - DOMAIN,api-adservices.apple.com
   - DOMAIN,sanme2.taisantech.com
   - DOMAIN,gecko3-lq.zijieapi.com
