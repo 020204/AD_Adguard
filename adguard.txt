@@ -1,7 +1,7 @@
 ! Description: 反馈群538268498
-! Homepage: https://github.com/020204/AD_Adguard
+! Homepage: https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt
 ! Title: 晴雅广告拦截规则重置版支持IOS🐧538268498
-! Version: 1.7.1
+! Version: 1.7.0
 ||789.kakamobi.cn^
 ||a1.alibabausercontent.com^
 ||a6-remad.qm989.com^
@@ -697,5 +697,3 @@
 ||rtbasia.com^
 ||sdk.tianmu.mobi^
 ||admobile.top^
-||m-adnet.dutils.com^
-||m-adnet.hiaiabc.com^
