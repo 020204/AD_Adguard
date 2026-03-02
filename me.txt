@@ -2,7 +2,7 @@
 ! Title: DNS拒绝清单（优化版 · 精简去重）
 ! Homepage: https://github.com/020204/Cat
 ! by: TTDNS⭐⭐✨
-! Last optimized: 2026-02-27（豆包优化）
+! Last optimized: 2026-03-03（豆包最终去重优化）
 
 !========================= 白名单（放行核心资源）=========================
 ! GitHub
@@ -48,6 +48,7 @@
 ||*-cdnfile*pcdn.msstatic.com^$important
 ||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
 ||zhiyan.monitor.tencent-cloud.net^$important
+||tam.cdn-go.cn^$important
 
 ! 京东广告
 ||mapi.m.jd.com^$important
@@ -88,7 +89,6 @@
 ! 淘宝/阿里/拼多多广告
 ||wcp.taobao.com^$important
 ||adashx.*.taobao.com^$important
-||adashx.m.taobao.com^$important
 ||mos.m.taobao.com^$important
 ||pages-fast.m.taobao.com^$important
 ||market.m.taobao.com^$important
@@ -145,6 +145,11 @@
 ||tobidad.*^$important
 ||leads.*^$important
 ||admobile.top^$important
+||dmrtb.com^$important
+||ssp.vivo.com.cn^$important
+||aaid.uyunad.com^$important
+||statics.adanxing.com^$important
+||adx.dictapis.cn^$important
 
 ! 爱奇艺/优酷/极光推送
 ||*.iqiyi.com^$important
@@ -153,7 +158,6 @@
 
 ! 厂商广告/追踪（vivo/oppo/一加/小米/华为/苹果/谷歌/三星/亚马逊）
 ||*-adnet.vivo.com.cn^$important
-||ssp.vivo.com.cn^$important
 ||129.227.*.*^$important
 ||142.251.*.*^$important
 ||52.77.*.*^$important
@@ -221,6 +225,14 @@
 ||resauth.kuwo.cn^$important
 ||kad.gotokeep.com^$important
 ||somamobi.com^$important
+||adbiding.com^$important
+||dentsuchina.cn^$important
+||voiceads.cn^$important
+||v.smtcdns.com^$important
+||ndcpp.com^$important
+||kplayer.keepcdn.com^$important
+||da.qiyukf.com^$important
+||v1.keepcdn.com^$important
 
 ! 米哈游/斗鱼/虎牙/动漫之家/车来了
 ||*-log*.mihoyo.com^$important
@@ -244,6 +256,8 @@
 ||logs.chelaile.net.cn^$important
 ||cdn.smartimg.chelaile.net.cn^$important
 ||dot.api.idmzj.com^$important
+||magicacid.cn^$important
+||youzanyun.com^$important
 
 ! 电信/翼支付/反诈/万能钥匙/汽车之家
 ||app*ad.189.cn^$important
@@ -269,6 +283,7 @@
 ||chat.bilibili.com^$important
 ||biliapi.net^$important
 ||biliapi.com^$important
+||365dmp.com^$important
 
 ! 字节广告/追踪（完整版）
 ||tnc*-aliec*.zijieapi.com^$important
@@ -308,6 +323,31 @@
 ||*-reading.fqnovelstatic.com^$important
 ||*-novelapp.fqnovelvod.com^$important
 ||lf-fe.fqnovelstatic.com^$important
+||uril6.com^$important
+||yuanbaobaoxian.com^$important
+||ahdohpiechei.com^$important
+||cjjd14.com^$important
+||homeborn.cn^$important
+||qtaeixd.com^$important
+||*0kkkkkt.com^$important
+||volcsiriusbd.com^$important
+||sealaly.net^$important
+||vegslb.com^$important
+||siomxity.com^$important
+||huixuanjiasu.com^$important
+||chengzijianzhan.com^$important
+||zxid-api.mobileservice.cn^$important
+||ietheivaicai.com^$important
+||whoami.akamai.net^$important
+||abtestvm.bytedance.com^$important
+||tapad-platform.tapimg.com^$important
+||tap-dsp.iem.taptap.cn^$important
+||ssp-landing.taptap.cn^$important
+||site.u-mob.cn^$important
+||rup4a04-c02.tos-cn-hongkong.bytepluses.com^$important
+||www.bytedance.com^$important
+||track.ranfenghd.com^$important
+||volces.com^$important
 
 ! 国际广告/追踪
 ||pagead2.googlesyndication.com^$important
@@ -331,14 +371,10 @@
 ||api.umengcn.org^$important
 ||tingyun.com^$important
 ||networkbench.com^$important
-||whoami.akamai.net^$important
-||tapad-platform.tapimg.com^$important
-||tap-dsp.iem.taptap.cn^$important
-||ssp-landing.taptap.cn^$important
-||site.u-mob.cn^$important
 ||gc.zgo.at^$important
 ||ymatuhin.ru^$important
 ||adult-movie.bidobido.xyz^$important
+||api2.dealmoon.cn^$important
 
 !========================= 泛规则（兜底拦截）=========================
 ||log.*^$important
@@ -346,4 +382,57 @@
 ||analytics.*^$important
 ||ad.*^$important
 ||adnetstatic.*^$important
-||ad-material.*^$important
+||ad-material.*.com^$important
+||ubixioe.com^$important
+||qttunion.com^$important
+||adintl.cn^$important
+||fdxadiv.com^$important
+||tqezu.com^$important
+||vsres.dsty*.com^$important
+||wejianzhan.com^$important
+||oschina.net^$important
+||birdgesdk.com^$important
+||topdalao.lanzoui.com^$important
+||z23r562938.iask.in^$important
+||irs03.com^$important
+||reachmax.cn^$important
+||logd.api.moji.com^$important
+||adlaunch.moji.com^$important
+||qchannel*.cn^$important
+||sdk.api.oaid.wocloud.cn^$important
+||oss4bpc.moji.com^$important
+||adash-emas.cn-hangzhou.aliyuncs.com^$important
+||appapi.51job.com^$important
+||applog-*.*^$important
+||api-share.mob.com^$important
+||shop45920354.m.youzan.com^$important
+||electric-shop.yaoguo.com^$important
+||yfanads.com^$important
+||yumao.puata.info^$important
+||mallapi2.qinlinkeji.com^$important
+||mall-dsp2.qinlinkeji.com^$important
+||al.nn.ci^$important
+||alist.nn.ci^$important
+||alistgo.com^$important
+||api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me^$important
+||api.nn.ci^$important
+||api-cf.nn.ci^$important
+||api.xhofe.top^$important
+||contrib.nn.ci^$important
+||jsd.nn.ci^$important
+||musl.nn.ci^$important
+||richmanrank.ksedt.com^$important
+||plusjrmallstatic.cdn.bcebos.com^$important
+||appdownload.ys7.com^$important
+||xxpkg.com^$important
+||comfylink.com^$important
+||djvod.ndcimgs.com^$important
+||cdn-*.g52j7.com^$important
+||bdxiguaimg.com^$important
+||xcdn.rltdxt.com^$important
+||vip.cqtnfs.com^$important
+||vip.aqdm349.com^$important
+||vip.huijujiavip.com^$important
+||imageads.codoon.com^$important
+||adsdkapi.dxys.pro^$important
+||sdk-log.partner.sm.cn^$important
