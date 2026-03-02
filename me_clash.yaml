@@ -4,7 +4,7 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 385
+#原始规则数: 375
 #最终规则数: 373
 #DOMAIN: 229
 #DOMAIN-SUFFIX: 66
@@ -12,7 +12,7 @@
 #IP-CIDR: 0
 #移除重复: 2
 #压缩子域: 0
-#更新时间: 2026-03-01 22:23:11 UTC+8
+#更新时间: 2026-03-02 19:25:19 UTC+8
 
 payload:
   - DOMAIN-SUFFIX,chengzijianzhan.com
