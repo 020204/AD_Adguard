@@ -5,85 +5,11 @@
 ! Last optimized: 2026-02-27（豆包优化）
 
 !========================= 白名单（放行核心资源）=========================
-! 知乎
-@@||static.zhihu.com^$important
-@@||pic*.zhimg.com^$important
-
-! 漫画/图床
-@@||bcebos.com^$important
-@@||*.umengcn.org^$important
-
 ! GitHub
 @@||github.com^$important
 @@||github.io^$important
 @@||githubusercontent.com^$important
 @@||githubassets.com^$important
-
-! 夸克/阿里/UC
-@@||doc-reader.quark.cn^$important
-@@||acs.m.taobao.com^$important
-@@||drive.uc.cn^$important
-@@||broccoli.uc.cn^$important
-@@||su.quark.cn^$important
-
-! 超星
-@@||learn.chaoxing.com^$important
-
-! 腾讯云COS
-@@||*.myqcloud.com^$important
-
-! Google 分析
-@@||app-measurement.com^$important
-
-! 快手
-@@||pull.yximgs.com^$important
-
-! 酷安/友盟/推送
-@@||tpns.tencent.com^$important
-@@||*.umeng.com^$important
-@@||*.umengcloud.com^$important
-
-! 运营商
-@@||auni.telecome.cn^$important
-@@||auni.unioncom.cc^$important
-
-! 网易
-@@||api.look.163.com^$important
-@@||dun.163.com^$important
-
-! 字节基础服务
-@@||dig.bdurl.net^$important
-@@||ecombdimg.com^$important
-@@||log.snssdk.com^$important
-@@||*.zijieapi.com^$important
-
-! 阿里本地生活
-@@||*.ele.me^$important
-@@||acjs.aliyun.com^$important
-
-! 腾讯
-@@||*.qq.com^$important
-@@||wx.qlogo.cn^$important
-@@||wxapp.tc.qq.com^$important
-
-! B站
-@@||grpc.biliapi.net^$important
-
-! 机场域名
-@@||xn--ehqx7tcnnope.com^$important
-@@||xn--4gqu8tcnnope.com^$important
-
-! Kimi
-@@||prod-chat-kimi.tos-cn-beijing.volces.com^$important
-
-! 番茄小说（仅APP）
-@@||*.fqnovel.com^$app=com.dragon.read
-@@||*.fqnovelstatic.com^$app=com.dragon.read
-@@||*.fqnovelpic.com^$app=com.dragon.read
-@@||*.fqnovelvod.com^$app=com.dragon.read
-@@||*.byteimg.com^$app=com.dragon.read
-@@||*.bytegecko.com^$app=com.dragon.read
-@@||reading.snssdk.com^$app=com.dragon.read
 
 !========================= 广告/追踪拦截（全网去重强化）=========================
 
@@ -129,7 +55,6 @@
 ||addata.jd.com^$important
 ||wl.jd.com^$important
 ||wq.jd.com^$important
-||*.jd.com^$important
 ||dsp-x.jd.com^$important
 ||mktm.jd.com^$important
 
@@ -414,90 +339,6 @@
 ||gc.zgo.at^$important
 ||ymatuhin.ru^$important
 ||adult-movie.bidobido.xyz^$important
-
-! 垃圾/劫持/恶意域名汇总
-||birdgesdk.com^$important
-||topdalao.lanzoui.com^$important
-||z23r562938.iask.in^$important
-||uril6.com^$important
-||yuanbaobaoxian.com^$important
-||ahdohpiechei.com^$important
-||cjjd14.com^$important
-||homeborn.cn^$important
-||qtaeixd.com^$important
-||*0kkkkkt.com^$important
-||volcsiriusbd.com^$important
-||sealaly.net^$important
-||vegslb.com^$important
-||siomxity.com^$important
-||huixuanjiasu.com^$important
-||chengzijianzhan.com^$important
-||zxid-api.mobileservice.cn^$important
-||ietheivaicai.com^$important
-||volces.com^$important
-||irs03.com^$important
-||reachmax.cn^$important
-||qchannel*.cn^$important
-||sogaha.cn^$important
-||adbiding.com^$important
-||dentsuchina.cn^$important
-||voiceads.cn^$important
-||ndcpp.com^$important
-||richmanrank.ksedt.com^$important
-||xxpkg.com^$important
-||comfylink.com^$important
-||al.nn.ci^$important
-||alist.nn.ci^$important
-||api.nn.ci^$important
-||api-cf.nn.ci^$important
-||api.xhofe.top^$important
-||contrib.nn.ci^$important
-||jsd.nn.ci^$important
-||musl.nn.ci^$important
-||alistgo.com^$important
-||kplayer.keepcdn.com^$important
-||da.qiyukf.com^$important
-||v1.keepcdn.com^$important
-||yumao.puata.info^$important
-||yfanads.com^$important
-||mallapi2.qinlinkeji.com^$important
-||mall-dsp2.qinlinkeji.com^$important
-||365dmp.com^$important
-||wejianzhan.com^$important
-||magicacid.cn^$important
-||youzanyun.com^$important
-||ugsdk.cn^$important
-||track.ranfenghd.com^$important
-||statics.adanxing.com^$important
-||adx.dictapis.cn^$important
-||uuad.uyunad.com^$important
-||api2.dealmoon.cn^$important
-||sd-gl.xycdn.com^$important
-||conf-darwin.xycdn.com^$important
-||sdk*xyajs.data.kuiniuca.com^$important
-||nstool.laiqukankan.com^$important
-||qiezibenpao.com^$important
-||logd.api.moji.com^$important
-||adlaunch.moji.com^$important
-||oss4bpc.moji.com^$important
-||unilog.wostore.cn^$important
-||plusjrmallstatic.cdn.bcebos.com^$important
-||appdownload.ys7.com^$important
-||shop45920354.m.youzan.com^$important
-||v.smtcdns.com^$important
-||sdk.api.oaid.wocloud.cn^$important
-||adash-emas.cn-hangzhou.aliyuncs.com^$important
-||api-share.mob.com^$important
-||appapi.51job.com^$important
-||applog-*.*^$important
-||djvod.ndcimgs.com^$important
-||bdxiguaimg.com^$important
-||xcdn.rltdxt.com^$important
-||vip.cqtnfs.com^$important
-||vip.aqdm349.com^$important
-||vip.huijujiavip.com^$important
-||imageads.codoon.com^$important
-||adsdkapi.dys.pro^$important
 
 !========================= 泛规则（兜底拦截）=========================
 ||log.*^$important
