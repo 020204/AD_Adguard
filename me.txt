@@ -499,18 +499,6 @@
 ||imageads.codoon.com^$important
 ||adsdkapi.dys.pro^$important
 
-!========================= 正则通杀（最强拦截）=========================
-/.*adservice.*/
-/.*ad-sign.*/
-/.*pangolin.*/
-/.*adsmind.*/
-/.*byteorge.*/
-/.*bytegoofy.*/
-/.*bytedance.*/
-/.*ibytedapm.*/
-/.*panglelog.*/
-/.*bytegecko.*/
-
 !========================= 泛规则（兜底拦截）=========================
 ||log.*^$important
 ||ads.*^$important
