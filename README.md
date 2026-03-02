@@ -40,7 +40,7 @@
 # 晴雅规则订阅📃
 Adguard
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/adguard.txt
+https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt
 ```
 
 clash
