@@ -449,4 +449,16 @@
 ||imageads.codoon.com^$important
 ||adsdkapi.dxys.pro^$important
 ||sdk-log.partner.sm.cn^$important
+
+!========================= 正则通杀拦截（最强拦截，注意可能误伤）=========================
+/.*adservice.*/$important
+/.*ad-sign.*/$important
+/.*pangolin.*/$important
+/.*adsmind.*/$important
+/.*byteorge.*/$important
+/.*bytegoofy.*/$important
+/.*bytedance.*/$important
+/.*ibytedapm.*/$important
+/.*panglelog.*/$important
+/.*bytegecko.*/$important
 ! 合并优化拦截
