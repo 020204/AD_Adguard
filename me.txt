@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Title: DNS拒绝清单（优化版 · 精简去重）
+! Title: DNS拒绝清单（AdGuard Home优化版）
 ! Homepage: https://github.com/020204/Cat
 ! by: TTDNS⭐⭐✨
-! Last optimized: 2026-03-03（豆包最终去重优化）
+! Last optimized: 2026-03-03（适配AdGuard Home）
 
 !========================= 白名单（放行核心资源）=========================
 ! GitHub
@@ -11,6 +11,26 @@
 @@||githubusercontent.com^$important
 @@||githubassets.com^$important
 
+! 基础服务（避免断网、证书错误）
+@@||gstatic.com^$important
+@@||googleapis.com^$important
+@@||cloudflare.com^$important
+@@||microsoft.com^$important
+@@||apple.com^$important
+@@||amazonaws.com^$important
+@@||windowsupdate.com^$important
+@@||ocsp.digicert.com^$important
+@@||digicert.com^$important
+
+! 百度白名单（原有）
+@@||sfp.safe.baidu.com^$important
+@@||dlswbr.baidu.com^$important
+
+! 常见日志/统计服务（避免功能异常，可根据需要增减）
+@@||log.mmstat.com^$important
+@@||log.console.aliyun.com^$important
+@@||log.umsns.com^$important
+
 !========================= 广告/追踪拦截（全网去重强化）=========================
 
 ! 快手广告
@@ -18,7 +38,7 @@
 ||open.kuaishouzt.com^$important
 ||log-sdk.ksapisrv.com^$important
 ||e.kuaishou.*^$important
-||ad*kwai.com^$important
+||ad*.kwai.com^$important
 ||adukwai.com^$important
 ||kskwai.com^$important
 ||promotion-partner.kuaishou.com^$important
@@ -45,7 +65,7 @@
 ||ug.qbimg.com^$important
 ||mcdn.kandian.qq.com^$important
 ||gameresource.itop.qq.com^$important
-||*-cdnfile*pcdn.msstatic.com^$important
+||*-cdnfile*.pcdn.msstatic.com^$important
 ||apd-pcdnwxlogin.teg.tencent-cloud.net^$important
 ||zhiyan.monitor.tencent-cloud.net^$important
 ||tam.cdn-go.cn^$important
@@ -82,10 +102,6 @@
 ||fakeurl.virtual.baidu.com^$important
 ||staticsns.cdn.bcebos.com^$important
 
-! 百度白名单
-@@||sfp.safe.baidu.com^$important
-@@||dlswbr.baidu.com^$important
-
 ! 淘宝/阿里/拼多多广告
 ||wcp.taobao.com^$important
 ||adashx.*.taobao.com^$important
@@ -115,7 +131,6 @@
 ||adbehavior.*.com^$important
 ||*.dutils.com^$important
 ||*.mob.com^$important
-||*.ximalaya.com^$important
 
 ! 抖音/西瓜广告
 ||pull-*-*.ixigua.com^$important
@@ -152,18 +167,17 @@
 ||adx.dictapis.cn^$important
 
 ! 爱奇艺/优酷/极光推送
-||*.iqiyi.com^$important
 ||ipm.atm.youku.com^$important
 ||*.jpush.cn^$important
 
 ! 厂商广告/追踪（vivo/oppo/一加/小米/华为/苹果/谷歌/三星/亚马逊）
 ||*-adnet.vivo.com.cn^$important
-||129.227.*.*^$important
-||142.251.*.*^$important
-||52.77.*.*^$important
-||13.213.*.*^$important
-||13.214.*.*^$important
-||58.242.*.*^$important
+||129.227.0.0/16^$important                     ! 修正为CIDR
+||142.251.0.0/16^$important                     ! 修正为CIDR
+||52.77.0.0/16^$important                       ! 修正为CIDR
+||13.213.0.0/16^$important                       ! 修正为CIDR
+||13.214.0.0/16^$important                       ! 修正为CIDR
+||58.242.0.0/16^$important                       ! 修正为CIDR
 ||developer.xiaomi.com^$important
 ||tracking.india.miui.com^$important
 ||sa.api.intl.miui.com^$important
@@ -215,7 +229,6 @@
 ||ggic01.miguvideo.com^$important
 ||ggtagcache.cmvideo.cn^$important
 ||nstool.netease.com^$important
-||*.kugou.com^$important
 ||voowebpbssdl.kugou.com^$important
 ||h5retry.kugou.com^$important
 ||adserviceretry.kglink.cn^$important
@@ -241,7 +254,6 @@
 ||h5log-api-dualstack.mihoyo.com^$important
 ||log-upload-v6.mihoyo.com^$important
 ||rtbapi.douyucdn.cn^$important
-||*.huya.com^$important
 ||e-ad-monitor.huya.com^$important
 ||ffilelogapp.huya.com^$important
 ||fileserverpcdn.cdn.huya.com^$important
@@ -375,11 +387,11 @@
 ||ymatuhin.ru^$important
 ||adult-movie.bidobido.xyz^$important
 ||api2.dealmoon.cn^$important
-||ads-dev.pinterest.com^important
-||app.getsentry.com^important
-||s3.amazonaws.com^important
+||ads-dev.pinterest.com^$important
+||app.getsentry.com^$important
+||s3.amazonaws.com^$important
 
-!========================= 泛规则（兜底拦截）=========================
+!========================= 泛规则（兜底拦截，谨慎使用）=========================
 ||log.*^$important
 ||ads.*^$important
 ||analytics.*^$important
@@ -392,8 +404,6 @@
 ||fdxadiv.com^$important
 ||tqezu.com^$important
 ||vsres.dsty*.com^$important
-||wejianzhan.com^$important
-||oschina.net^$important
 ||birdgesdk.com^$important
 ||topdalao.lanzoui.com^$important
 ||z23r562938.iask.in^$important
@@ -439,4 +449,4 @@
 ||imageads.codoon.com^$important
 ||adsdkapi.dxys.pro^$important
 ||sdk-log.partner.sm.cn^$important
-
+! 合并优化拦截
