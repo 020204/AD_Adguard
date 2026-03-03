@@ -377,7 +377,7 @@
 ||api2.dealmoon.cn^$important
 ||ads-dev.pinterest.com^important
 ||app.getsentry.com^important
-||affiliationjs.s3.amazonaws.com^important
+||s3.amazonaws.com^important
 
 !========================= 泛规则（兜底拦截）=========================
 ||log.*^$important
