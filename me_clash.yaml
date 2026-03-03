@@ -12,7 +12,7 @@
 #IP-CIDR: 0
 #移除重复: 1
 #压缩子域: 0
-#更新时间: 2026-03-03 11:27:20 UTC+8
+#更新时间: 2026-03-03 11:32:04 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
@@ -302,6 +302,7 @@ payload:
   - DOMAIN,tracking.india.miui.com
   - DOMAIN,sp0.baidu.com
   - DOMAIN,ug.qbimg.com
+  - DOMAIN,s3.amazonaws.com^important
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN,tianshu.gtimg.cn
   - DOMAIN,bc-ad-vod.zdmimg.com
@@ -309,7 +310,6 @@ payload:
   - DOMAIN,h5retry.kugou.com
   - DOMAIN,gecko5-lq.zijieapi.com
   - DOMAIN-SUFFIX,hotjar-analytics.com
-  - DOMAIN,affiliationjs.s3.amazonaws.com^important
   - DOMAIN,kad.gotokeep.com
   - DOMAIN,applogapi.autohome.com.cn
   - DOMAIN-KEYWORD,.huya.com
