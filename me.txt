@@ -375,6 +375,9 @@
 ||ymatuhin.ru^$important
 ||adult-movie.bidobido.xyz^$important
 ||api2.dealmoon.cn^$important
+||ads-dev.pinterest.com^important
+||app.getsentry.com^important
+||affiliationjs.s3.amazonaws.com^important
 
 !========================= 泛规则（兜底拦截）=========================
 ||log.*^$important
