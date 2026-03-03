@@ -4,7 +4,7 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 378
+#原始规则数: 388
 #最终规则数: 371
 #DOMAIN: 234
 #DOMAIN-SUFFIX: 69
@@ -12,7 +12,7 @@
 #IP-CIDR: 0
 #移除重复: 1
 #压缩子域: 0
-#更新时间: 2026-03-03 11:47:34 UTC+8
+#更新时间: 2026-03-03 11:51:43 UTC+8
 
 payload:
   - DOMAIN-SUFFIX,tqezu.com
