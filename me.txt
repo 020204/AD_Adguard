@@ -11,26 +11,6 @@
 @@||githubusercontent.com^$important
 @@||githubassets.com^$important
 
-! 基础服务（避免断网、证书错误）
-@@||gstatic.com^$important
-@@||googleapis.com^$important
-@@||cloudflare.com^$important
-@@||microsoft.com^$important
-@@||apple.com^$important
-@@||amazonaws.com^$important
-@@||windowsupdate.com^$important
-@@||ocsp.digicert.com^$important
-@@||digicert.com^$important
-
-! 百度白名单（原有）
-@@||sfp.safe.baidu.com^$important
-@@||dlswbr.baidu.com^$important
-
-! 常见日志/统计服务（避免功能异常，可根据需要增减）
-@@||log.mmstat.com^$important
-@@||log.console.aliyun.com^$important
-@@||log.umsns.com^$important
-
 !========================= 广告/追踪拦截（全网去重强化）=========================
 
 ! 快手广告
