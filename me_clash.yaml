@@ -6,13 +6,13 @@
 #--------------------------------------
 #原始规则数: 421
 #最终规则数: 400
-#DOMAIN: 259
+#DOMAIN: 258
 #DOMAIN-SUFFIX: 73
-#DOMAIN-KEYWORD: 68
+#DOMAIN-KEYWORD: 69
 #IP-CIDR: 0
 #移除重复: 5
 #压缩子域: 0
-#更新时间: 2026-03-05 21:30:52 UTC+8
+#更新时间: 2026-03-05 21:51:26 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
@@ -50,7 +50,6 @@ payload:
   - DOMAIN,wmlog.meituan.com
   - DOMAIN,s.bdstatic.com
   - DOMAIN,fileserverpcdn.cdn.huya.com
-  - DOMAIN,spclient.wg.spotify.com
   - DOMAIN-SUFFIX,crashlytics.com
   - DOMAIN,abtestvm.bytedance.com
   - DOMAIN,adash-emas.cn-hangzhou.aliyuncs.com
@@ -366,6 +365,7 @@ payload:
   - DOMAIN,resauth.kuwo.cn
   - DOMAIN,app.getsentry.com
   - DOMAIN-SUFFIX,365dmp.com
+  - DOMAIN-KEYWORD,heads.spotifycdn.com
   - DOMAIN,metrics.apple.com
   - DOMAIN-KEYWORD,tnc-bjlgy.zijieapi.com
   - DOMAIN,wjz-cdn.baidu.com
