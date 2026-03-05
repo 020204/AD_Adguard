@@ -345,7 +345,7 @@
 ||audio-ads.spotify.com^
 ||adclick.g.doubleclick.net^
 ||pubads.g.doubleclick.net^
-||spclient.wg.spotify.com^
+||heads*.spotifycdn.com^$important
 ||heads-ec.spotify.com^
 ||ads-fa.spotify.com^
 ||adeventtracker.spotify.com^
