@@ -470,7 +470,6 @@
 /.*adsmind.*/$important
 /.*byteorge.*/$important
 /.*bytegoofy.*/$important
-/.*bytedance.*/$important
 /.*ibytedapm.*/$important
 /.*panglelog.*/$important
 /.*bytegecko.*/$important
