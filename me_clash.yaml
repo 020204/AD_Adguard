@@ -4,7 +4,7 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 421
+#原始规则数: 420
 #最终规则数: 400
 #DOMAIN: 258
 #DOMAIN-SUFFIX: 73
@@ -12,7 +12,7 @@
 #IP-CIDR: 0
 #移除重复: 5
 #压缩子域: 0
-#更新时间: 2026-03-05 22:31:22 UTC+8
+#更新时间: 2026-03-06 09:06:29 UTC+8
 
 payload:
   - DOMAIN,pic1.chelaile.net.cn
