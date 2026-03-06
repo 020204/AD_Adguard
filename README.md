@@ -69,7 +69,8 @@ clash
 ```
 https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/refs/heads/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
 ```
-
+- 中国科学大学测速网：[点击跳转](https://test.ustc.edu.cn)
+- 测试广告拦截率（达到96%或以上是正常）：[点击跳转](https://paileactivist.github.io/toolz/adblock.html)
 
 </ul>
 
