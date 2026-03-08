@@ -10,6 +10,7 @@
 @@||github.io^$important
 @@||githubusercontent.com^$important
 @@||githubassets.com^$important
+@@||anti-ad.net^important
 
 !========================= 广告/追踪拦截（全网去重强化）=========================
 
