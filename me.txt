@@ -151,6 +151,4 @@
 ||abtest.alibaba.com^$important
 ||acs.m.taobao.com^$important
 ||eco.taobao.com^$important
-||alicdn.com^$important
-@@||liangcang-material.alicdn.com^$important
 ||push.m.youku.com^$important
