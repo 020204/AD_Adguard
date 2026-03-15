@@ -137,13 +137,6 @@
 ||lbs.netease.im^
 ||link120-bgp-ipv6.yunxinfw.com^
 ||statistic-overseas.yunxinfw.com^
-# 智联招聘
-||cgate.zhaopin.com^
-||zhixing.dev.zhaopin.com^
-||api.map.baidu.com^
-||fe-api.zhaopin.com^
-||abt-online.netease.im^
-||lbs.netease.im^
 # 优酷
 ||abtest.alibaba.com^
 ||acs.m.taobao.com^
