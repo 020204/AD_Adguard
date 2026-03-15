@@ -145,3 +145,12 @@
 ||zhixing.dev.zhaopin.com^$important
 ||api.map.baidu.com^$important
 ||fe-api.zhaopin.com^$important
+||abt-online.netease.im^$important
+||lbs.netease.im^$important
+# 优酷
+||abtest.alibaba.com^$important
+||acs.m.taobao.com^$important
+||eco.taobao.com^$important
+||alicdn.com^$important
+@@||liangcang-material.alicdn.com^$important
+||push.m.youku.com^$important
