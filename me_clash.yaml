@@ -4,17 +4,18 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 126
-#最终规则数: 126
-#DOMAIN: 103
-#DOMAIN-SUFFIX: 20
+#原始规则数: 133
+#最终规则数: 132
+#DOMAIN: 108
+#DOMAIN-SUFFIX: 21
 #DOMAIN-KEYWORD: 3
 #IP-CIDR: 0
-#移除重复: 0
+#移除重复: 1
 #压缩子域: 0
-#更新时间: 2026-03-14 22:26:14 UTC+8
+#更新时间: 2026-03-15 10:41:00 UTC+8
 
 payload:
+  - DOMAIN,push.m.youku.com
   - DOMAIN,bigdata.ssp.samsung.com
   - DOMAIN,ads.google.com
   - DOMAIN-SUFFIX,hotjar.com
@@ -36,12 +37,14 @@ payload:
   - DOMAIN,config.samsungads.com
   - DOMAIN,adtago.s3.amazonaws.com
   - DOMAIN,securemetrics.apple.com
+  - DOMAIN,abt-online.netease.im
   - DOMAIN,ads.yahoo.com
   - DOMAIN,sessions.bugsnag.com
   - DOMAIN,adservetx.media.net
   - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN,logservice.hicloud.com
   - DOMAIN,notify.bugsnag.com
+  - DOMAIN,abtest.alibaba.com
   - DOMAIN,data.mistat.india.xiaomi.com
   - DOMAIN,analytics-api.samsunghealthcn.com
   - DOMAIN,metrics.data.hicloud.com
@@ -58,6 +61,7 @@ payload:
   - DOMAIN,ad.doubleclick.net
   - DOMAIN,analytics.mobile.yandex.net
   - DOMAIN,lbs.netease.im
+  - DOMAIN-SUFFIX,alicdn.com
   - DOMAIN,upload.luckyorange.net
   - DOMAIN,globalapi.ad.xiaomi.com
   - DOMAIN,samsung-com.112.2o7.net
@@ -72,6 +76,7 @@ payload:
   - DOMAIN,metrics5.data.hicloud.com
   - DOMAIN,appmetrica.yandex.com
   - DOMAIN,static.hotjar.com
+  - DOMAIN,eco.taobao.com
   - DOMAIN,advertising.amazon.com
   - DOMAIN,advice-ads.s3.amazonaws.com
   - DOMAIN,analytics.oneplus.cn
@@ -83,6 +88,7 @@ payload:
   - DOMAIN,cgate.zhaopin.com
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
+  - DOMAIN,acs.m.taobao.com
   - DOMAIN,analyticsengine.s3.amazonaws.com
   - DOMAIN-SUFFIX,amazon-adsystem.com
   - DOMAIN,devwireless.ctrip.com
@@ -136,8 +142,8 @@ payload:
   - DOMAIN,mc.yandex.com
   - DOMAIN,data.mistat.rus.xiaomi.com
   - DOMAIN,fe-api.zhaopin.com
-  - DOMAIN,audio-ak.spotifycdn.com
   - DOMAIN,click.oneplus.com
+  - DOMAIN,audio-ak.spotifycdn.com
   - DOMAIN,sdkconfig.ad.xiaomi.com
   - DOMAIN,metrics.mzstatic.com
   - DOMAIN,api.map.baidu.com
