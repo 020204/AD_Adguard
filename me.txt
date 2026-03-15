@@ -2,17 +2,16 @@
 ! Title: DNS拒绝清单（AdGuard Home优化版）
 ! Homepage: https://github.com/020204/Cat
 ! by: TTDNS⭐⭐✨
-! Last optimized: 2026-03-03（适配AdGuard Home）
-
-!========================= 白名单（放行核心资源）=========================
+! Last optimized: 2026-03-15
+!========================= 白名单=========================
 ! GitHub
-@@||github.com^$important
-@@||github.io^$important
-@@||githubusercontent.com^$important
-@@||githubassets.com^$important
+@@||github.com^
+@@||github.io^
+@@||githubusercontent.com^
+@@||githubassets.com^
 @@||anti-ad.net^important
 
-!========================= 广告/追踪拦截（全网去重强化）=========================
+!========================= 广告/追踪拦截=========================
 # 国外ADS
 ||pagead2.googlesyndication.com^
 ||ads.google.com^
@@ -121,34 +120,32 @@
 ||amazon-adsystem.com^
 ||advertising.amazon.com^
 ||aax.amazon-adsystem.com^
-||pq.us*.globals-download.com^$important
+||pq.us*.globals-download.com^
 # 携程
-||ma-adx.ctrip.com^$important
-||im4.ctrip.com^$important
-||ubtlog.ctrip.com^$important
-||m.ctrip.com^$important
-||dimg*.c-ctrip.com^$important
-||tcpgateway-ali*.ctrip.com^$important
-||devwireless.ctrip.com^$important
+||ma-adx.ctrip.com^
+||im4.ctrip.com^
+||ubtlog.ctrip.com^
+||m.ctrip.com^
+||dimg*.c-ctrip.com^
+||tcpgateway-ali*.ctrip.com^
+||devwireless.ctrip.com^
 # OPPO 主题商店
-||theme-res-gl.heytapimage.com^$important
-@@||theme-h5-cn.heytap.com^$important
-@@||theme.heytapimage.com^$important
+||theme-res-gl.heytapimage.com^
 # 声破天
-||audio-ak.spotifycdn.com^$important
-||heads-fa-tls13.spotifycdn.com^$important
-||lbs.netease.im^$important
-||link120-bgp-ipv6.yunxinfw.com^$important
-||statistic-overseas.yunxinfw.com^$important
+||audio-ak.spotifycdn.com^
+||heads-fa-tls13.spotifycdn.com^
+||lbs.netease.im^
+||link120-bgp-ipv6.yunxinfw.com^
+||statistic-overseas.yunxinfw.com^
 # 智联招聘
-||cgate.zhaopin.com^$important
-||zhixing.dev.zhaopin.com^$important
-||api.map.baidu.com^$important
-||fe-api.zhaopin.com^$important
-||abt-online.netease.im^$important
-||lbs.netease.im^$important
+||cgate.zhaopin.com^
+||zhixing.dev.zhaopin.com^
+||api.map.baidu.com^
+||fe-api.zhaopin.com^
+||abt-online.netease.im^
+||lbs.netease.im^
 # 优酷
-||abtest.alibaba.com^$important
-||acs.m.taobao.com^$important
-||eco.taobao.com^$important
-||push.m.youku.com^$important
+||abtest.alibaba.com^
+||acs.m.taobao.com^
+||eco.taobao.com^
+||push.m.youku.com^
