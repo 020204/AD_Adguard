@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 132
-#最终规则数: 131
-#DOMAIN: 108
+#原始规则数: 126
+#最终规则数: 126
+#DOMAIN: 103
 #DOMAIN-SUFFIX: 20
 #DOMAIN-KEYWORD: 3
 #IP-CIDR: 0
-#移除重复: 1
+#移除重复: 0
 #压缩子域: 0
-#更新时间: 2026-03-15 11:29:57 UTC+8
+#更新时间: 2026-03-15 20:21:25 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -37,7 +37,6 @@ payload:
   - DOMAIN,config.samsungads.com
   - DOMAIN,adtago.s3.amazonaws.com
   - DOMAIN,securemetrics.apple.com
-  - DOMAIN,abt-online.netease.im
   - DOMAIN,ads.yahoo.com
   - DOMAIN,sessions.bugsnag.com
   - DOMAIN,adservetx.media.net
@@ -84,7 +83,6 @@ payload:
   - DOMAIN,cdn.luckyorange.com
   - DOMAIN,api.bugsnag.com
   - DOMAIN,metrics1.data.hicloud.com
-  - DOMAIN,cgate.zhaopin.com
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
   - DOMAIN,acs.m.taobao.com
@@ -124,7 +122,6 @@ payload:
   - DOMAIN,cs.luckyorange.net
   - DOMAIN-SUFFIX,yandexadexchange.net
   - DOMAIN,advertising-api-eu.amazon.com
-  - DOMAIN,zhixing.dev.zhaopin.com
   - DOMAIN,w1.luckyorange.com
   - DOMAIN,logservice1.hicloud.com
   - DOMAIN,app.bugsnag.com
@@ -140,9 +137,7 @@ payload:
   - DOMAIN,static.doubleclick.net
   - DOMAIN,mc.yandex.com
   - DOMAIN,data.mistat.rus.xiaomi.com
-  - DOMAIN,fe-api.zhaopin.com
-  - DOMAIN,click.oneplus.com
   - DOMAIN,audio-ak.spotifycdn.com
+  - DOMAIN,click.oneplus.com
   - DOMAIN,sdkconfig.ad.xiaomi.com
   - DOMAIN,metrics.mzstatic.com
-  - DOMAIN,api.map.baidu.com
