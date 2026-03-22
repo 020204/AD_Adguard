@@ -135,7 +135,6 @@
 # OPPO 主题商店
 ||theme-res-gl.heytapimage.com^
 # 声破天
-||audio-ak.spotifycdn.com^
 ||heads-fa-tls13.spotifycdn.com^
 ||lbs.netease.im^
 ||link120-bgp-ipv6.yunxinfw.com^
