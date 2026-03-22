@@ -2,7 +2,7 @@
 ! Title: DNS拒绝清单（AdGuard Home优化版）
 ! Homepage: https://github.com/020204/Cat
 ! by: TTDNS⭐⭐✨
-! Last optimized: 2026-03-15
+! Last optimized: 2026-03-22
 !========================= 白名单=========================
 ! GitHub
 @@||github.com^
@@ -16,6 +16,9 @@
 ||pagead2.googlesyndication.com^
 ||ads.google.com^
 ||adservice.google.com^
+||advertising.twitter.com^
+||analytics.facebook.com^
+||ads-dev.pinterest.com^
 ||pagead2.googleadservices.com^
 ||googleadservices.com^
 ||static.media.net^
