@@ -1,27 +1,43 @@
 #!/bin/bash
 # Ultimate AdGuard → Clash Meta payload converter (GitHub Repository Edition)
-# adguard.txt 自动从 https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt 获取最新规则
+# Author: chatgpt
+# GitHub: https://github.com/020204/AD_Adguard
 # 使用方法: ./convert.sh
 
 set -e
 export LC_ALL=C
-
-REPO_DIR="\( (cd " \)(dirname "$0")" && pwd)"  # 脚本所在目录
-
+REPO_DIR="$(cd "$(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目录）
 # ━━━━━━━━━━━━━━━━━━━
-# 日志配置（已修复 GitHub Actions 语法错误）
+# 新增：日志配置
 # ━━━━━━━━━━━━━━━━━━━
 LOG_FILE="$REPO_DIR/convert_log.txt"
-> "$LOG_FILE"   # 清空日志文件
 
-# 先输出一条到终端（Actions 会显示），再把后续所有输出重定向到日志文件
+# 将后续所有输出同步重定向到文件和终端
+# exec 意思是执行后续命令， >(tee ...) 会开启一个进程记录输出
+exec > >(tee -i "$LOG_FILE") 2>&1
+
 echo "📝 日志将保存至: $LOG_FILE"
-exec >> "$LOG_FILE" 2>&1
+#━━━━━━━━━━━━━━━━━━━
+# 🔽 下载远程规则（临时文件安全覆盖）
+#━━━━━━━━━━━━━━━━━━━
+REMOTE_URL="https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt"
+LOCAL_FILE="$REPO_DIR/adguard.txt"
+TMP_FILE="$REPO_DIR/adguard.tmp"
 
-echo "🚀 AdGuard → Clash Meta 转换器 (已启用远程规则自动更新)"
-echo "📅 时间: $(date "+%Y-%m-%d %H:%M:%S UTC+8")"
-echo "📁 仓库目录: $REPO_DIR"
+echo "🌐 正在下载最新规则..."
 
+if curl -L --fail --connect-timeout 10 -o "$TMP_FILE" "$REMOTE_URL"; then
+    if [ -s "$TMP_FILE" ]; then
+        mv "$TMP_FILE" "$LOCAL_FILE"
+        echo "✅ 规则更新成功（已覆盖 adguard.txt）"
+    else
+        echo "⚠️ 下载内容为空，已丢弃"
+        rm -f "$TMP_FILE"
+    fi
+else
+    echo "❌ 下载失败，保留原有 adguard.txt"
+    rm -f "$TMP_FILE"
+fi
 #━━━━━━━━━━━━━━━━━━━
 # GitHub 仓库配置
 #━━━━━━━━━━━━━━━━━━━
@@ -30,26 +46,9 @@ GITHUB_REPO="AD_Adguard"
 GITHUB_BRANCH="main"
 
 #━━━━━━━━━━━━━━━━━━━
-# 【核心】下载最新的 AdGuard 规则 (black.txt → adguard.txt)
+# 本地文件路径（仓库根目录）
 #━━━━━━━━━━━━━━━━━━━
-echo "🌐 正在下载最新的 AdGuard 规则..."
-ADGUARD_URL="https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt"
-ADGUARD_FILE="$REPO_DIR/adguard.txt"
 
-if curl -fsSL -o "$ADGUARD_FILE" "$ADGUARD_URL"; then
-    echo "✅ 成功下载最新规则到 adguard.txt"
-    echo "📊 文件大小: $(wc -c < "$ADGUARD_FILE" | awk '{print $1}') 字节"
-    echo "📈 规则行数: $(wc -l < "$ADGUARD_FILE") 行"
-    echo "🔗 来源: $ADGUARD_URL"
-else
-    echo "❌ 错误: 下载 adguard.txt 失败！"
-    echo "   URL: $ADGUARD_URL"
-    exit 1
-fi
-
-#━━━━━━━━━━━━━━━━━━━
-# 本地文件路径
-#━━━━━━━━━━━━━━━━━━━
 FILE_PAIRS=(
     "$REPO_DIR/me.txt:$REPO_DIR/me_clash.yaml"
     "$REPO_DIR/adguard.txt:$REPO_DIR/clash.yaml"
@@ -57,16 +56,21 @@ FILE_PAIRS=(
 
 NOW=$(date "+%Y-%m-%d %H:%M:%S UTC+8")
 
+echo "🚀 AdGuard → Clash Meta 转换器"
+echo "📅 时间: $NOW"
+echo "📁 仓库目录: $REPO_DIR"
 echo "📄 需要处理 ${#FILE_PAIRS[@]} 个文件"
 
 #━━━━━━━━━━━━━━━━━━━
-# 处理函数（以下内容与之前完全一致，仅日志方式已改为安全版）
+# 处理函数
 #━━━━━━━━━━━━━━━━━━━
 process_file() {
     local IN="$1"
     local OUT="$2"
     local FILENAME=$(basename "$IN")
     local OUTPUT_FILENAME=$(basename "$OUT")
+    
+    # 生成对应的 GitHub Raw URL
     local GITHUB_URL="https://raw.githubusercontent.com/$GITHUB_USER/$GITHUB_REPO/$GITHUB_BRANCH/$OUTPUT_FILENAME"
     
     echo ""
@@ -78,6 +82,7 @@ process_file() {
     
     if [ ! -f "$IN" ]; then
         echo "❌ 错误: 输入文件不存在: $IN"
+        echo "💡 提示: 请确保 $FILENAME 存在于仓库根目录"
         return 1
     fi
     
@@ -86,6 +91,7 @@ process_file() {
         return 1
     fi
     
+    # 创建临时目录（在系统临时目录）
     local TMP="/tmp/clash_convert_${FILENAME}_$$"
     mkdir -p "$TMP"
     
@@ -93,20 +99,235 @@ process_file() {
     echo "   大小: $(wc -c < "$IN" | awk '{print $1}') 字节"
     echo "   行数: $(wc -l < "$IN") 行"
     
-    # 1️⃣ 清洗规则（后续所有 echo 都会自动进入日志文件）
+    #━━━━━━━━━━━━━━━━━━━
+    # 1️⃣ 清洗 AdGuard 规则
+    #━━━━━━━━━━━━━━━━━━━
     echo "🧹 清洗规则中..."
-    # （以下所有代码与您之前使用的版本**完全一致**，不再重复粘贴以节省篇幅）
-    # 请把您原来 convert.sh 中从 “#━━━━━━━━━━━━━━━━━━━ # 1️⃣ 清洗 AdGuard 规则” 开始一直到文件末尾的全部内容粘贴到这里
-    # （process_file 函数、主循环、最终报告等全部保留原样）
     
-    # ... [此处请粘贴您之前版本中从 “#━━━━━━━━━━━━━━━━━━━ # 1️⃣ 清洗 AdGuard 规则” 到结尾的全部代码] ...
+    grep -vE '^(#|!|/\*|\s*$|@@)' "$IN" \
+    | sed -E '
+      s/\r//g
+      s/\$.*//
+      s#https?://##
+      s/^0\.0\.0\.0[[:space:]]+//
+      s/^127\.0\.0\.1[[:space:]]+//
+      s/^\|\|//
+      s/\^$//
+    ' > "$TMP/clean.txt"
+    
+    ORIGINAL_COUNT=$(wc -l < "$TMP/clean.txt")
+    echo "📊 有效规则数: $ORIGINAL_COUNT"
+    
+    if [ "$ORIGINAL_COUNT" -eq 0 ]; then
+        echo "⚠️  警告: 清洗后规则数为0，尝试备用方法..."
+        grep -v '^\s*$' "$IN" | grep -v '^#' | grep -v '^!' | sed 's/\r//g' > "$TMP/clean.txt"
+        ORIGINAL_COUNT=$(wc -l < "$TMP/clean.txt")
+        echo "📊 备用清洗后: $ORIGINAL_COUNT 条"
+    fi
+    
+    if [ "$ORIGINAL_COUNT" -eq 0 ]; then
+        echo "❌ 错误: 没有有效的规则可以处理"
+        rm -rf "$TMP"
+        return 1
+    fi
+    
+    #━━━━━━━━━━━━━━━━━━━
+    # 2️⃣ awk 极速分类
+    #━━━━━━━━━━━━━━━━━━━
+    echo "🚀 规则分类中..."
+    
+    awk '
+    BEGIN {
+      dom=0; key=0; ip=0; skip=0
+    }
+    {
+      line=$0
+      if (line == "") next
+    
+      # 跳过路径 / 正则
+      if (line ~ /\//) {
+        skip++
+        next
+      }
+    
+      # IPv4
+      if (line ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) {
+        print "  - IP-CIDR," line "/32,no-resolve"
+        ip++
+        next
+      }
+    
+      # 通配符
+      if (line ~ /\*/) {
+        gsub(/\*/, "", line)
+        if (line != "") {
+          print "  - DOMAIN-KEYWORD," line
+          key++
+        }
+        next
+      }
+    
+      # 域名
+      n = split(line, a, ".")
+      if (n >= 3) {
+        print "  - DOMAIN," line
+        dom++
+      } else {
+        print "  - DOMAIN-SUFFIX," line
+        dom++
+      }
+    }
+    END {
+      printf "DOMAIN=%d\nKEYWORD=%d\nIP=%d\nSKIP=%d\n", dom, key, ip, skip > "'"$TMP/stats.txt"'"
+    }
+    ' "$TMP/clean.txt" > "$TMP/rules.txt"
+    
+    # 读取统计信息
+    DOMAIN_COUNT=0
+    KEYWORD_COUNT=0
+    IP_COUNT=0
+    SKIP_COUNT=0
+    
+    if [ -f "$TMP/stats.txt" ]; then
+        while IFS='=' read -r key value; do
+            case $key in
+                DOMAIN) DOMAIN_COUNT=$value ;;
+                KEYWORD) KEYWORD_COUNT=$value ;;
+                IP) IP_COUNT=$value ;;
+                SKIP) SKIP_COUNT=$value ;;
+            esac
+        done < "$TMP/stats.txt"
+    fi
+    
+    DOMAIN_SUFFIX_COUNT=$(grep -c "DOMAIN-SUFFIX," "$TMP/rules.txt")
+    DOMAIN_COUNT=$((DOMAIN_COUNT - DOMAIN_SUFFIX_COUNT))
+    CLASSIFIED_COUNT=$(wc -l < "$TMP/rules.txt")
+    
+    echo "📈 分类统计:"
+    echo "   🔸 DOMAIN: $DOMAIN_COUNT"
+    echo "   🔹 DOMAIN-SUFFIX: $DOMAIN_SUFFIX_COUNT"
+    echo "   🔠 DOMAIN-KEYWORD: $KEYWORD_COUNT"
+    echo "   📡 IP-CIDR: $IP_COUNT"
+    echo "   🚫 跳过路径规则: $SKIP_COUNT"
+    
+    #━━━━━━━━━━━━━━━━━━━
+    # 3️⃣ 排序 + 去重
+    #━━━━━━━━━━━━━━━━━━━
+    echo "🧹 排序去重中..."
+    sort -u "$TMP/rules.txt" > "$TMP/sorted.txt"
+    AFTER_DEDUP=$(wc -l < "$TMP/sorted.txt")
+    REMOVED_DUPLICATES=$((CLASSIFIED_COUNT - AFTER_DEDUP))
+    echo "✅ 去重: 移除了 $REMOVED_DUPLICATES 条重复"
+    
+    #━━━━━━━━━━━━━━━━━━━
+    # 4️⃣ 子域压缩
+    #━━━━━━━━━━━━━━━━━━━
+    echo "🔧 子域压缩中..."
+    
+    awk -F',' '
+    {
+      rule[$2] = $0
+      type = $1
+      if (type == "  - DOMAIN") domain_type[$2] = "DOMAIN"
+      else if (type == "  - DOMAIN-SUFFIX") domain_type[$2] = "DOMAIN-SUFFIX"
+      else if (type == "  - DOMAIN-KEYWORD") domain_type[$2] = "KEYWORD"
+      else if (type == "  - IP-CIDR") domain_type[$2] = "IP"
+    }
+    END {
+      for (d in rule) {
+        if (domain_type[d] == "IP" || domain_type[d] == "KEYWORD") {
+          print rule[d]
+          continue
+        }
+        
+        split(d, a, ".")
+        keep = 1
+        
+        for (i = 2; i <= length(a); i++) {
+          parent = ""
+          for (j = i; j <= length(a); j++) {
+            parent = parent (j==i?"":".") a[j]
+          }
+          if (parent in rule && domain_type[parent] != "IP" && domain_type[parent] != "KEYWORD") {
+            if (!(domain_type[d] == "DOMAIN" && domain_type[parent] == "DOMAIN-SUFFIX")) {
+              keep = 0
+              break
+            }
+          }
+        }
+        if (keep) print rule[d]
+      }
+    }' "$TMP/sorted.txt" > "$TMP/final.txt"
+    
+    #━━━━━━━━━━━━━━━━━━━
+    # 5️⃣ 统计最终数量
+    #━━━━━━━━━━━━━━━━━━━
+    FINAL_COUNT=$(wc -l < "$TMP/final.txt")
+    FINAL_DOMAIN=$(grep -c "DOMAIN," "$TMP/final.txt")
+    FINAL_SUFFIX=$(grep -c "DOMAIN-SUFFIX," "$TMP/final.txt")
+    FINAL_KEYWORD=$(grep -c "DOMAIN-KEYWORD," "$TMP/final.txt")
+    FINAL_IP=$(grep -c "IP-CIDR," "$TMP/final.txt")
+    COMPRESSED_COUNT=$((AFTER_DEDUP - FINAL_COUNT))
+    
+    echo "📊 最终统计:"
+    echo "   ✅ 总计: $FINAL_COUNT 条"
+    echo "   🔸 DOMAIN: $FINAL_DOMAIN"
+    echo "   🔹 DOMAIN-SUFFIX: $FINAL_SUFFIX"
+    echo "   🔠 DOMAIN-KEYWORD: $FINAL_KEYWORD"
+    echo "   📡 IP-CIDR: $FINAL_IP"
+    echo "   🔽 压缩优化: 移除了 $COMPRESSED_COUNT 条冗余子域"
+    
+    #━━━━━━━━━━━━━━━━━━━
+    # 6️⃣ 生成最终文件
+    #━━━━━━━━━━━━━━━━━━━
+    echo "📄 生成 Clash 配置文件..."
+    
+    cat > "$TMP/new.txt" <<EOF
+#Title: ${OUTPUT_FILENAME%.*} 规则集
+#Source: ${FILENAME}
+#Author: 020204
+#GitHub: https://github.com/$GITHUB_USER/$GITHUB_REPO
+#Update URL: $GITHUB_URL
+#--------------------------------------
+#原始规则数: $ORIGINAL_COUNT
+#最终规则数: $FINAL_COUNT
+#DOMAIN: $FINAL_DOMAIN
+#DOMAIN-SUFFIX: $FINAL_SUFFIX
+#DOMAIN-KEYWORD: $FINAL_KEYWORD
+#IP-CIDR: $FINAL_IP
+#移除重复: $REMOVED_DUPLICATES
+#压缩子域: $COMPRESSED_COUNT
+#更新时间: $NOW
+
+payload:
+EOF
+    
+    cat "$TMP/final.txt" >> "$TMP/new.txt"
+    
+    #━━━━━━━━━━━━━━━━━━━
+    # 7️⃣ 检查内容变化
+    #━━━━━━━━━━━━━━━━━━━
+    local NEED_UPDATE=true
+    if [ -f "$OUT" ]; then
+        if cmp -s "$TMP/new.txt" "$OUT"; then
+            echo "🧠 规则无变化，跳过更新"
+            NEED_UPDATE=false
+        else
+            echo "📈 规则有变化，准备更新"
+        fi
+    fi
+    
+    if [ "$NEED_UPDATE" = true ]; then
+        mv "$TMP/new.txt" "$OUT"
+        echo "✅ 文件已更新: $OUT"
+    fi
     
     rm -rf "$TMP"
     return 0
 }
 
 #━━━━━━━━━━━━━━━━━━━
-# 主循环 + 最终报告（保持原样）
+# 主循环处理所有文件
 #━━━━━━━━━━━━━━━━━━━
 SUCCESS_COUNT=0
 FAIL_COUNT=0
@@ -121,6 +342,7 @@ echo "   目录: $REPO_DIR"
 for PAIR in "${FILE_PAIRS[@]}"; do
     IN="${PAIR%%:*}"
     OUT="${PAIR##*:}"
+    
     if process_file "$IN" "$OUT"; then
         SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
     else
@@ -128,7 +350,9 @@ for PAIR in "${FILE_PAIRS[@]}"; do
     fi
 done
 
-# 最终报告（保持您原来的完整报告代码）
+#━━━━━━━━━━━━━━━━━━━
+# 最终报告
+#━━━━━━━━━━━━━━━━━━━
 echo ""
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "📊 转换汇总报告"
