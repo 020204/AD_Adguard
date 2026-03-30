@@ -17,27 +17,7 @@ LOG_FILE="$REPO_DIR/convert_log.txt"
 exec > >(tee -i "$LOG_FILE") 2>&1
 
 echo "📝 日志将保存至: $LOG_FILE"
-#━━━━━━━━━━━━━━━━━━━
-# 🔽 下载远程规则（临时文件安全覆盖）
-#━━━━━━━━━━━━━━━━━━━
-REMOTE_URL="https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt"
-LOCAL_FILE="$REPO_DIR/adguard.txt"
-TMP_FILE="$REPO_DIR/adguard.tmp"
 
-echo "🌐 正在下载最新规则..."
-
-if curl -L --fail --connect-timeout 10 -o "$TMP_FILE" "$REMOTE_URL"; then
-    if [ -s "$TMP_FILE" ]; then
-        mv "$TMP_FILE" "$LOCAL_FILE"
-        echo "✅ 规则更新成功（已覆盖 adguard.txt）"
-    else
-        echo "⚠️ 下载内容为空，已丢弃"
-        rm -f "$TMP_FILE"
-    fi
-else
-    echo "❌ 下载失败，保留原有 adguard.txt"
-    rm -f "$TMP_FILE"
-fi
 #━━━━━━━━━━━━━━━━━━━
 # GitHub 仓库配置
 #━━━━━━━━━━━━━━━━━━━
