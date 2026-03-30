@@ -4,19 +4,20 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml
 #--------------------------------------
-#原始规则数: 831
-#最终规则数: 805
-#DOMAIN: 703
-#DOMAIN-SUFFIX: 57
+#原始规则数: 1176
+#最终规则数: 1141
+#DOMAIN: 947
+#DOMAIN-SUFFIX: 149
 #DOMAIN-KEYWORD: 42
 #IP-CIDR: 3
 #移除重复: 0
-#压缩子域: 22
-#更新时间: 2026-03-30 02:48:39 UTC+8
+#压缩子域: 31
+#更新时间: 2026-03-30 02:49:48 UTC+8
 
 payload:
   - DOMAIN,sumdiff.vivo.com.cn
   - DOMAIN,static.hotjar.com
+  - DOMAIN,data.mistat.india.xiaomi.com
   - DOMAIN,p.l.qq.com
   - DOMAIN,metrika.yandex.com
   - DOMAIN,api.e.kuaishou.cn
@@ -25,125 +26,190 @@ payload:
   - DOMAIN,appstoreort-stsdk.vivo.com.cn
   - DOMAIN,cdn.luckyorange.com
   - DOMAIN,adsdk.whjzjx.cn
+  - DOMAIN,metrics.icloud.com
   - DOMAIN,events3alt.adcolony.com
   - DOMAIN,iyes.youku.com
+  - DOMAIN-SUFFIX,commission-junction.com
   - DOMAIN,ad-rs6-bjmt5406.idcyz.hb1.kwaidc.com
   - DOMAIN,img-x.jd.com
   - DOMAIN,zt.gifshow.com
   - DOMAIN-SUFFIX,gridsumdissector.com
+  - DOMAIN,sdk.privacy-center.org
+  - DOMAIN,streaming.split.io
   - DOMAIN,weather-analytics-events.apple.com
   - DOMAIN,ep1.adtrafficquality.google
+  - DOMAIN,go.skimresources.com
   - DOMAIN,contextual.media.net
   - DOMAIN,adxst.vivo.com.cn
   - DOMAIN,tracker.yfanads.com
   - DOMAIN,toblog.volceapplog.com
   - DOMAIN-SUFFIX,getui.cn
+  - DOMAIN-SUFFIX,privacymanager.io
+  - DOMAIN-SUFFIX,impact.com
   - DOMAIN,tx-cfg-u1.ubixioe.com
   - DOMAIN,api.luckyorange.com
+  - DOMAIN,r.logrocket.io
   - DOMAIN,region1.google-analytics.com
+  - DOMAIN,ct.pinterest.com
+  - DOMAIN,sync.springserve.com
   - DOMAIN,adx-bj.anythinktech.com
+  - DOMAIN,vortex.data.microsoft.com
+  - DOMAIN,grs.hicloud.com
   - DOMAIN,tagmanager.google.com
   - DOMAIN,open.e.kuaishou.com
   - DOMAIN,polaris-sinfonlinea.zijieapi.com
   - DOMAIN,api.myadsget.com
+  - DOMAIN-SUFFIX,ads-twitter.com
+  - DOMAIN,analytics.query.yahoo.com
+  - DOMAIN-SUFFIX,minergate.com
   - DOMAIN,xpis-mob-xcdn.youku.com
   - DOMAIN,upload.luckyorange.net
+  - DOMAIN,pixel.advertising.com
+  - DOMAIN,ad.dm.gg
+  - DOMAIN,ad.samsungadhub.com
   - DOMAIN,v3.gdt.qq.com
+  - DOMAIN,platform.linkedin.com
+  - DOMAIN,pixel.aweber.com
   - DOMAIN,images.taboola.com
+  - DOMAIN,log.pinterest.com
+  - DOMAIN,t.teads.tv
+  - DOMAIN,i.liadm.com
   - DOMAIN,vr.gdt.qq.com
   - IP-CIDR,120.232.58.157/32,no-resolve
   - DOMAIN,cdn.amplitude.com
   - DOMAIN,iadsdk.apple.com
   - DOMAIN-KEYWORD,lf-leads-fe-scm.bytecdn.com..queniubg.com
   - DOMAIN,toblog.ctobsnssdk.com
+  - DOMAIN,track.hubspot.com
   - DOMAIN,cddp-track.aligames.com
   - DOMAIN,union.gdtimg.com
+  - DOMAIN,appmetrica.yandex.ru
   - DOMAIN,api.revenuads.com
   - DOMAIN,supportmetrics.apple.com
   - DOMAIN,brort.stsdk.vivo.com.cn
   - DOMAIN,report-sy.adview.cn
+  - DOMAIN,events.launchdarkly.com
   - DOMAIN,un-acs.cp31.ott.cibntv.net
   - DOMAIN-KEYWORD,polaris-normal-lq.zijieapi.com
   - DOMAIN-KEYWORD,pangolintoutiao.com
   - DOMAIN,swallow.kakamobi.cn
+  - DOMAIN-SUFFIX,raygun.io
   - DOMAIN,ipv6.shuzilm.cn
+  - DOMAIN,ir-na.amazon-adsystem.com
+  - DOMAIN,static.kameleoon.com
   - DOMAIN,ltscsy.qq.com
   - DOMAIN,api.ad.xiaomi.com
   - DOMAIN,ssp-sdk-config.uc.cn
+  - DOMAIN-SUFFIX,authedmine.com
   - DOMAIN,log-yex.youdao.com
+  - DOMAIN-SUFFIX,kochava.com
   - DOMAIN,log-api.pangolin-sdk-toutiao.com
   - DOMAIN,surveys.hotjar.com
   - DOMAIN,securepubads.g.doubleclick.net
+  - DOMAIN-SUFFIX,adsrvr.org
   - DOMAIN,api5-normal-sinfonlineb.dcarapi.com
   - DOMAIN,ads.x.com
   - DOMAIN,mc.yandex.ru
   - DOMAIN,adnetstatic.vivo.com.cn
   - DOMAIN,pro.bugly.qq.com
   - DOMAIN,adsapi.snapchat.com
+  - DOMAIN,app.launchdarkly.com
+  - DOMAIN-SUFFIX,liadm.com
   - DOMAIN,api-fp-retry-bj.fengkongcloud.com
   - DOMAIN,ichannel.snssdk.com
+  - DOMAIN-SUFFIX,dwin1.com
   - DOMAIN,www.fmiphone-apple.com
   - DOMAIN,api2.amplitude.com
   - DOMAIN,connection-center.vivo.com.cn
+  - DOMAIN,platform.twitter.com
   - IP-CIDR,120.226.10.195/32,no-resolve
   - DOMAIN,inbox.clashofclans.cn
   - DOMAIN,tnc3-bjlgy.zijieapi.com
   - DOMAIN,galileotelemetry.tencent.com
   - DOMAIN,ir-sdk.dun.163.com
+  - DOMAIN,snap.licdn.com
   - DOMAIN,upos-sz-staticcos.bilivideo.com
   - DOMAIN,msg.umengcloud.com
   - DOMAIN,tracking-adnet.vivo.com.cn
+  - DOMAIN-SUFFIX,webminepool.com
   - DOMAIN,default.cn.wagbridge.ad.alibabacorp.com.gds.alibabadns.com
+  - DOMAIN-SUFFIX,awin1.com
   - DOMAIN,w1.gskwai.com
   - DOMAIN-KEYWORD,p-ff.adkwai.com
   - DOMAIN,ulog-sdk.gifshow.com
+  - DOMAIN,consent-api.exponential.com
   - DOMAIN,zhcm.gocdna.cn
   - DOMAIN,unitelogreport.reader.qq.com
   - DOMAIN,pixel.quantserve.com
   - DOMAIN,ads30.adcolony.com
+  - DOMAIN,trk.pinterest.com
   - DOMAIN,pick.isxyrzo.com
   - DOMAIN,push-ads-cn.heytapmobi.com
+  - DOMAIN-SUFFIX,cryptoloot.org
   - DOMAIN,wximg.wxs.qq.com
   - DOMAIN,win.gdt.qq.com
   - DOMAIN,static.doubleclick.net
   - DOMAIN,tnc3-alisc1.zijieapi.com
   - DOMAIN,adsfs.heytapimage.com
+  - DOMAIN,consent.cookiebot.com
   - DOMAIN,hijack.baidu.com
   - DOMAIN,cdn.heapanalytics.com
   - DOMAIN,xvadtrack.xingya.com.cn
   - DOMAIN-SUFFIX,miaozhen.com
   - DOMAIN,analytics.google.com
   - DOMAIN-KEYWORD,-ad.adbkwai.com
+  - DOMAIN,ads-api.tiktok.com
   - DOMAIN,ad-api.morefreegame.com
   - DOMAIN,tnc0-bjlgy.zijieapi.com
+  - DOMAIN-SUFFIX,ftjcfx.com
   - DOMAIN,lf-leads-fe-scm.bytecdn.com
+  - DOMAIN,app.usercentrics.eu
+  - DOMAIN-SUFFIX,trackjs.com
   - DOMAIN-SUFFIX,shackapple.com
+  - DOMAIN,quantcast.mgr.consensu.org
+  - DOMAIN-SUFFIX,sentry.io
+  - DOMAIN,platform.instagram.com
+  - DOMAIN-SUFFIX,fastpool.xyz
   - DOMAIN,lf3-reading.fqnovelpic.com
   - DOMAIN,www.view-apple.com
   - DOMAIN,open-set-api.shenshiads.com
   - DOMAIN,ads.zijieapi.com
+  - DOMAIN-SUFFIX,getdrip.com
   - DOMAIN,pic7.iqiyipic.com
   - DOMAIN-SUFFIX,midongtech.com
+  - DOMAIN-SUFFIX,coin-hive.com
   - DOMAIN,assets.zhutile.com
   - DOMAIN-SUFFIX,fullstory.com
   - DOMAIN,sdktmp.hubcloud.com.cn
   - DOMAIN,open.kuaishouzt.com
   - DOMAIN,audid.umeng.com
+  - DOMAIN,unagi-na.amazon.com
   - DOMAIN,vcode-od.vivo.com.cn
   - DOMAIN,httpkafka.unityads.unity3d.com
   - DOMAIN,tx-ad.a.yximgs.com
+  - DOMAIN,email.getresponse.com
   - DOMAIN,w1.kskwai.com
   - DOMAIN,adse.ximalaya.com
   - DOMAIN,yk-ssp.ad.youku.com
   - DOMAIN,ssp.1rtb.com
+  - DOMAIN,results.optimizely.com
   - DOMAIN,abtk.pinduoduo.com
+  - DOMAIN-SUFFIX,sibautomation.com
+  - DOMAIN,adfox.yandex.ru
   - DOMAIN,scs-x.iqiyi.com
+  - DOMAIN,sync.teads.tv
+  - DOMAIN,stream.launchdarkly.com
   - DOMAIN,adsfileretry.service.kugou.com
   - DOMAIN,uploads1.gifshow.com
   - DOMAIN,s.jpush.cn
   - DOMAIN-KEYWORD,download.vzuu.com
+  - DOMAIN,cdn-eu.configcat.com
   - DOMAIN-SUFFIX,freshmarketer.com
+  - DOMAIN,fresnel.vimeocdn.com
+  - DOMAIN,syndication.twitter.com
+  - DOMAIN,device-metrics-us.amazon.com
   - DOMAIN,android.bugly.qq.com
+  - DOMAIN-SUFFIX,gdeslon.ru
   - DOMAIN,metrics-collector.xaidc.com
   - DOMAIN,statics.woozooo.com
   - DOMAIN,risk-fp-openapi.vivo.com.cn
@@ -155,15 +221,22 @@ payload:
   - DOMAIN,cards.iqiyi.com
   - DOMAIN,adtago.s3.amazonaws.com
   - DOMAIN-SUFFIX,wawe.in
+  - DOMAIN-SUFFIX,shareasale-analytics.com
   - DOMAIN,tdid.m.qq.com
   - DOMAIN-SUFFIX,mixpanel.com
   - DOMAIN-SUFFIX,luggagetumbledapple.com
   - DOMAIN,metrika.yandex.ru
   - DOMAIN,ad-sdk-config.youdao.com
   - DOMAIN,brandadsstatic.vivo.com.cn
+  - DOMAIN,samsung-com.112.2o7.net
   - DOMAIN,dm.pstatp.com
+  - DOMAIN-SUFFIX,minero-proxy.com
+  - DOMAIN,search.spotxchange.com
   - DOMAIN,ad.cyapi.cn
   - DOMAIN,nadvideo2.baidu.com
+  - DOMAIN,cdn.rollbar.com
+  - DOMAIN,sdk.singular.net
+  - DOMAIN,udcm.yahoo.com
   - DOMAIN,data.ab.qq.com
   - DOMAIN-SUFFIX,webvisor.com
   - DOMAIN,xsgdt.play.aiseet.atianqi.com
@@ -171,8 +244,10 @@ payload:
   - DOMAIN,mads.meituan.com
   - DOMAIN,v5-novelapp.fqnovelvod.com
   - DOMAIN,lf3-analytics.bytescm.com
+  - DOMAIN,consentcdn.cookiebot.com
   - DOMAIN,ads-acc.qqbrowser.qq.com
   - DOMAIN,config.ab.qq.com
+  - DOMAIN-SUFFIX,coinerra.com
   - DOMAIN,tnc3-bjlgy.bytedance.com
   - DOMAIN,www.bayread.com
   - DOMAIN,tianshu.qq.com
@@ -184,79 +259,107 @@ payload:
   - DOMAIN,adx-cn.ads.vungle.com
   - DOMAIN-KEYWORD,az-upload-js.gifshow.com
   - DOMAIN,vdn6.vzuu.com
+  - DOMAIN,metrics.data.hicloud.com
   - DOMAIN,perm-api.vivo.com.cn
+  - DOMAIN,cmp.quantcast.com
+  - DOMAIN,capture.trackjs.com
+  - DOMAIN,vid.springserve.com
   - DOMAIN,tr.outbrain.com
   - DOMAIN,tab.video.qq.com
   - DOMAIN,st-ads-jssdk.vivo.com.cn
   - DOMAIN,richmedia.video.qq.com
+  - DOMAIN,track.constantcontact.com
   - DOMAIN,adsmind.ugdtimg.com
   - DOMAIN,nr.taboola.com
+  - DOMAIN,api.airbrake.io
   - DOMAIN,tnc0-aliec2.zijieapi.com
   - DOMAIN,cdn.wwads.cn
   - DOMAIN,ad.shunchangzhixing.com
   - DOMAIN,openlog.cashcatads.com
   - DOMAIN,aden.baidu.com
+  - DOMAIN,cdn.raygun.io
   - DOMAIN,bsync3-normal-lq.zijieapi.com
   - DOMAIN-KEYWORD,p-lm.adkwai.com
   - DOMAIN,lf6-sf-be-pack-sign.pglstatp-toutiao.com
   - DOMAIN,adlog.vivo.com.cn
+  - DOMAIN,ads-sg.tiktok.com
   - DOMAIN,style-browse-openapi.test.gifshow.com
   - DOMAIN,789.kakamobi.cn
+  - DOMAIN,ads.yahoo.com
   - DOMAIN,xiaoshuo.km.com
+  - DOMAIN,pi.pardot.com
   - DOMAIN,dss0.bdstatic.com
   - DOMAIN,diagnosis.ad.xiaomi.com
   - DOMAIN,cdn.mouseflow.com
+  - DOMAIN,cdn2.teads.tv
   - DOMAIN,ios.bugly.qq.com
   - DOMAIN-SUFFIX,nielsen.com
+  - DOMAIN,geo.yahoo.com
   - DOMAIN,ulogs.umengcloud.com
   - DOMAIN,bat.bing.com
   - DOMAIN,ads.yieldmo.com
   - DOMAIN,dig.bdurl.net
+  - DOMAIN,track.customer.io
   - DOMAIN,trc.taboola.com
   - DOMAIN,pangolin.snssdk.com
+  - DOMAIN,api.crashlytics.com
   - DOMAIN,ad.wx.com
+  - DOMAIN,r.skimresources.com
   - DOMAIN,dm.bytedance.com
+  - DOMAIN,an.facebook.com
   - DOMAIN,track.innoads.cn
   - DOMAIN,thind.unityads.unity3d.com
   - DOMAIN,d.url.cn
+  - DOMAIN,analytics.yahoo.com
   - DOMAIN,script.hotjar.com
   - DOMAIN,w1.luckyorange.com
   - DOMAIN,timon.zijieapi.com
   - DOMAIN,api.segment.io
+  - DOMAIN,t.hubspotemail.net
   - DOMAIN,sc.laoqj.top
   - DOMAIN,st-sentinel.vivo.com.cn
   - DOMAIN,ads-sdk-api.ranfenghd.com
   - DOMAIN,jsb.zijieapi.com
-  - DOMAIN,adshows.21cn.com
   - DOMAIN,dm.toutiao.com
+  - DOMAIN,adshows.21cn.com
   - DOMAIN,bes-mtj.baidu.com
   - DOMAIN-SUFFIX,lalabaos1026.top
   - DOMAIN,s1.hapying.com
   - DOMAIN,lookup.api.bsb.baidu.com
+  - DOMAIN,t.sendinblue.com
+  - DOMAIN,idsync.rlcdn.com
+  - DOMAIN,bdapi-in-ads.realmemobile.com
   - DOMAIN,adtrack.quark.cn
   - DOMAIN,isecure.vivo.com.cn
   - DOMAIN,launches.appsflyer.com
   - DOMAIN,onrt-stsdk.vivo.com.cn
   - DOMAIN,mediavisor.doubleclick.net
-  - DOMAIN,baichuan-sdk.alicdn.com
-  - DOMAIN,i.ys7.com
   - DOMAIN,image.uczzd.cn
+  - DOMAIN,i.ys7.com
   - DOMAIN,em.baidu.com
+  - DOMAIN,baichuan-sdk.alicdn.com
+  - DOMAIN-SUFFIX,singular.net
   - DOMAIN-SUFFIX,alexametrics.com
   - DOMAIN,cdn.taboola.com
   - DOMAIN-KEYWORD,api-access.pangolin-sdk-toutiao-.com
   - DOMAIN,sls-android.cn-beijing.log.aliyuncs.com
   - DOMAIN,ad.xelements.cn
+  - DOMAIN,metrics.mzstatic.com
   - DOMAIN,abtest3-misc-lq.zijieapi.com
   - DOMAIN,rs.fullstory.com
   - DOMAIN,adservice.google.com
+  - DOMAIN,cdn.jwplayer.com
   - DOMAIN-SUFFIX,appsflyer.com
   - DOMAIN,analyticsengine.s3.amazonaws.com
+  - DOMAIN,api.raygun.io
+  - DOMAIN-SUFFIX,skimresources.com
+  - DOMAIN,www.awin1.com
   - DOMAIN,rtb.openx.net
   - DOMAIN,default.cn.sz.wagbridge.ad.alibabacorp.com
   - DOMAIN,download1.vzuu.com
   - DOMAIN-SUFFIX,lnk0.com
   - DOMAIN,skill-platform-prd.vivo.com.cn
+  - DOMAIN,browser.sentry-cdn.com
   - DOMAIN,ugd.gtimg.com
   - DOMAIN,rapi.cmgadx.com
   - DOMAIN,ad-sh-sz-zb.wagbridge.tanx.alimama.com
@@ -264,18 +367,28 @@ payload:
   - DOMAIN,ads.morefreegame.com
   - DOMAIN,z-na.amazon-adsystem.com
   - DOMAIN,qy.qchannel03.cn
+  - DOMAIN-SUFFIX,jdoqocy.com
   - DOMAIN,adsdkapi.dxys.pro
   - DOMAIN,xpgw-xcdn.youku.com
   - DOMAIN,p2.eckwai.com
+  - DOMAIN,api.usercentrics.eu
+  - DOMAIN,pixel.mailchimp.com
   - DOMAIN,api2.kwaixiaodian.com
+  - DOMAIN,nmetrics.samsung.com
+  - DOMAIN,adtech.yahooinc.com
+  - DOMAIN,cdn.privacy-mgmt.com
   - DOMAIN,vc.hotjar.io
   - DOMAIN,swan-api.iqiyi.com
   - DOMAIN,a6-remad.qm989.com
   - DOMAIN,vivotest.oss-cn-beijing.aliyuncs.com
   - DOMAIN,feeds.vivo.com.cn
   - DOMAIN,activity.inads.cn
+  - DOMAIN,assets.mailerlite.com
+  - DOMAIN,analytics.twitter.com
+  - DOMAIN-SUFFIX,cnhv.co
   - DOMAIN,data.flurry.com
   - DOMAIN,bj.openstorage.cn
+  - DOMAIN,tracking.rus.miui.com
   - DOMAIN,push.ksapisrv.com
   - DOMAIN,huichuan.sm.cn
   - DOMAIN-SUFFIX,peplle.cn
@@ -289,13 +402,17 @@ payload:
   - DOMAIN-KEYWORD,sf-fe-tos.pglstatp-toutiao.com
   - DOMAIN,static.media.net
   - DOMAIN,px.ads.linkedin.cn
-  - DOMAIN,ads-config.unityads.unity3d.com
   - DOMAIN,googleads.g.doubleclick.net
+  - DOMAIN,ads-config.unityads.unity3d.com
   - DOMAIN,absod.video.iqiyi.com
   - DOMAIN,www.pangolin-dsp-toutiao.com
   - DOMAIN,avlstatic.vivo.com.cn
   - DOMAIN,vcode-api.vivo.com.cn
   - DOMAIN,ad.zijieapi.com
+  - DOMAIN-SUFFIX,sharethis.com
+  - DOMAIN,sessions.bugsnag.com
+  - DOMAIN,lt.activecampaign.com
+  - DOMAIN-SUFFIX,webminerpool.com
   - DOMAIN,www.googletagmanager.com
   - DOMAIN,analytics.woozooo.com
   - DOMAIN,stats.wp.com
@@ -305,8 +422,8 @@ payload:
   - DOMAIN,aax-eu.amazon.com
   - DOMAIN,sv-video.play.aiseet.atianqi.com
   - DOMAIN,v2.gdt.qq.com
-  - DOMAIN,adsfilebssdlbig.ali.kugou.com.wswebcdn.com
   - DOMAIN,gecko.snssdk.com
+  - DOMAIN,adsfilebssdlbig.ali.kugou.com.wswebcdn.com
   - DOMAIN,sentry.kugou.com
   - DOMAIN,log-sdk.ksapisrv.com
   - DOMAIN,activity.hdslb.com
@@ -317,46 +434,66 @@ payload:
   - DOMAIN,wtradv.market.xiaomi.com
   - DOMAIN,bossaudioandcomic-1252317822.image.myqcloud.com
   - DOMAIN,t-dsp.pinduoduo.com
+  - DOMAIN,business-api.tiktok.com
   - DOMAIN,public-bjy-rs-kce-node1466.idchb1az2.hb1.kwaidc.com
   - DOMAIN-SUFFIX,aiclk.com
+  - DOMAIN,c.amazon-adsystem.com
+  - DOMAIN,app.bugsnag.com
   - DOMAIN,tnc3-aliec2.zijieapi.com
   - DOMAIN,cdn.pendo.io
   - DOMAIN-SUFFIX,openx.net
+  - DOMAIN-SUFFIX,addthis.com
+  - DOMAIN,sdkconfig.ad.intl.xiaomi.com
   - DOMAIN,vdn5.vzuu.com
   - DOMAIN,ulog-sdk.ksapisrv.com
   - DOMAIN,nc.gdt.qq.com
+  - DOMAIN,ingest.sentry.io
   - DOMAIN-KEYWORD,adintl.cn
   - DOMAIN,landing.gdtimg.com
   - DOMAIN,cdn.mxpnl.com
   - DOMAIN,remoteads.oss-cn-beijing.aliyuncs.com
+  - DOMAIN,email.mailgun.net
   - DOMAIN,kyy-dl.dzhread.cn
+  - DOMAIN,us.edge.rms.media.net
   - DOMAIN,subscribe.vivo.com.cn
   - DOMAIN-SUFFIX,attri.mobi
   - DOMAIN,api.kwaizt.com
+  - DOMAIN,apis.google.com
+  - DOMAIN,ads.tiktok.com
   - DOMAIN,amdcopen.m.taobao.com
   - DOMAIN,ugc-upload.3g.qq.com
+  - DOMAIN-SUFFIX,hashing.win
   - DOMAIN,iad.apple.com
+  - DOMAIN,ads.dailymotion.com
   - DOMAIN,api1.kwaixiaodian.com
   - DOMAIN,ykad-data.youku.com
   - DOMAIN,baichuan-sdk.taobao.com
   - DOMAIN-KEYWORD,googleads
   - DOMAIN,mads.amazon.com
-  - DOMAIN,gator.volces.com
   - DOMAIN,imapi5-oth-lq.zijieapi.com
+  - DOMAIN,gator.volces.com
+  - DOMAIN,analytics.pointdrive.linkedin.com
+  - DOMAIN,ads-mas-us.vivobrowser.com
+  - DOMAIN,cd.connatix.com
   - DOMAIN,sslwidget.criteo.com
   - DOMAIN-KEYWORD,.juicyads.me
   - DOMAIN-KEYWORD,-ad-sign.byteimg.com
+  - DOMAIN,d.reddit.com
   - DOMAIN-SUFFIX,rumt-zh.com
-  - DOMAIN,adash.man.aliyuncs.com
   - DOMAIN,iadmusicmatvideo.music.126.net
+  - DOMAIN,adash.man.aliyuncs.com
   - DOMAIN,v2.reachmax.cn
   - DOMAIN,sdk-event.beizi.biz
   - DOMAIN,ads.midongtech.com
   - DOMAIN,api-flow.flyme.cn
   - DOMAIN,ad.midongtech.com
+  - DOMAIN,api.impact.com
   - DOMAIN-SUFFIX,clarity.ms
+  - DOMAIN-SUFFIX,rlcdn.com
   - DOMAIN,cards-css.iqiyi.com
   - DOMAIN,js-rwk.pull.etoote.com
+  - DOMAIN-SUFFIX,teads.tv
+  - DOMAIN-SUFFIX,redditmedia.com
   - DOMAIN,apd-pcdnwxstat.teg.tencent-cloud.net
   - DOMAIN,access1.tpns.tencent.com
   - DOMAIN,tyaqy.m.cn.miaozhen.com
@@ -372,7 +509,10 @@ payload:
   - DOMAIN,cpro.baidustatic.com
   - DOMAIN,adsrv.kurogames.com
   - DOMAIN,cdn.inads.cn
+  - DOMAIN-SUFFIX,siteimproveanalytics.com
+  - DOMAIN,notify.bugsnag.com
   - DOMAIN,gorgon.youdao.com
+  - DOMAIN,email-open.dripemail2.com
   - DOMAIN,datk.anythinktech.com
   - DOMAIN,tr.snapchat.com
   - DOMAIN,in.hotjar.com
@@ -382,19 +522,25 @@ payload:
   - DOMAIN,us.l.qq.com
   - DOMAIN,stocks-analytics-events.apple.com
   - DOMAIN,p3-stone-tv.byteimg.com
+  - DOMAIN,ads.youtube.com
+  - DOMAIN-SUFFIX,t.co
   - DOMAIN,webcast5-open-lf.douyin.com
   - DOMAIN-KEYWORD,-ad.adukwai.com
   - DOMAIN,adsbdfs.heytapimage.com
+  - DOMAIN-SUFFIX,kameleoon.eu
+  - DOMAIN,imasdk.googleapis.com
   - DOMAIN,dspsdk.pinduoduo.com
   - DOMAIN-KEYWORD,ad.wtzw.com
   - DOMAIN,gsp0.baidu.com
   - DOMAIN,frontend-perf-service.e.kuaishou.com
+  - DOMAIN,cdn.springserve.com
   - DOMAIN-SUFFIX,hotjar.com
   - DOMAIN,uploads2.ksapisrv.com
   - DOMAIN,aa.birdgesdk.com
   - DOMAIN,v5-be-pack.pglstatp-toutiao.com
   - DOMAIN,v3-be-pack.pglstatp-toutiao.com
   - DOMAIN,webcast-open.douyin.com
+  - DOMAIN,a.teads.tv
   - DOMAIN,adsfilebssdlbig.ali.kugou.com
   - DOMAIN,ttc.gdt.qq.com
   - DOMAIN,lf26-sf-be-pack-sign.pglstatp-toutiao.com
@@ -410,6 +556,7 @@ payload:
   - DOMAIN,ulogs.umeng.com
   - DOMAIN-SUFFIX,piwik.pro
   - DOMAIN,tk.anythinktech.com
+  - DOMAIN,clientservices.googleapis.com
   - DOMAIN-KEYWORD,pagead.googlesyndication-cn.com
   - DOMAIN,h-adashx4bc.ut.taobao.com
   - DOMAIN,ads.game.iqiyi.com
@@ -417,6 +564,7 @@ payload:
   - DOMAIN-SUFFIX,admobile.top
   - DOMAIN,www.google-analytics.com
   - DOMAIN-SUFFIX,matomo.cloud
+  - DOMAIN,config.samsungads.com
   - DOMAIN,themis.hupu.com
   - DOMAIN-SUFFIX,wwads.cn
   - DOMAIN,ssp.vivo.com.cn
@@ -428,100 +576,158 @@ payload:
   - DOMAIN-KEYWORD,unityads.unity3d.com
   - DOMAIN,pubads.g.doubleclick.net
   - DOMAIN,feedback-c.zijieapi.com
+  - DOMAIN,cdn-pci.optimizely.com
   - DOMAIN,sdk.tianmu.mobi
+  - DOMAIN,cdn.krxd.net
+  - DOMAIN,click.linksynergy.com
   - DOMAIN,chat-platform-open.kakamobi.cn
+  - DOMAIN,ads.pinterest.com
+  - DOMAIN-SUFFIX,emjcd.com
+  - DOMAIN-SUFFIX,crypto-loot.com
+  - DOMAIN,logs.logrocket.io
   - DOMAIN,abeacdataort-stsdk.vivo.com.cn
+  - DOMAIN,widgets.pinterest.com
   - DOMAIN-KEYWORD,.applovin.com
+  - DOMAIN,st-widget.s3.amazonaws.com
   - DOMAIN,mssdk.volces.com
   - DOMAIN,mobads.e.shifen.com
   - DOMAIN,jiaxiao-awd.kakamobi.cn
   - DOMAIN,certify.alexametrics.com
+  - DOMAIN,click.mailerlite.com
+  - DOMAIN-SUFFIX,app.link
+  - DOMAIN,static.ads-twitter.com
+  - DOMAIN,cookies-data.onetrust.io
   - DOMAIN,adsserver.yadro.ru
   - DOMAIN,adashbc.m.taobao.com
+  - DOMAIN-SUFFIX,customeriomail.com
+  - DOMAIN,match.adsrvr.org
+  - DOMAIN,tags.tiqcdn.com
+  - DOMAIN-SUFFIX,bugsnag.com
+  - DOMAIN,click.em.pardot.com
   - DOMAIN,124124fgh56u34.e2y4h7.com
   - DOMAIN,aan.amazon.com
+  - DOMAIN-SUFFIX,shareasale.com
   - DOMAIN,tmeadcomm.y.qq.com
   - DOMAIN,cdn.piwik.pro
   - DOMAIN,pre-cache.video.iqiyi.com
+  - DOMAIN,c.betrad.com
   - DOMAIN,c.clarity.ms
+  - DOMAIN-SUFFIX,awltovhc.com
+  - DOMAIN,js.honeybadger.io
   - DOMAIN,ugccsy.qq.com
-  - DOMAIN,az.appstore.vivo.com.cn
   - DOMAIN,download.qidian.com
-  - DOMAIN,ad.lovefree.cc
+  - DOMAIN,az.appstore.vivo.com.cn
+  - DOMAIN,telemetry.microsoft.com
   - DOMAIN,gdfp.gifshow.com
+  - DOMAIN,ad.lovefree.cc
+  - DOMAIN,click.googleanalytics.com
   - DOMAIN,reading-lq.snssdk.com
+  - DOMAIN,firebase-settings.crashlytics.com
   - DOMAIN,ad.smartadserver.com
   - DOMAIN,stats.g.doubleclick.net
   - DOMAIN,rpt-gdt.play.aiseet.atianqi.com
   - DOMAIN,feed-image.baidu.com
+  - DOMAIN,adfstat.yandex.ru
   - DOMAIN,app-preload.iqiyi.com
+  - DOMAIN,analytics-sg.tiktok.com
   - DOMAIN,huaweicdncmnet.inter.iqiyi.com
   - DOMAIN,map.thb205.com
+  - DOMAIN,logbak.hicloud.com
   - DOMAIN,static.chartbeat.com
   - DOMAIN,saveu5-normal-lq.zijieapi.com
+  - DOMAIN,f.vimeocdn.com
+  - DOMAIN,click.oneplus.cn
   - DOMAIN,api.afdback.ppsimg.com
   - DOMAIN,news-l.play.aiseet.atianqi.com
   - DOMAIN,adx-core.youku.com
+  - DOMAIN,pixel.rubiconproject.com
   - DOMAIN,ads.cup.com.cn
   - DOMAIN,accscdn.m.taobao.com
   - DOMAIN,dis.criteo.com
   - DOMAIN,ad.us.sinaimg.cn
+  - DOMAIN,cdn.cookielaw.org
   - DOMAIN,www.sugarle.com
   - DOMAIN,adsdk.vivo.com.cn
   - DOMAIN-SUFFIX,adjust.com
   - DOMAIN,kadmimage.biz.weibo.com
+  - DOMAIN,settings-win.data.microsoft.com
   - DOMAIN,xpis-xcdn.youku.com
   - DOMAIN,lf9-sf-be-pack-sign.pglstatp-toutiao.com
-  - DOMAIN,ad.turn.com
   - DOMAIN,dispatch-api-online.vemarsdev.com
+  - DOMAIN,ad.turn.com
+  - DOMAIN,cdn.vwo.com
   - DOMAIN,shua-music.shinet.cn
   - DOMAIN,polaris5-normal-hl.zijieapi.com
+  - DOMAIN-SUFFIX,app-measurement.com
   - DOMAIN,mssdk-bu.bytedance.com
+  - DOMAIN,clicks.aweber.com
   - DOMAIN,xpgw-mob-xcdn.cp31.ott.cibntv.net
+  - DOMAIN,pixel.facebook.com
   - DOMAIN,ad-sh-sz-zb.wagbridge.tanx.alimama.com.gds.alibabadns.com
-  - DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com
   - DOMAIN,defaultts.tc.qq.com
+  - DOMAIN,admonitor-feedback.cn-hangzhou.log.aliyuncs.com
   - DOMAIN,qzs.gdtimg.com
   - DOMAIN,janapi.jd.com
   - DOMAIN-KEYWORD,ads-.xhscdn.com
   - DOMAIN,ads.weilitoutiao.net
   - DOMAIN,isrpt-vn.gdt.qq.com
+  - DOMAIN,iot-eu-logser.realme.com
+  - DOMAIN,analytics.tiktok.com
   - DOMAIN,services.xiangji.qq.com
   - DOMAIN,zlink.toutiao.com
+  - DOMAIN-SUFFIX,coinhive.com
+  - DOMAIN-SUFFIX,bitcoinplus.com
   - DOMAIN,mc.yandex.com
+  - DOMAIN,cdn.onetrust.com
   - DOMAIN,isrpt-in.gdt.qq.com
   - DOMAIN-SUFFIX,sc-static.net
   - DOMAIN-SUFFIX,getui.net
   - DOMAIN,ib-hl.snssdk.com
   - DOMAIN,aax-us-east.amazon-adsystem.com
+  - DOMAIN,cdn.optimizely.com
   - DOMAIN,meta.video.iqiyi.com
   - DOMAIN-KEYWORD,ads-normal-lf.zijieapi.com
   - DOMAIN-SUFFIX,maplehaze.cn
   - DOMAIN,tj.com.day
+  - DOMAIN,open.convertkit.com
   - DOMAIN,books-analytics-events.apple.com
   - DOMAIN,smvconf.f.360.cn
   - DOMAIN,ywab.reader.qq.com
   - DOMAIN,wvcwop.zbbznk.xyz
   - DOMAIN,wa.gtimg.com
+  - DOMAIN-SUFFIX,coinimp.com
+  - DOMAIN,ads-mas.vivobrowser.com
+  - DOMAIN-SUFFIX,kqzyfj.com
   - DOMAIN,tpc.googlesyndication.com
   - DOMAIN,sync.outbrain.com
   - DOMAIN,ad.xmmnsd.com
+  - DOMAIN,bdapi-ads.realmemobile.com
   - DOMAIN,viav-cse.avlyun.com
   - DOMAIN-SUFFIX,qttunion.com
   - DOMAIN,qqdata.ab.qq.com
+  - DOMAIN,open.oneplus.net
   - DOMAIN,ads.privacy.qq.com
+  - DOMAIN-SUFFIX,samsungads.com
   - DOMAIN,xlog.jd.com
   - DOMAIN,ads-shopping.shouqianba.com
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net
   - DOMAIN,tnc3-bjlgy.snssdk.com
+  - DOMAIN,api.rlcdn.com
   - DOMAIN,tmead.y.qq.com
   - DOMAIN,ad.hzyoka.com
+  - DOMAIN,track.mailgun.org
   - DOMAIN,adsmind.ugdtimg.com.svideolego-dk.sched.dcloudstc.com
   - DOMAIN,static.criteo.net
+  - DOMAIN,api.flagsmith.com
   - DOMAIN,ads.exoclick.com
   - DOMAIN-SUFFIX,pendo.io
+  - DOMAIN-SUFFIX,afminer.com
+  - DOMAIN,reports.crashlytics.com
   - DOMAIN,vdn5-1.vzuu.com
+  - DOMAIN,optanon.blob.core.windows.net
   - DOMAIN,brandlog.vivo.com.cn
   - IP-CIDR,120.232.6.158/32,no-resolve
+  - DOMAIN-SUFFIX,apmebf.com
   - DOMAIN-KEYWORD,pglstatp-toutiao.com
   - DOMAIN,jsonatm-wss.broker.tplay.qq.com
   - DOMAIN,log.zijieapi.com
@@ -529,6 +735,7 @@ payload:
   - DOMAIN,auni.telecome.cn
   - DOMAIN,mobads-logs.e.shifen.com
   - DOMAIN,vcode-or.vivo.com.cn
+  - DOMAIN-SUFFIX,facebook.net
   - DOMAIN,adxlog.vivo.com.cn
   - DOMAIN,adservice.kugou.com
   - DOMAIN,fp-upload.dun.163.com
@@ -540,20 +747,35 @@ payload:
   - DOMAIN,player-mob-lg.cp31.ott.cibntv.net
   - DOMAIN,ad.oceanengine.com
   - DOMAIN,image2.pubmatic.com
+  - DOMAIN-SUFFIX,shrsl.com
   - DOMAIN,pgdt.gtimg.cn
   - DOMAIN,ma.zijieapi.com
   - DOMAIN,iqiyi-mipdx.cn.miaozhen.com
   - DOMAIN-SUFFIX,itjcqlp.icu
+  - DOMAIN,ads.linkedin.com
   - DOMAIN,adsmind.gdtimg.com
+  - DOMAIN-SUFFIX,lduhtrp.net
+  - DOMAIN,ablink.kochava.com
   - DOMAIN,tnc3-alisc1.bytedance.com
+  - DOMAIN,firebaselogging.googleapis.com
   - DOMAIN,c.sayhi.360.cn
   - DOMAIN-SUFFIX,ctrmi.cn
   - DOMAIN,s.1rtb.net
   - DOMAIN,e.qq.com
+  - DOMAIN,api.bugsnag.com
   - DOMAIN,uploads2.gifshow.com
+  - DOMAIN,s0.2mdn.net
+  - DOMAIN,track.mailerlite.com
   - DOMAIN,api.amplitude.com
+  - DOMAIN,settings.luckyorange.net
+  - DOMAIN,analytics.s3.amazonaws.com
+  - DOMAIN-SUFFIX,bnc.lt
   - DOMAIN,notes-analytics-events.apple.com
+  - DOMAIN,cdn.branch.io
+  - DOMAIN,gemini.yahoo.com
   - DOMAIN,djvod.ndcimgs.com
+  - DOMAIN,sdk.split.io
+  - DOMAIN-SUFFIX,abtasty.com
   - DOMAIN,webview.unityads.unity3d.com
   - DOMAIN,prebid.adnxs.com
   - DOMAIN,ad.toutiao.com
@@ -567,11 +789,20 @@ payload:
   - DOMAIN,gecko3-lq.zijieapi.com
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN,kjp.cupid.iqiyi.com
+  - DOMAIN,ads-api.twitter.com
+  - DOMAIN,aggregator.service.usercentrics.eu
+  - DOMAIN,api.privacy-center.org
+  - DOMAIN,cdn.ravenjs.com
   - DOMAIN-KEYWORD,p-ad.adukwai.com
   - DOMAIN,tracking.miui.com
+  - DOMAIN,pagead2.googlevideo.com
+  - DOMAIN-SUFFIX,cryptoloot.pro
   - DOMAIN,spcsz.cdn.bcebos.com
   - DOMAIN,orbit.jd.com
+  - DOMAIN,consumer.krxd.net
   - DOMAIN,ads.sohu.com
+  - DOMAIN-SUFFIX,jsecoin.com
+  - DOMAIN,open.activecampaign.com
   - DOMAIN,advertising.apple.com
   - DOMAIN,appupgrade.vivo.com.cn
   - DOMAIN,m.doubleclick.net
@@ -581,9 +812,13 @@ payload:
   - DOMAIN,abtest.ytkjsh.com
   - DOMAIN,realtime.luckyorange.com
   - DOMAIN,adservetx.media.net
+  - DOMAIN,data.kameleoon.io
   - DOMAIN,on-device-ai.vivo.com.cn
+  - DOMAIN,static.addtoany.com
   - DOMAIN,aapl-edge0.qtlcdn.com
+  - DOMAIN-SUFFIX,coin-hive-proxy.com
   - DOMAIN,oth.str.mdt.qq.com
+  - DOMAIN-SUFFIX,coin-have.com
   - DOMAIN,ad.doubleclick.net
   - DOMAIN,qm-ab.wtzw.com
   - DOMAIN,afd.baidu.com
@@ -595,78 +830,123 @@ payload:
   - DOMAIN,log.tpns.tencent.com
   - DOMAIN,nj.cschannel.anticheatexpert.com
   - DOMAIN,eclick.baidu.com
+  - DOMAIN,api.branch.io
+  - DOMAIN,video-ads.twitter.com
   - DOMAIN,t.appsflyer.com
+  - DOMAIN,usage.trackjs.com
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN-KEYWORD,p.adkwai.com
   - DOMAIN,ad.tencentmusic.com
   - DOMAIN,connectivitycheck.vivo.com.cn
   - DOMAIN,ads-dot.midongtech.com
   - DOMAIN,securemetrics.apple.com
-  - DOMAIN,as.weixin.qq.com
   - DOMAIN,gecko5-lq.zijieapi.com
+  - DOMAIN,as.weixin.qq.com
   - DOMAIN,api.mouseflow.com
+  - DOMAIN,consent-pref.trustarc.com
+  - DOMAIN-SUFFIX,vwo.com
   - DOMAIN-KEYWORD,p-lm.adukwai.com
+  - DOMAIN,events.split.io
+  - DOMAIN-SUFFIX,anrdoezrs.net
   - DOMAIN,feedsplat.vivo.com.cn
   - DOMAIN,signaltower.gdt.qq.com
   - DOMAIN,adse.wsa.ximalaya.com
+  - DOMAIN,api.launchdarkly.com
+  - DOMAIN,cdn.lr-ingest.com
   - DOMAIN,guid.tpns.tencent.com
+  - DOMAIN-SUFFIX,minemytraffic.com
   - DOMAIN,afs.googlesyndication.com
+  - DOMAIN-SUFFIX,rollbar.com
+  - DOMAIN,survey.watson.microsoft.com
   - DOMAIN,adsfile.bssdlbig.kugou.com
   - DOMAIN,dsplog-adnet.vivo.com.cn
   - DOMAIN,a1.alibabausercontent.com
   - DOMAIN,adsmind.ugdtimg.com.tcdn.qq.com
   - DOMAIN,an.yandex.ru
+  - DOMAIN,js-agent.newrelic.com
   - DOMAIN,als.baidu.com
   - DOMAIN,control.adjust.com
+  - DOMAIN-SUFFIX,didomi.io
   - DOMAIN,adreq.vivo.com.cn
+  - DOMAIN,events.redditmedia.com
+  - DOMAIN,bam-cell.nr-data.net
   - DOMAIN,api-access.pangolin-sdk-toutiao1.com
   - DOMAIN,app.adjust.com
   - DOMAIN,ad-rs6-bjmt-platform34.idcyz.hb1.kwaidc.com
   - DOMAIN-KEYWORD,az-upload.ksapisrv.com
+  - DOMAIN,badges.instagram.com
+  - DOMAIN,bam.nr-data.net
   - DOMAIN,nd-api.chuangjing.com
+  - DOMAIN,beacon.krxd.net
   - DOMAIN,api.mixpanel.com
+  - DOMAIN-SUFFIX,bcvp0rtal.com
+  - DOMAIN,ad.admitad.com
   - DOMAIN-SUFFIX,rtbasia.com
+  - DOMAIN-SUFFIX,featuregates.org
   - DOMAIN,fls-na.amazon-adsystem.com
   - DOMAIN,log.outbrain.com
+  - DOMAIN-SUFFIX,ppoi.org
+  - DOMAIN,sourcepoint.mgr.consensu.org
+  - DOMAIN,logservice1.hicloud.com
   - DOMAIN,e-ad-monitor.huya.com
   - DOMAIN,pl.cp31.ott.cibntv.net
   - DOMAIN,auni.unioncom.cc
   - DOMAIN,ossgw.alicdn.com
+  - DOMAIN,ce.lijit.com
+  - DOMAIN,cdn.spotxcdn.com
   - DOMAIN,sysdesc.vivo.com.cn
+  - DOMAIN-SUFFIX,privacy-mgmt.com
   - DOMAIN,sysupgrade.vivo.com.cn
   - DOMAIN,v.smtcdns.com
   - DOMAIN,neptune-platform.zijieapi.com
+  - DOMAIN-SUFFIX,trackcmp.net
   - DOMAIN,stappupgrade.vivo.com.cn
   - DOMAIN,adashx.ut.cainiao.com
   - DOMAIN-KEYWORD,tnc0-.zijieapi.com
+  - DOMAIN,ws-na.amazon-adsystem.com
   - DOMAIN,miniapp-ad.cdn.bcebos.com
   - DOMAIN,ad.12306.cn
   - DOMAIN,c.etoolads.cn
   - DOMAIN,w2.gskwai.com
   - DOMAIN,snowflake.qq.com
   - DOMAIN,adcdn6.tencentmusic.com
+  - DOMAIN,cdn.split.io
   - DOMAIN-SUFFIX,chengzijianzhan.com
   - DOMAIN,sis.jpush.io
+  - DOMAIN,analytics.pinterest.com
+  - DOMAIN,mobile.launchdarkly.com
+  - DOMAIN,consent.trustarc.com
   - DOMAIN-KEYWORD,-ad-union-sdk.pglstatp-toutiao.com
   - DOMAIN,abtest-ch.snssdk.com
   - DOMAIN,cdn.cmgadx.com
+  - DOMAIN,smetrics.samsung.com
+  - DOMAIN,api.honeybadger.io
   - DOMAIN,api-access.pangolin-sdk-toutiao.com
   - DOMAIN,advert.tadu.com
   - DOMAIN,cn-da.anythinktech.com
   - DOMAIN-SUFFIX,opencollective.com
+  - DOMAIN-SUFFIX,getresponse.com
   - DOMAIN,gromore.pangolin-sdk-toutiao.com
   - DOMAIN,ii.gdt.qq.com
+  - DOMAIN-SUFFIX,tkqlhce.com
+  - DOMAIN-SUFFIX,qksrv.net
   - DOMAIN-SUFFIX,fmiphone-apple.com
   - DOMAIN,edge.fullstory.com
+  - DOMAIN,cpu.js.org
+  - DOMAIN,xp.apple.com
+  - DOMAIN,s.skimresources.com
   - DOMAIN,cn-api.anythinktech.com
+  - DOMAIN,lt.pardot.com
   - DOMAIN,applog.zijieapi.com
   - DOMAIN,amplify.outbrain.com
   - DOMAIN,ad.wx.com:12638
   - DOMAIN,cm.g.doubleclick.net
+  - DOMAIN-SUFFIX,dpbolvw.net
   - DOMAIN,volc.bj.ad.track.66mobi.com
   - DOMAIN-SUFFIX,hnshamu.com
   - DOMAIN,pixel.wp.com
   - DOMAIN,adtrack.e.kuaishou.com
+  - DOMAIN-SUFFIX,list-manage.com
   - DOMAIN,acdn.adnxs.com
   - DOMAIN,crash.163.com
   - DOMAIN-SUFFIX,google-analytics.com
@@ -675,29 +955,41 @@ payload:
   - DOMAIN,df.tanx.com
   - DOMAIN-SUFFIX,https-apple.com
   - DOMAIN,adxlog-adnet.vivo.com.cn
+  - DOMAIN,trends.revcontent.com
   - DOMAIN,rmonitor.qq.com
+  - DOMAIN,graph.facebook.com
   - DOMAIN-SUFFIX,view-apple.com
   - DOMAIN,yktd.m.cn.miaozhen.com
   - DOMAIN,update.appstore.vivo.com.cn
   - DOMAIN-KEYWORD,-reading-ad.qznovelvod.com
+  - DOMAIN,log.byteoversea.com
   - DOMAIN,adx-bj-req.anythinktech.com
+  - DOMAIN,api.bcovlive.io
+  - DOMAIN,wrapper-api.sp-prod.net
   - DOMAIN,w2.kskwai.com
-  - DOMAIN,d3upkyrv5jl3rn.cloudfront.net
   - DOMAIN,default.cn.sz.wagbridge.ad.alibabacorp.com.gds.alibabadns.com
+  - DOMAIN,d3upkyrv5jl3rn.cloudfront.net
+  - DOMAIN,logx.optimizely.com
+  - DOMAIN,capi.connatix.com
   - DOMAIN,ads-marketing-vivofs.vivo.com.cn
   - DOMAIN,img5.chkaja.com
+  - DOMAIN,connect.facebook.net
+  - DOMAIN,api.optimizely.com
   - DOMAIN,ads.pubmatic.com
   - DOMAIN,mssdk-bu.snssdk.com
   - DOMAIN,ib.snssdk.com
+  - DOMAIN,data.mistat.xiaomi.com
   - DOMAIN-SUFFIX,tradplusad.com
   - DOMAIN-SUFFIX,midongtech.xyz
   - DOMAIN,coc-ws.broker.tplay.qq.com
   - DOMAIN,androiddownload.damai.cn
+  - DOMAIN,app.convertkit.com
   - DOMAIN,cache.wuji.qq.com
+  - DOMAIN-SUFFIX,sendgrid.net
   - DOMAIN,ort.stsdk.vivo.com.cn
   - DOMAIN,lens.zhihu.com
-  - DOMAIN,api-htp.beizi.biz
   - DOMAIN,guanggao-prod.cn-shanghai.log.aliyuncs.com
+  - DOMAIN,api-htp.beizi.biz
   - DOMAIN,chn-feedback.adsrvr.cn
   - DOMAIN,mon.zijieapi.com
   - DOMAIN,log-api.pangolin-sdk-toutiao-b.com
@@ -705,6 +997,9 @@ payload:
   - DOMAIN-KEYWORD,log-applog-lq.fqnovel.com
   - DOMAIN,h4es48.z.cjjd14.com
   - DOMAIN,c3.gdt.qq.com
+  - DOMAIN,usersync.krxd.net
+  - DOMAIN,data.mistat.rus.xiaomi.com
+  - DOMAIN,staticxx.facebook.com
   - DOMAIN,v.gdt.qq.com
   - DOMAIN,fcapi.jpush.cn
   - DOMAIN,cfgc.flysleep.cn
@@ -717,11 +1012,14 @@ payload:
   - DOMAIN-SUFFIX,luckyorange.com
   - DOMAIN,adx-open-service.youku.com
   - DOMAIN,admin-app.edifier.com
+  - DOMAIN-SUFFIX,minero.cc
   - DOMAIN,sdk.beizi.biz
+  - DOMAIN,app.getsentry.com
   - DOMAIN,oi.rb.qq.com
   - DOMAIN,xs.gdt.qq.com
   - DOMAIN,gads.pubmatic.com
   - DOMAIN-KEYWORD,.voiceads.cn
+  - DOMAIN,try.abtasty.com
   - DOMAIN,monitor.v2.tcyad.com
   - DOMAIN,test.y.qq.com
   - DOMAIN-KEYWORD,googleadsserving.cn
@@ -732,90 +1030,128 @@ payload:
   - DOMAIN,sub.powerapple.com
   - DOMAIN,ad.weixin.qq.com
   - DOMAIN,adash.m.taobao.com
+  - DOMAIN-SUFFIX,hashforcash.us
   - DOMAIN,ecom3-normal-lq.ecombdapi.com
   - DOMAIN,audd.shuzilm.cn
   - DOMAIN,iadsdk.qtlcdn.com
+  - DOMAIN-SUFFIX,coinhiveproxy.com
   - DOMAIN,adservice.sigmob.cn
+  - DOMAIN,api.rollbar.com
   - DOMAIN,adv.adriver.ru
+  - DOMAIN,log.fc.yahoo.com
+  - DOMAIN,s7.addthis.com
+  - DOMAIN,metrics2.data.hicloud.com
   - DOMAIN,extlog.snssdk.com
+  - DOMAIN-SUFFIX,statsigapi.net
   - DOMAIN,tobapplog.ctobsnssdk.com
-  - DOMAIN,cs.luckyorange.net
   - DOMAIN,ipv4.gdt.qq.com
+  - DOMAIN,cs.luckyorange.net
   - DOMAIN,yk-ssp-ad.cp31.ott.cibntv.net
+  - DOMAIN,dev.visualwebsiteoptimizer.com
   - DOMAIN,adstatis.99jiasu.com
   - DOMAIN-KEYWORD,ads-normal-lq.zijieapi.com
   - DOMAIN,public.gdtimg.com
-  - DOMAIN,ef-dongfeng.tanx.com
+  - DOMAIN,prd.jwpltx.com
   - DOMAIN,goblin.hupu.com
+  - DOMAIN,ef-dongfeng.tanx.com
+  - DOMAIN-SUFFIX,tqlkg.com
   - DOMAIN,sdkconfig.ad.xiaomi.com
+  - DOMAIN,ad.linksynergy.com
   - DOMAIN,www.googleadservices.com
+  - DOMAIN,cdn.configcat.com
   - DOMAIN,wxa.wxs.qq.com
+  - DOMAIN,prox.sendinblue.com
   - DOMAIN,api.wtzw.com
   - DOMAIN-KEYWORD,sf-be-pack.pglstatp-toutiao.com
+  - DOMAIN,notifier.airbrake.io
   - DOMAIN,vas-lf-x.snssdk.com
   - DOMAIN,image-ad.sm.cn
+  - DOMAIN,events.reddit.com
   - DOMAIN,ad-rs6-bjmt5409.idcyz.hb1.kwaidc.com
   - DOMAIN,ad-ggtg-api.37.com.cn
   - DOMAIN,sdkcfg.adintl.cn
   - DOMAIN,game-attribute.biligame.com
-  - DOMAIN,default.cn.wagbridge.ad.alibabacorp.com
   - DOMAIN,is-lq.snssdk.com
+  - DOMAIN,default.cn.wagbridge.ad.alibabacorp.com
   - DOMAIN,beta2-ad-open-api.test.gifshow.com
   - DOMAIN,adimg.uve.weibo.com
   - DOMAIN,valipl.cp31.ott.cibntv.net
   - DOMAIN,ada.baidu.com
+  - DOMAIN-SUFFIX,mailchimp.com
   - DOMAIN,polaris.zijieapi.com
   - DOMAIN,az2-api-js.gifshow.com
   - DOMAIN,adashx.m.taobao.com
   - DOMAIN-SUFFIX,media.net
   - DOMAIN,aax.amazon-adsystem.com
+  - DOMAIN-SUFFIX,webmine.cz
   - DOMAIN,z6.cnzz.com
   - DOMAIN,tools.mouseflow.com
   - DOMAIN,t7z.cupid.iqiyi.com
   - DOMAIN,api.iegadp.qq.com
+  - DOMAIN-SUFFIX,id5-sync.com
+  - DOMAIN-SUFFIX,abtest.ai
   - DOMAIN,advice-ads.s3.amazonaws.com
+  - DOMAIN,d.impactradius-event.com
   - DOMAIN,lf-cdn-tos.bytescm.com
+  - DOMAIN,analytics-api.samsunghealthcn.com
+  - DOMAIN,gdpr.trustarc.com
   - DOMAIN-SUFFIX,quantserve.com
   - DOMAIN,appstorepnrt-stsdk.vivo.com.cn
   - DOMAIN,frontier100-toutiao-hl.fqnovel.com
   - DOMAIN,us-ads.openx.net
   - DOMAIN,mesu.apple.com
+  - DOMAIN-SUFFIX,monerominer.rocks
   - DOMAIN,badjs.weixinbridge.com
   - DOMAIN,ads-img-bak.xhscdn.com
   - DOMAIN,reading-hl.snssdk.com
+  - DOMAIN-SUFFIX,coinhive-proxy.com
   - DOMAIN,adstrategy.biz.weibo.com
+  - DOMAIN-SUFFIX,mandrillapp.com
   - DOMAIN,vod-settings.bytedanceapi.com
   - DOMAIN,configv2.unityads.unity3d.com
+  - DOMAIN,adsfs.oppomobile.com
   - DOMAIN,h5.gdt.qq.com
   - DOMAIN,mobads-pre-config.cdn.bcebos.com
   - DOMAIN,ai-static.vivo.com.cn
   - DOMAIN,app.pendo.io
   - DOMAIN-SUFFIX,umeng.com
+  - DOMAIN,cdn.logrocket.io
   - DOMAIN,fundingchoicesmessages.google.com
+  - DOMAIN,plus.google.com
   - DOMAIN,ec3-core-lq.ecombdapi.com
   - DOMAIN,ads.log.kafka.top
   - DOMAIN,canvas-cdn.gdt.qq.com
   - DOMAIN,cad.youku.com
   - DOMAIN,mobads.baidu.com
+  - DOMAIN,control.kochava.com
   - DOMAIN,mediaad.tadu.com
   - DOMAIN,adstats.tencentmusic.com
+  - DOMAIN,partnerads.ysm.yahoo.com
   - DOMAIN,ads-drcn.platform.hihonorcloud.com
+  - DOMAIN,insight.adsrvr.org
+  - DOMAIN-SUFFIX,afcyhf.com
   - DOMAIN-SUFFIX,wkanx.com
   - DOMAIN,widgets.outbrain.com
   - DOMAIN,wd.adcolony.com
   - DOMAIN,sdk.appsflyer.com
   - DOMAIN,ad-drs.52qumao.com
+  - DOMAIN,iot-logser.realme.com
   - DOMAIN,appcloud2.zhihu.com
   - DOMAIN,commdata.v.qq.com
   - DOMAIN,v2mi.gdt.qq.com
   - DOMAIN,cainiao-app-logs.cn-zhangjiakou.dualstack.log.aliyuncs.com
   - DOMAIN,mi.gdt.qq.com
+  - DOMAIN,logservice.hicloud.com
   - DOMAIN,fpvideo.shenshiads.com
+  - DOMAIN,cdn.abtest.ai
+  - DOMAIN,ats.rlcdn.com
   - DOMAIN,lives.l.aiseet.atianqi.com
   - DOMAIN,cdn.segment.com
   - DOMAIN,otheve.beacon.qq.com
+  - DOMAIN,xmr.omine.org
   - DOMAIN,bidder.criteo.com
   - DOMAIN,api.taboola.com
+  - DOMAIN,geolocation.onetrust.com
   - DOMAIN-SUFFIX,nineton.cn
   - DOMAIN,adc3-launch.adcolony.com
   - DOMAIN,ads.sinaimg.cn
