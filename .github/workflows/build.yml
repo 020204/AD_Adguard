@@ -22,9 +22,12 @@ jobs:
 
       - name: Fix Script Format
         run: |
-          sed -i 's/\r$//' convert.sh
-          sed -i '1s|.*|#!/bin/bash|' convert.sh
+          sed -i 's/\r//g' convert.sh          # 彻底清除所有 \r
+          sed -i '1s/^.*#/#!/' convert.sh      # 强制第一行是 shebang
+          sed -i '1s/^\xEF\xBB\xBF//' convert.sh  # 清除可能的 UTF-8 BOM
           chmod +x convert.sh
+          echo "=== Script head (for debug) ==="
+          head -n 15 convert.sh
 
       - name: Run Converter
         run: ./convert.sh
