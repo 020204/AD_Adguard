@@ -2,18 +2,19 @@
 # Ultimate AdGuard → Clash Meta payload converter (GitHub Repository Edition)
 # Author: chatgpt
 # GitHub: https://github.com/020204/AD_Adguard
+# 修改: adguard.txt 自动从 https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt 获取最新规则
 # 使用方法: ./convert.sh
 
 set -e
 export LC_ALL=C
-REPO_DIR="$(cd "$(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目录）
+REPO_DIR="\( (cd " \)(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目录）
+
 # ━━━━━━━━━━━━━━━━━━━
 # 新增：日志配置
 # ━━━━━━━━━━━━━━━━━━━
 LOG_FILE="$REPO_DIR/convert_log.txt"
 
 # 将后续所有输出同步重定向到文件和终端
-# exec 意思是执行后续命令， >(tee ...) 会开启一个进程记录输出
 exec > >(tee -i "$LOG_FILE") 2>&1
 
 echo "📝 日志将保存至: $LOG_FILE"
@@ -26,6 +27,24 @@ GITHUB_REPO="AD_Adguard"
 GITHUB_BRANCH="main"
 
 #━━━━━━━━━━━━━━━━━━━
+# 【新增】下载最新的 AdGuard 规则 (black.txt → adguard.txt)
+#━━━━━━━━━━━━━━━━━━━
+echo "🌐 正在下载最新的 AdGuard 规则..."
+ADGUARD_URL="https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt"
+ADGUARD_FILE="$REPO_DIR/adguard.txt"
+
+if curl -fsSL -o "$ADGUARD_FILE" "$ADGUARD_URL"; then
+    echo "✅ 成功下载最新规则到 adguard.txt"
+    echo "📊 文件大小: $(wc -c < "$ADGUARD_FILE" | awk '{print $1}') 字节"
+    echo "📈 规则行数: $(wc -l < "$ADGUARD_FILE") 行"
+    echo "🔗 来源: $ADGUARD_URL"
+else
+    echo "❌ 错误: 下载 adguard.txt 失败！"
+    echo "   URL: $ADGUARD_URL"
+    exit 1
+fi
+
+#━━━━━━━━━━━━━━━━━━━
 # 本地文件路径（仓库根目录）
 #━━━━━━━━━━━━━━━━━━━
 
@@ -36,7 +55,7 @@ FILE_PAIRS=(
 
 NOW=$(date "+%Y-%m-%d %H:%M:%S UTC+8")
 
-echo "🚀 AdGuard → Clash Meta 转换器"
+echo "🚀 AdGuard → Clash Meta 转换器 (已启用远程规则自动更新)"
 echo "📅 时间: $NOW"
 echo "📁 仓库目录: $REPO_DIR"
 echo "📄 需要处理 ${#FILE_PAIRS[@]} 个文件"
@@ -125,20 +144,20 @@ process_file() {
       if (line == "") next
     
       # 跳过路径 / 正则
-      if (line ~ /\//) {
+      if (line \~ /\//) {
         skip++
         next
       }
     
       # IPv4
-      if (line ~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) {
+      if (line \~ /^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$/) {
         print "  - IP-CIDR," line "/32,no-resolve"
         ip++
         next
       }
     
       # 通配符
-      if (line ~ /\*/) {
+      if (line \~ /\*/) {
         gsub(/\*/, "", line)
         if (line != "") {
           print "  - DOMAIN-KEYWORD," line
@@ -264,10 +283,11 @@ process_file() {
     
     cat > "$TMP/new.txt" <<EOF
 #Title: ${OUTPUT_FILENAME%.*} 规则集
-#Source: ${FILENAME}
+#Source: ${FILENAME} (远程 black.txt)
 #Author: 020204
 #GitHub: https://github.com/$GITHUB_USER/$GITHUB_REPO
 #Update URL: $GITHUB_URL
+#Remote Source: $ADGUARD_URL
 #--------------------------------------
 #原始规则数: $ORIGINAL_COUNT
 #最终规则数: $FINAL_COUNT
@@ -392,6 +412,6 @@ echo "💡 提示:"
 echo "1. 确保 .gitignore 包含临时文件:"
 echo "   /tmp/clash_convert_*"
 echo "2. 提交生成的文件到 GitHub:"
-echo "   git add me_clash.txt clash.txt"
+echo "   git add *.yaml convert_log.txt"
 echo "   git commit -m '更新规则集'"
 echo "   git push"
