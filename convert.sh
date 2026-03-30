@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Ultimate AdGuard → Clash Meta payload converter (GitHub Repository Edition)
 # Author: chatgpt
 # GitHub: https://github.com/020204/AD_Adguard
@@ -7,6 +7,30 @@
 set -e
 export LC_ALL=C
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目录）
+
+
+#━━━━━━━━━━━━━━━━━━━
+# 🔽 先下载
+#━━━━━━━━━━━━━━━━━━━
+REMOTE_URL="https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt"
+LOCAL_FILE="$REPO_DIR/adguard.txt"
+TMP_FILE="$REPO_DIR/adguard.tmp"
+
+echo "🌐 正在下载最新规则..."
+
+if curl -L --fail --connect-timeout 10 -o "$TMP_FILE" "$REMOTE_URL"; then
+    if [ -s "$TMP_FILE" ]; then
+        mv "$TMP_FILE" "$LOCAL_FILE"
+        echo "✅ 规则更新成功（已覆盖 adguard.txt）"
+    else
+        echo "⚠️ 下载内容为空，已丢弃"
+        rm -f "$TMP_FILE"
+    fi
+else
+    echo "❌ 下载失败，保留原有 adguard.txt"
+    rm -f "$TMP_FILE"
+fi
+
 # ━━━━━━━━━━━━━━━━━━━
 # 新增：日志配置
 # ━━━━━━━━━━━━━━━━━━━
