@@ -70,9 +70,9 @@ clash
 https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/refs/heads/main/Filters/AWAvenue-Ads-Rule-Clash-Classical.yaml
 ```
 - 中国科学大学测速网：[点击跳转](https://test.ustc.edu.cn)
-- 测试广告拦截率（达到96%或以上是正常）：[点击跳转](https://paileactivist.github.io/toolz/adblock.html)
-- about:blank测试拦截率：[点击跳转](https://mobileproxy.space/ch/adblock-test.html)
-
+- paileactivist 测试广告拦截率（达到96%或以上是正常）：[点击跳转](https://paileactivist.github.io/toolz/adblock.html)
+- about:blank 测试广告拦截率：[点击跳转](https://mobileproxy.space/ch/adblock-test.html)
+- adblock.turtlecute 测试广告拦截率（最高只能达到98%是正常的）：[点击跳转](https://adblock.turtlecute.org/)
 </ul>
 
 
