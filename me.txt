@@ -144,3 +144,5 @@
 ||acs.m.taobao.com^
 ||eco.taobao.com^
 ||push.m.youku.com^
+#夸克
+||umcdn.uc.cn^
