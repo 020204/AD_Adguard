@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 162
-#最终规则数: 156
-#DOMAIN: 130
+#原始规则数: 161
+#最终规则数: 155
+#DOMAIN: 129
 #DOMAIN-SUFFIX: 23
 #DOMAIN-KEYWORD: 3
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-14 08:51:35 UTC+8
+#更新时间: 2026-07-14 09:03:49 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -154,7 +154,6 @@ payload:
   - DOMAIN,www.googleadservices.com
   - DOMAIN,umcdn.uc.cn
   - DOMAIN,s0.2mdn.net
-  - DOMAIN,spclient.wg.spotify.com
   - DOMAIN,metrics4.data.hicloud.com
   - DOMAIN,metrics.icloud.com
   - DOMAIN-SUFFIX,assoc-amazon.com
