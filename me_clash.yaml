@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 129
-#最终规则数: 129
-#DOMAIN: 106
-#DOMAIN-SUFFIX: 20
+#原始规则数: 162
+#最终规则数: 156
+#DOMAIN: 130
+#DOMAIN-SUFFIX: 23
 #DOMAIN-KEYWORD: 3
 #IP-CIDR: 0
-#移除重复: 0
+#移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-13 22:54:59 UTC+8
+#更新时间: 2026-07-14 08:51:35 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -24,6 +24,7 @@ payload:
   - DOMAIN-SUFFIX,fastclick.com
   - DOMAIN-KEYWORD,pq.us.globals-download.com
   - DOMAIN,advertising.twitter.com
+  - DOMAIN,ads-fa.spotify.com
   - DOMAIN-KEYWORD,tcpgateway-ali.ctrip.com
   - DOMAIN,tracking.rus.miui.com
   - DOMAIN,metrics.apple.com
@@ -33,6 +34,7 @@ payload:
   - DOMAIN-SUFFIX,luckyorange.com
   - DOMAIN,tracking.miui.com
   - DOMAIN,static.media.net
+  - DOMAIN,log.spotify.com
   - DOMAIN-SUFFIX,samsungadhub.com
   - DOMAIN,media.fastclick.net
   - DOMAIN,config.samsungads.com
@@ -46,11 +48,15 @@ payload:
   - DOMAIN,ads-dev.pinterest.com
   - DOMAIN,notify.bugsnag.com
   - DOMAIN,abtest.alibaba.com
+  - DOMAIN,adeventtracker.spotify.com
   - DOMAIN,data.mistat.india.xiaomi.com
+  - DOMAIN,securepubads.g.doubleclick.net
   - DOMAIN,analytics-api.samsunghealthcn.com
   - DOMAIN,metrics.data.hicloud.com
   - DOMAIN-SUFFIX,fastclick.net
+  - DOMAIN,ib.adnxs.com
   - DOMAIN,extmaps-api.yandex.net
+  - DOMAIN,audio-ads.spotify.com
   - DOMAIN,ad.samsungadhub.com
   - DOMAIN,analytics.facebook.com
   - DOMAIN-SUFFIX,doubleclick.net
@@ -68,15 +74,17 @@ payload:
   - DOMAIN,samsung-com.112.2o7.net
   - DOMAIN,heads-fa-tls13.spotifycdn.com
   - DOMAIN,app.chat.xiaomi.net
-  - DOMAIN,aax.amazon-adsystem.com
   - DOMAIN,app.getsentry.com
+  - DOMAIN,aax.amazon-adsystem.com
   - DOMAIN,analytics.pointdrive.linkedin.com
   - DOMAIN,tracking.intl.miui.com
   - DOMAIN,smetrics.samsung.com
   - DOMAIN,cdn.fastclick.net
+  - DOMAIN,analytics.google.com
   - DOMAIN,metrics5.data.hicloud.com
   - DOMAIN,appmetrica.yandex.com
   - DOMAIN,static.hotjar.com
+  - DOMAIN,heads-ec.spotify.com
   - DOMAIN,eco.taobao.com
   - DOMAIN,advertising.amazon.com
   - DOMAIN,advice-ads.s3.amazonaws.com
@@ -84,15 +92,20 @@ payload:
   - DOMAIN,open.oneplus.net
   - DOMAIN,metrics3.data.hicloud.com
   - DOMAIN,cdn.luckyorange.com
+  - DOMAIN,stats.g.doubleclick.net
   - DOMAIN,api.bugsnag.com
+  - DOMAIN,googleads.g.doubleclick.net
   - DOMAIN,metrics1.data.hicloud.com
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
   - DOMAIN,acs.m.taobao.com
   - DOMAIN,analyticsengine.s3.amazonaws.com
+  - DOMAIN,pubads.g.doubleclick.net
+  - DOMAIN,tpc.googlesyndication.com
   - DOMAIN-SUFFIX,amazon-adsystem.com
   - DOMAIN,devwireless.ctrip.com
   - DOMAIN,click.oneplus.cn
+  - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN,nmetrics.samsung.com
   - DOMAIN,im4.ctrip.com
   - DOMAIN,analytics.samsungknox.com
@@ -101,18 +114,25 @@ payload:
   - DOMAIN,business.samsungusa.com
   - DOMAIN,theme-res-gl.heytapimage.com
   - DOMAIN,browser.sentry-cdn.com
+  - DOMAIN,adservice.google.co
+  - DOMAIN,ads.facebook.com
   - DOMAIN-KEYWORD,dimg.c-ctrip.com
   - DOMAIN,sa.api.intl.miui.com
   - DOMAIN,data.mistat.intl.xiaomi.com
   - DOMAIN-SUFFIX,samsungads.com
+  - DOMAIN-SUFFIX,ads-twitter.com
+  - DOMAIN,ads.linkedin.com
   - DOMAIN,stats.wp.com
+  - DOMAIN,metrics.spotify.com
   - DOMAIN,data.mistat.xiaomi.com
   - DOMAIN-SUFFIX,mouseflow.com
   - DOMAIN,sdkconfig.ad.intl.xiaomi.com
+  - DOMAIN,pagead46.l.doubleclick.net
   - DOMAIN,m.ctrip.com
   - DOMAIN,api.ad.xiaomi.com
   - DOMAIN,adservice.google.com
   - DOMAIN,affiliationjs.s3.amazonaws.com
+  - DOMAIN,adclick.g.doubleclick.net
   - DOMAIN,logbak.hicloud.com
   - DOMAIN-SUFFIX,api-hotjar.com
   - DOMAIN-SUFFIX,hotjar-analytics.com
@@ -120,15 +140,21 @@ payload:
   - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN,ubtlog.ctrip.com
   - DOMAIN,pagead2.googlesyndication.com
+  - DOMAIN-SUFFIX,crashlytics.com
   - DOMAIN,global.adserver.yahoo.com
   - DOMAIN-SUFFIX,amazonclix.com
   - DOMAIN,cs.luckyorange.net
   - DOMAIN-SUFFIX,yandexadexchange.net
   - DOMAIN,advertising-api-eu.amazon.com
+  - DOMAIN,ads.g.doubleclick.net
+  - DOMAIN,secure.adnxs.com
   - DOMAIN,w1.luckyorange.com
   - DOMAIN,logservice1.hicloud.com
   - DOMAIN,app.bugsnag.com
+  - DOMAIN,www.googleadservices.com
   - DOMAIN,umcdn.uc.cn
+  - DOMAIN,s0.2mdn.net
+  - DOMAIN,spclient.wg.spotify.com
   - DOMAIN,metrics4.data.hicloud.com
   - DOMAIN,metrics.icloud.com
   - DOMAIN-SUFFIX,assoc-amazon.com
@@ -137,6 +163,7 @@ payload:
   - DOMAIN,metrics2.data.hicloud.com
   - DOMAIN-SUFFIX,media.net
   - DOMAIN-SUFFIX,[Adblock Plus 2.0]
+  - DOMAIN,www.googletagservices.com
   - DOMAIN,statistic-overseas.yunxinfw.com
   - DOMAIN,static.doubleclick.net
   - DOMAIN,mc.yandex.com
