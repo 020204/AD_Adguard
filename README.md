@@ -40,7 +40,7 @@
 # 晴雅规则订阅📃
 Adguard
 ```
-https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt
+https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt
 ```
 
 clash
