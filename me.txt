@@ -202,22 +202,7 @@
 *umeng*
 
 ! =========================
-! 字节跳动
-! =========================
-*sdk*toutiao*
-*pglstatp*toutiao*
-*vcs*zijieapi*com*
-*ctobsnssdk*
-*log*snssdk*
-*apmplus*volces*
 
-*bytedns*
-*byte008*
-*toutiao*
-*bytedance*
-*zijieapi*
-*snssdk*
-*mssdk*
 
 ||sf1-ttcdn-tos.pstatp.com^
 ||*novel.byteimg.com^
