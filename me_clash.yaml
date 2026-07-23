@@ -4,20 +4,19 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 269
-#最终规则数: 263
+#原始规则数: 256
+#最终规则数: 250
 #DOMAIN: 161
 #DOMAIN-SUFFIX: 37
-#DOMAIN-KEYWORD: 65
+#DOMAIN-KEYWORD: 52
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-23 02:20:32 UTC+8
+#更新时间: 2026-07-23 07:45:18 UTC+8
 
 payload:
   - DOMAIN-KEYWORD,ks-cdn
   - DOMAIN,push.m.youku.com
-  - DOMAIN-KEYWORD,zijieapi
   - DOMAIN,bigdata.ssp.samsung.com
   - DOMAIN,ads.google.com
   - DOMAIN-SUFFIX,viayoo.com
@@ -30,7 +29,6 @@ payload:
   - DOMAIN-SUFFIX,fastclick.com
   - DOMAIN-KEYWORD,pq.us.globals-download.com
   - DOMAIN-KEYWORD,gifshow.com
-  - DOMAIN-KEYWORD,mssdk
   - DOMAIN,advertising.twitter.com
   - DOMAIN,ads-fa.spotify.com
   - DOMAIN-KEYWORD,tcpgateway-ali.ctrip.com
@@ -69,7 +67,6 @@ payload:
   - DOMAIN,logservice.hicloud.com
   - DOMAIN,ads-dev.pinterest.com
   - DOMAIN-KEYWORD,vc-mirrorndcpp.com
-  - DOMAIN-KEYWORD,ctobsnssdk
   - DOMAIN,tpns.tencent.com
   - DOMAIN,notify.bugsnag.com
   - DOMAIN,abtest.alibaba.com
@@ -78,7 +75,6 @@ payload:
   - DOMAIN,data.mistat.india.xiaomi.com
   - DOMAIN,securepubads.g.doubleclick.net
   - DOMAIN,analytics-api.samsunghealthcn.com
-  - DOMAIN-KEYWORD,pglstatptoutiao
   - DOMAIN-KEYWORD,p.douyinpic.com
   - DOMAIN-KEYWORD,mobadsbaidu.com
   - DOMAIN,ssp.maplehaze.cn
@@ -101,7 +97,6 @@ payload:
   - DOMAIN,ma-adx.ctrip.com
   - DOMAIN,ad.doubleclick.net
   - DOMAIN,analytics.mobile.yandex.net
-  - DOMAIN-KEYWORD,byte008
   - DOMAIN,lbs.netease.im
   - DOMAIN-KEYWORD,anythinktech
   - DOMAIN,upload.luckyorange.net
@@ -127,7 +122,6 @@ payload:
   - DOMAIN-KEYWORD,gdtqq
   - DOMAIN,metrics5.data.hicloud.com
   - DOMAIN,appmetrica.yandex.com
-  - DOMAIN-KEYWORD,snssdk
   - DOMAIN,static.hotjar.com
   - DOMAIN,heads-ec.spotify.com
   - DOMAIN,eco.taobao.com
@@ -162,7 +156,6 @@ payload:
   - DOMAIN-KEYWORD,ecombdapi
   - DOMAIN,devwireless.ctrip.com
   - DOMAIN-KEYWORD,readingfqnovel.com
-  - DOMAIN-KEYWORD,bytedance
   - DOMAIN-KEYWORD,adwtzw
   - DOMAIN,qzs.gdtimg.com
   - DOMAIN,click.oneplus.cn
@@ -219,7 +212,6 @@ payload:
   - DOMAIN,logbak.hicloud.com
   - DOMAIN-SUFFIX,api-hotjar.com
   - DOMAIN-KEYWORD,bugqq
-  - DOMAIN-KEYWORD,apmplusvolces
   - DOMAIN,bugly.qq.com
   - DOMAIN-SUFFIX,ubixioe.com
   - DOMAIN-SUFFIX,hotjar-analytics.com
@@ -228,7 +220,6 @@ payload:
   - DOMAIN,ubtlog.ctrip.com
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,crashlytics.com
-  - DOMAIN-KEYWORD,logsnssdk
   - DOMAIN,sdktmp.hubcloud.com.cn
   - DOMAIN,global.adserver.yahoo.com
   - DOMAIN-SUFFIX,amazonclix.com
@@ -237,12 +228,10 @@ payload:
   - DOMAIN,t-cfg.wtzw.com
   - DOMAIN,cs.luckyorange.net
   - DOMAIN-SUFFIX,yandexadexchange.net
-  - DOMAIN-KEYWORD,vcszijieapicom
   - DOMAIN,api-sc.wtzw.com
   - DOMAIN,advertising-api-eu.amazon.com
   - DOMAIN,ads.g.doubleclick.net
   - DOMAIN,secure.adnxs.com
-  - DOMAIN-KEYWORD,sdktoutiao
   - DOMAIN,w1.luckyorange.com
   - DOMAIN,logservice1.hicloud.com
   - DOMAIN,app.bugsnag.com
@@ -251,7 +240,6 @@ payload:
   - DOMAIN,s0.2mdn.net
   - DOMAIN,httpdns.alicdn.com
   - DOMAIN-SUFFIX,lanpye.cn
-  - DOMAIN-KEYWORD,toutiao
   - DOMAIN-KEYWORD,kwai
   - DOMAIN-KEYWORD,beizi
   - DOMAIN-KEYWORD,t7z.cupid.iqiyi
@@ -265,7 +253,6 @@ payload:
   - DOMAIN,janapi.jd.com
   - DOMAIN-SUFFIX,media.net
   - DOMAIN-SUFFIX,[Adblock Plus 2.0]
-  - DOMAIN-KEYWORD,bytedns
   - DOMAIN,www.googletagservices.com
   - DOMAIN,statistic-overseas.yunxinfw.com
   - DOMAIN,static.doubleclick.net
