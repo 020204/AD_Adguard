@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 238
-#最终规则数: 232
+#原始规则数: 234
+#最终规则数: 228
 #DOMAIN: 161
 #DOMAIN-SUFFIX: 37
-#DOMAIN-KEYWORD: 34
+#DOMAIN-KEYWORD: 30
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-23 08:59:14 UTC+8
+#更新时间: 2026-07-23 09:00:39 UTC+8
 
 payload:
   - DOMAIN-KEYWORD,ks-cdn
@@ -110,7 +110,6 @@ payload:
   - DOMAIN,cdn.fastclick.net
   - DOMAIN,analytics.google.com
   - DOMAIN-KEYWORD,misc.fqnovel.com
-  - DOMAIN-KEYWORD,gdtqq
   - DOMAIN,metrics5.data.hicloud.com
   - DOMAIN,appmetrica.yandex.com
   - DOMAIN,static.hotjar.com
@@ -134,7 +133,6 @@ payload:
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
   - DOMAIN,acs.m.taobao.com
-  - DOMAIN-KEYWORD,amsmyqcloud
   - DOMAIN,analyticsengine.s3.amazonaws.com
   - DOMAIN,pubads.g.doubleclick.net
   - DOMAIN,tpc.googlesyndication.com
@@ -195,7 +193,6 @@ payload:
   - DOMAIN,adclick.g.doubleclick.net
   - DOMAIN,logbak.hicloud.com
   - DOMAIN-SUFFIX,api-hotjar.com
-  - DOMAIN-KEYWORD,bugqq
   - DOMAIN,bugly.qq.com
   - DOMAIN-SUFFIX,ubixioe.com
   - DOMAIN-SUFFIX,hotjar-analytics.com
@@ -245,5 +242,4 @@ payload:
   - DOMAIN,click.oneplus.com
   - DOMAIN,sdkconfig.ad.xiaomi.com
   - DOMAIN,metrics.mzstatic.com
-  - DOMAIN-KEYWORD,sdkeqq
   - DOMAIN,tdid.m.qq.com
