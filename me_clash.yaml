@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 256
-#最终规则数: 250
+#原始规则数: 255
+#最终规则数: 249
 #DOMAIN: 161
 #DOMAIN-SUFFIX: 37
-#DOMAIN-KEYWORD: 52
+#DOMAIN-KEYWORD: 51
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-23 07:45:18 UTC+8
+#更新时间: 2026-07-23 08:29:57 UTC+8
 
 payload:
   - DOMAIN-KEYWORD,ks-cdn
@@ -75,7 +75,6 @@ payload:
   - DOMAIN,data.mistat.india.xiaomi.com
   - DOMAIN,securepubads.g.doubleclick.net
   - DOMAIN,analytics-api.samsunghealthcn.com
-  - DOMAIN-KEYWORD,p.douyinpic.com
   - DOMAIN-KEYWORD,mobadsbaidu.com
   - DOMAIN,ssp.maplehaze.cn
   - DOMAIN,ssp.vivo.com.cn
