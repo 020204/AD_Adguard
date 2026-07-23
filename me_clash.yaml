@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 255
-#最终规则数: 249
+#原始规则数: 238
+#最终规则数: 232
 #DOMAIN: 161
 #DOMAIN-SUFFIX: 37
-#DOMAIN-KEYWORD: 51
+#DOMAIN-KEYWORD: 34
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-23 08:29:57 UTC+8
+#更新时间: 2026-07-23 08:59:14 UTC+8
 
 payload:
   - DOMAIN-KEYWORD,ks-cdn
@@ -23,8 +23,6 @@ payload:
   - DOMAIN-SUFFIX,hotjar.com
   - DOMAIN,analytics.yahoo.com
   - DOMAIN-KEYWORD,pull.yximgs.com
-  - DOMAIN-KEYWORD,mob.com
-  - DOMAIN-KEYWORD,advivo
   - DOMAIN,settings.luckyorange.net
   - DOMAIN-SUFFIX,fastclick.com
   - DOMAIN-KEYWORD,pq.us.globals-download.com
@@ -38,11 +36,9 @@ payload:
   - DOMAIN,metrics.apple.com
   - DOMAIN,mc.yandex.ru
   - DOMAIN-SUFFIX,freshmarketer.com
-  - DOMAIN-KEYWORD,aio.ecombdimg.com
   - DOMAIN,pagead2.googleadservices.com
   - DOMAIN-SUFFIX,wscdns.com
   - DOMAIN-SUFFIX,luckyorange.com
-  - DOMAIN-KEYWORD,apiqmcom
   - DOMAIN,tracking.miui.com
   - DOMAIN,static.media.net
   - DOMAIN,log.spotify.com
@@ -62,7 +58,6 @@ payload:
   - DOMAIN,sessions.bugsnag.com
   - DOMAIN,adservetx.media.net
   - DOMAIN-SUFFIX,google-analytics.com
-  - DOMAIN-KEYWORD,tanx.com
   - DOMAIN-KEYWORD,novel.byteimg.com
   - DOMAIN,logservice.hicloud.com
   - DOMAIN,ads-dev.pinterest.com
@@ -106,8 +101,6 @@ payload:
   - DOMAIN,sdk.e.qq.com
   - DOMAIN,heads-fa-tls13.spotifycdn.com
   - DOMAIN,app.chat.xiaomi.net
-  - DOMAIN-KEYWORD,vodwtzw.com
-  - DOMAIN-KEYWORD,shifen.com
   - DOMAIN,app.getsentry.com
   - DOMAIN,aax.amazon-adsystem.com
   - DOMAIN,analytics.pointdrive.linkedin.com
@@ -116,7 +109,6 @@ payload:
   - DOMAIN,webcast5-open-lf.douyin.com
   - DOMAIN,cdn.fastclick.net
   - DOMAIN,analytics.google.com
-  - DOMAIN-KEYWORD,yumao.puata
   - DOMAIN-KEYWORD,misc.fqnovel.com
   - DOMAIN-KEYWORD,gdtqq
   - DOMAIN,metrics5.data.hicloud.com
@@ -127,7 +119,6 @@ payload:
   - DOMAIN,advertising.amazon.com
   - DOMAIN,advice-ads.s3.amazonaws.com
   - DOMAIN,api-gw.wtzw.com
-  - DOMAIN-KEYWORD,yundunwaf.com
   - DOMAIN,api-cmnt.wtzw.com
   - DOMAIN,analytics.oneplus.cn
   - DOMAIN,open.oneplus.net
@@ -138,10 +129,8 @@ payload:
   - DOMAIN,api.bugsnag.com
   - DOMAIN,googleads.g.doubleclick.net
   - DOMAIN-SUFFIX,vegslb.com
-  - DOMAIN-KEYWORD,drcndbankcdn
   - DOMAIN,metrics1.data.hicloud.com
   - DOMAIN-SUFFIX,app-measurement.com
-  - DOMAIN-KEYWORD,adqm
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
   - DOMAIN,acs.m.taobao.com
@@ -155,11 +144,9 @@ payload:
   - DOMAIN-KEYWORD,ecombdapi
   - DOMAIN,devwireless.ctrip.com
   - DOMAIN-KEYWORD,readingfqnovel.com
-  - DOMAIN-KEYWORD,adwtzw
   - DOMAIN,qzs.gdtimg.com
   - DOMAIN,click.oneplus.cn
   - DOMAIN-SUFFIX,googlesyndication.com
-  - DOMAIN-KEYWORD,item.ecombdimg.com
   - DOMAIN-KEYWORD,dun.163
   - DOMAIN,nmetrics.samsung.com
   - DOMAIN,im4.ctrip.com
@@ -168,7 +155,6 @@ payload:
   - DOMAIN-SUFFIX,smtcdns.com
   - DOMAIN,xlog.jd.com
   - DOMAIN,mediavisor.doubleclick.net
-  - DOMAIN-KEYWORD,gslb.qianxun.com
   - DOMAIN,www.cdn.ad.xiaomi.com
   - DOMAIN,business.samsungusa.com
   - DOMAIN,theme-res-gl.heytapimage.com
@@ -188,7 +174,6 @@ payload:
   - DOMAIN,amdcopen.m.taobao.com
   - DOMAIN-SUFFIX,ads-twitter.com
   - DOMAIN-KEYWORD,video.fqnovelvod.com
-  - DOMAIN-KEYWORD,adqumao
   - DOMAIN,qm-data.wtzw.com
   - DOMAIN,mkt.wtzw.com
   - DOMAIN-KEYWORD,kuaishou
@@ -223,7 +208,6 @@ payload:
   - DOMAIN,global.adserver.yahoo.com
   - DOMAIN-SUFFIX,amazonclix.com
   - DOMAIN-KEYWORD,metricslinks.com
-  - DOMAIN-KEYWORD,ks.qm.com
   - DOMAIN,t-cfg.wtzw.com
   - DOMAIN,cs.luckyorange.net
   - DOMAIN-SUFFIX,yandexadexchange.net
@@ -262,5 +246,4 @@ payload:
   - DOMAIN,sdkconfig.ad.xiaomi.com
   - DOMAIN,metrics.mzstatic.com
   - DOMAIN-KEYWORD,sdkeqq
-  - DOMAIN-KEYWORD,apidutils.com
   - DOMAIN,tdid.m.qq.com
