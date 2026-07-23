@@ -206,7 +206,6 @@
 
 ||sf1-ttcdn-tos.pstatp.com^
 ||*novel.byteimg.com^
-||p*.douyinpic.com^
 ||webcast5-open-lf.douyin.com^
 ||vc-brain*ndcpp.com^
 ||vc-mirror*ndcpp.com^
