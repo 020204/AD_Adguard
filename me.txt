@@ -182,10 +182,6 @@
 ! =========================
 ! 腾讯
 ! =========================
-*gdt*qq*
-*sdk*e*qq*
-*ams*myqcloud*
-*bug*qq*
 ||tpns.tencent.com^
 ||sdk.e.qq.com^
 ||gdt.qq.com^
