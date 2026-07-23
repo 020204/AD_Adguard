@@ -263,15 +263,8 @@ t7z.cupid.iqiyi*
 ! =========================
 ! 阿里巴巴
 ! =========================
-||*tanx.com^
 ||amdcopen.m.taobao.com^
 ||httpdns.alicdn.com^
-
-! =========================
-! 拼多多疑似
-! =========================
-||*aio.ecombdimg.com^
-||*item.ecombdimg.com^
 
 ! =========================
 ! 七猫 / 网文 / 广告联盟
@@ -279,26 +272,17 @@ t7z.cupid.iqiyi*
 ||janapi.jd.com^
 ||xlog.jd.com^
 
-||*mob.com^
 ||mobads*baidu.com
-||*shifen.com^
 ||api.qttunion.com^
 ||aiclk.com^
 ||ssp.maplehaze.cn^
 ||ssp.vivo.com.cn^
 
-||*ad*qumao*
-||*ad*qm*
-||*ad*vivo*
-||*ad*wtzw*
 
 ||qm-data.wtzw.com^
-||*vod*wtzw.com^
 ||api-gw.wtzw.com^
 ||api-cmnt.wtzw.com^
 ||api-sc.wtzw.com^
-||api*qm*com^
-||*ks.qm*.com^
 ||drs.wtzw.com^
 ||t-cfg.wtzw.com^
 ||mkt.wtzw.com^
@@ -307,24 +291,19 @@ t7z.cupid.iqiyi*
 ! 华为
 ! =========================
 ||dbankcloud.cn^
-||*drcn*dbankcdn*
 ||hicloud.com^
 
 ! =========================
 ! 安全/风控/CDN
 ! =========================
 ||wscdns.com^
-||*gslb.qianxun.com^
-||api*dutils.com^
 ||ubixioe.com^
 ||fengkongcloud.com^
-||*yundunwaf*.com^
 ||risk-fp-openapi.vivo.com.cn^
 
 ! =========================
 ! 未知/待确认
 ! =========================
-*yumao.puata*
 ||auni.unioncom.cc^
 ||resource.ad-scope.com.cn^
 ||sdktmp.hubcloud.com.cn^
