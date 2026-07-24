@@ -198,22 +198,6 @@
 *umeng*
 
 ! =========================
-
-
-||sf1-ttcdn-tos.pstatp.com^
-||*novel.byteimg.com^
-||webcast5-open-lf.douyin.com^
-||vc-brain*ndcpp.com^
-||vc-mirror*ndcpp.com^
-
-||*normal.fqnovel.com^
-||*applog.fqnovel.com^
-||*video.fqnovelvod.com^
-||*lf.fqnovel.com^
-||*misc.fqnovel.com^
-||*reading*fqnovel*.com^
-
-! =========================
 ! 快手
 ! =========================
 *gifshow.com*
@@ -235,26 +219,9 @@ t7z.cupid.iqiyi*
 ! =========================
 ||dataflow.biliapi.com^
 
-! =========================
-! 广告/统计 SDK
-! =========================
-*telecome.cn*
-*anythinktech*
-*metricslinks.com*
-*statisticslinks*
-*beizi*
-*ecombdapi*
-*shuzilm*
-
 ||app.adjust.io^
 ||whoami.akamai.net^
 ||app-measurement.com^
-
-! =========================
-! 网易
-! =========================
-||dun.163*
-||uu.163*
 
 ! =========================
 ! 阿里巴巴
