@@ -10,6 +10,7 @@
 @@||githubusercontent.com^
 @@||githubassets.com^
 @@||anti-ad.net^important
+@@||acs.m.taobao.com^
 
 !========================= 广告/追踪拦截=========================
 # 国外ADS
