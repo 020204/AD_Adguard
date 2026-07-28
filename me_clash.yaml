@@ -4,22 +4,21 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 214
-#最终规则数: 208
-#DOMAIN: 159
-#DOMAIN-SUFFIX: 37
+#原始规则数: 201
+#最终规则数: 195
+#DOMAIN: 154
+#DOMAIN-SUFFIX: 29
 #DOMAIN-KEYWORD: 12
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-27 23:00:04 UTC+8
+#更新时间: 2026-07-28 02:12:19 UTC+8
 
 payload:
   - DOMAIN-KEYWORD,ks-cdn
   - DOMAIN,push.m.youku.com
   - DOMAIN,bigdata.ssp.samsung.com
   - DOMAIN,ads.google.com
-  - DOMAIN-SUFFIX,viayoo.com
   - DOMAIN-SUFFIX,hotjar.com
   - DOMAIN,analytics.yahoo.com
   - DOMAIN-KEYWORD,pull.yximgs.com
@@ -36,7 +35,6 @@ payload:
   - DOMAIN,mc.yandex.ru
   - DOMAIN-SUFFIX,freshmarketer.com
   - DOMAIN,pagead2.googleadservices.com
-  - DOMAIN-SUFFIX,wscdns.com
   - DOMAIN-SUFFIX,luckyorange.com
   - DOMAIN,tracking.miui.com
   - DOMAIN,static.media.net
@@ -44,10 +42,8 @@ payload:
   - DOMAIN-SUFFIX,samsungadhub.com
   - DOMAIN-SUFFIX,hicloud.com
   - DOMAIN,media.fastclick.net
-  - DOMAIN,risk-fp-openapi.vivo.com.cn
   - DOMAIN,config.samsungads.com
   - DOMAIN,adtago.s3.amazonaws.com
-  - DOMAIN,auni.unioncom.cc
   - DOMAIN,pull.etoote.com
   - DOMAIN,api.qttunion.com
   - DOMAIN-SUFFIX,ugdtimg.com
@@ -117,7 +113,6 @@ payload:
   - DOMAIN,stats.g.doubleclick.net
   - DOMAIN,api.bugsnag.com
   - DOMAIN,googleads.g.doubleclick.net
-  - DOMAIN-SUFFIX,vegslb.com
   - DOMAIN,metrics1.data.hicloud.com
   - DOMAIN-SUFFIX,app-measurement.com
   - DOMAIN,metrics-dra.dt.hicloud.com
@@ -126,9 +121,7 @@ payload:
   - DOMAIN,analyticsengine.s3.amazonaws.com
   - DOMAIN,pubads.g.doubleclick.net
   - DOMAIN,tpc.googlesyndication.com
-  - DOMAIN-SUFFIX,id6.me
   - DOMAIN-SUFFIX,amazon-adsystem.com
-  - DOMAIN,resource.ad-scope.com.cn
   - DOMAIN,devwireless.ctrip.com
   - DOMAIN,qzs.gdtimg.com
   - DOMAIN,click.oneplus.cn
@@ -137,7 +130,6 @@ payload:
   - DOMAIN,im4.ctrip.com
   - DOMAIN,dataflow.biliapi.com
   - DOMAIN,analytics.samsungknox.com
-  - DOMAIN-SUFFIX,smtcdns.com
   - DOMAIN,xlog.jd.com
   - DOMAIN,mediavisor.doubleclick.net
   - DOMAIN,www.cdn.ad.xiaomi.com
@@ -152,7 +144,6 @@ payload:
   - DOMAIN-SUFFIX,samsungads.com
   - DOMAIN-SUFFIX,gdtimg.com
   - DOMAIN,app.adjust.io
-  - DOMAIN,s.peplle.cn
   - DOMAIN,amdcopen.m.taobao.com
   - DOMAIN-SUFFIX,ads-twitter.com
   - DOMAIN,qm-data.wtzw.com
@@ -168,7 +159,6 @@ payload:
   - DOMAIN,sdkconfig.ad.intl.xiaomi.com
   - DOMAIN,pagead46.l.doubleclick.net
   - DOMAIN,m.ctrip.com
-  - DOMAIN-SUFFIX,fengkongcloud.com
   - DOMAIN,api.ad.xiaomi.com
   - DOMAIN,adservice.google.com
   - DOMAIN,gdt.qq.com
@@ -177,14 +167,12 @@ payload:
   - DOMAIN,logbak.hicloud.com
   - DOMAIN-SUFFIX,api-hotjar.com
   - DOMAIN,bugly.qq.com
-  - DOMAIN-SUFFIX,ubixioe.com
   - DOMAIN-SUFFIX,hotjar-analytics.com
   - DOMAIN-SUFFIX,amazonaax.com
   - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN,ubtlog.ctrip.com
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,crashlytics.com
-  - DOMAIN,sdktmp.hubcloud.com.cn
   - DOMAIN,global.adserver.yahoo.com
   - DOMAIN-SUFFIX,amazonclix.com
   - DOMAIN,t-cfg.wtzw.com
@@ -201,7 +189,6 @@ payload:
   - DOMAIN,umcdn.uc.cn
   - DOMAIN,s0.2mdn.net
   - DOMAIN,httpdns.alicdn.com
-  - DOMAIN-SUFFIX,lanpye.cn
   - DOMAIN-KEYWORD,kwai
   - DOMAIN-KEYWORD,t7z.cupid.iqiyi
   - DOMAIN,metrics4.data.hicloud.com
