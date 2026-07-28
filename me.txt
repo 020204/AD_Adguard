@@ -235,14 +235,11 @@ t7z.cupid.iqiyi*
 ! =========================
 ||janapi.jd.com^
 ||xlog.jd.com^
-
 ||mobads*baidu.com
 ||api.qttunion.com^
 ||aiclk.com^
 ||ssp.maplehaze.cn^
 ||ssp.vivo.com.cn^
-
-
 ||qm-data.wtzw.com^
 ||api-gw.wtzw.com^
 ||api-cmnt.wtzw.com^
@@ -256,24 +253,3 @@ t7z.cupid.iqiyi*
 ! =========================
 ||dbankcloud.cn^
 ||hicloud.com^
-
-! =========================
-! 安全/风控/CDN
-! =========================
-||wscdns.com^
-||ubixioe.com^
-||fengkongcloud.com^
-||risk-fp-openapi.vivo.com.cn^
-
-! =========================
-! 未知/待确认
-! =========================
-||auni.unioncom.cc^
-||resource.ad-scope.com.cn^
-||sdktmp.hubcloud.com.cn^
-||viayoo.com^
-||lanpye.cn^
-||smtcdns.com^
-||vegslb.com^
-||id6.me^
-||s.peplle.cn^
