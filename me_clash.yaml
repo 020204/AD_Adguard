@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 201
-#最终规则数: 195
-#DOMAIN: 154
+#原始规则数: 200
+#最终规则数: 194
+#DOMAIN: 153
 #DOMAIN-SUFFIX: 29
 #DOMAIN-KEYWORD: 12
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-07-28 02:12:19 UTC+8
+#更新时间: 2026-07-28 02:13:00 UTC+8
 
 payload:
   - DOMAIN-KEYWORD,ks-cdn
@@ -117,7 +117,6 @@ payload:
   - DOMAIN-SUFFIX,app-measurement.com
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
-  - DOMAIN,acs.m.taobao.com
   - DOMAIN,analyticsengine.s3.amazonaws.com
   - DOMAIN,pubads.g.doubleclick.net
   - DOMAIN,tpc.googlesyndication.com
@@ -178,8 +177,8 @@ payload:
   - DOMAIN,t-cfg.wtzw.com
   - DOMAIN,cs.luckyorange.net
   - DOMAIN-SUFFIX,yandexadexchange.net
-  - DOMAIN,api-sc.wtzw.com
   - DOMAIN,advertising-api-eu.amazon.com
+  - DOMAIN,api-sc.wtzw.com
   - DOMAIN,ads.g.doubleclick.net
   - DOMAIN,secure.adnxs.com
   - DOMAIN,w1.luckyorange.com
