@@ -174,7 +174,6 @@
 ||adservice.google.co^
 # 优酷
 ||abtest.alibaba.com^
-||acs.m.taobao.com^
 ||eco.taobao.com^
 ||push.m.youku.com^
 #夸克
@@ -206,7 +205,6 @@
 *ks-cdn*
 *kwai*
 *kuaishou*
-
 ||*pull.yximgs.com^
 ||pull.etoote.com^
 
@@ -219,7 +217,6 @@ t7z.cupid.iqiyi*
 ! 哔哩哔哩
 ! =========================
 ||dataflow.biliapi.com^
-
 ||app.adjust.io^
 ||whoami.akamai.net^
 ||app-measurement.com^
