@@ -4,18 +4,17 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 182
-#最终规则数: 176
+#原始规则数: 177
+#最终规则数: 171
 #DOMAIN: 141
 #DOMAIN-SUFFIX: 26
-#DOMAIN-KEYWORD: 9
+#DOMAIN-KEYWORD: 4
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-08-08 22:26:56 UTC+8
+#更新时间: 2026-08-09 07:43:49 UTC+8
 
 payload:
-  - DOMAIN-KEYWORD,ks-cdn
   - DOMAIN,push.m.youku.com
   - DOMAIN,bigdata.ssp.samsung.com
   - DOMAIN,ads.google.com
@@ -25,7 +24,6 @@ payload:
   - DOMAIN,settings.luckyorange.net
   - DOMAIN-SUFFIX,fastclick.com
   - DOMAIN-KEYWORD,pq.us.globals-download.com
-  - DOMAIN-KEYWORD,gifshow.com
   - DOMAIN,advertising.twitter.com
   - DOMAIN,ads-fa.spotify.com
   - DOMAIN-KEYWORD,tcpgateway-ali.ctrip.com
@@ -134,14 +132,12 @@ payload:
   - DOMAIN,app.adjust.io
   - DOMAIN,amdcopen.m.taobao.com
   - DOMAIN-SUFFIX,ads-twitter.com
-  - DOMAIN-KEYWORD,kuaishou
   - DOMAIN,quic.xsj.qq.com
   - DOMAIN,ads.linkedin.com
   - DOMAIN,stats.wp.com
   - DOMAIN,metrics.spotify.com
   - DOMAIN,data.mistat.xiaomi.com
   - DOMAIN-SUFFIX,mouseflow.com
-  - DOMAIN-KEYWORD,openkuaishou
   - DOMAIN,sdkconfig.ad.intl.xiaomi.com
   - DOMAIN,pagead46.l.doubleclick.net
   - DOMAIN,m.ctrip.com
@@ -173,7 +169,6 @@ payload:
   - DOMAIN,umcdn.uc.cn
   - DOMAIN,s0.2mdn.net
   - DOMAIN,httpdns.alicdn.com
-  - DOMAIN-KEYWORD,kwai
   - DOMAIN,metrics4.data.hicloud.com
   - DOMAIN,metrics.icloud.com
   - DOMAIN-SUFFIX,assoc-amazon.com
