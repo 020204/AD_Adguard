@@ -188,12 +188,6 @@
 ||ugdtimg.com^
 ||qzs.gdtimg.com^
 ||quic.xsj.qq.com^
-! 快手
-*gifshow.com*
-*open*kuaishou*
-*ks-cdn*
-*kwai*
-*kuaishou*
 ||*pull.yximgs.com^
 ||pull.etoote.com^
 ! 哔哩哔哩
