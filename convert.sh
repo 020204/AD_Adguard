@@ -16,18 +16,18 @@ REMOTE_URL="https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt"
 LOCAL_FILE="$REPO_DIR/adguard.txt"
 TMP_FILE="$REPO_DIR/adguard.tmp"
 
-echo "🌐 正在下载最新规则..."
-
-if curl -L --fail --connect-timeout 10 -o "$TMP_FILE" "$REMOTE_URL"; then
+# 强制下载，覆盖本地文件
+echo "🌐 正在强制下载最新规则以覆盖 adguard.txt..."
+if curl -L --fail --connect-timeout 30 -o "$TMP_FILE" "$REMOTE_URL"; then
     if [ -s "$TMP_FILE" ]; then
-        mv "$TMP_FILE" "$LOCAL_FILE"
-        echo "✅ 规则更新成功（已覆盖 adguard.txt）"
+        mv -f "$TMP_FILE" "$LOCAL_FILE"  # 使用 -f 强制覆盖
+        echo "✅ 规则下载并覆盖成功！"
     else
-        echo "⚠️ 下载内容为空，已丢弃"
+        echo "⚠️ 下载内容为空，保留原有 adguard.txt"
         rm -f "$TMP_FILE"
     fi
 else
-    echo "❌ 下载失败，保留原有 adguard.txt"
+    echo "❌ 下载失败，保留原有 adguard.txt（可能因网络原因）"
     rm -f "$TMP_FILE"
 fi
 
