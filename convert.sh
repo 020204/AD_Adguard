@@ -12,7 +12,7 @@ REPO_DIR="$(cd "$(dirname "$0")" && pwd)"  # 脚本所在目录（仓库根目�
 #━━━━━━━━━━━━━━━━━━━
 # 🔽 先下载
 #━━━━━━━━━━━━━━━━━━━
-REMOTE_URL="https://raw.gitcode.com/rssv/qy-Ads-Rule/raw/main/black.txt"
+REMOTE_URL="https://raw.githubusercontent.com/rssvcn/qy-Ads-Rule/main/black.txt"
 LOCAL_FILE="$REPO_DIR/adguard.txt"
 TMP_FILE="$REPO_DIR/adguard.tmp"
 
