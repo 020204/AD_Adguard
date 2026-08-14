@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 177
-#最终规则数: 171
-#DOMAIN: 141
+#原始规则数: 181
+#最终规则数: 175
+#DOMAIN: 145
 #DOMAIN-SUFFIX: 26
 #DOMAIN-KEYWORD: 4
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-08-13 22:39:23 UTC+8
+#更新时间: 2026-08-14 05:26:17 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -20,10 +20,12 @@ payload:
   - DOMAIN,ads.google.com
   - DOMAIN-SUFFIX,hotjar.com
   - DOMAIN,analytics.yahoo.com
+  - DOMAIN,analytics-sg.tiktok.com
   - DOMAIN-KEYWORD,pull.yximgs.com
   - DOMAIN,settings.luckyorange.net
   - DOMAIN-SUFFIX,fastclick.com
   - DOMAIN-KEYWORD,pq.us.globals-download.com
+  - DOMAIN,pixel.facebook.com
   - DOMAIN,advertising.twitter.com
   - DOMAIN,ads-fa.spotify.com
   - DOMAIN-KEYWORD,tcpgateway-ali.ctrip.com
@@ -79,6 +81,7 @@ payload:
   - DOMAIN,samsung-com.112.2o7.net
   - DOMAIN,sdk.e.qq.com
   - DOMAIN,heads-fa-tls13.spotifycdn.com
+  - DOMAIN,d.reddit.com
   - DOMAIN,app.chat.xiaomi.net
   - DOMAIN,app.getsentry.com
   - DOMAIN,aax.amazon-adsystem.com
@@ -105,6 +108,7 @@ payload:
   - DOMAIN-SUFFIX,app-measurement.com
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
+  - DOMAIN,trk.pinterest.com
   - DOMAIN,analyticsengine.s3.amazonaws.com
   - DOMAIN,pubads.g.doubleclick.net
   - DOMAIN,tpc.googlesyndication.com
