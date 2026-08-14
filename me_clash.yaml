@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 181
-#最终规则数: 175
-#DOMAIN: 145
+#原始规则数: 185
+#最终规则数: 179
+#DOMAIN: 149
 #DOMAIN-SUFFIX: 26
 #DOMAIN-KEYWORD: 4
 #IP-CIDR: 0
 #移除重复: 6
 #压缩子域: 0
-#更新时间: 2026-08-14 05:26:17 UTC+8
+#更新时间: 2026-08-14 05:30:26 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -48,11 +48,13 @@ payload:
   - DOMAIN,ads.yahoo.com
   - DOMAIN,sessions.bugsnag.com
   - DOMAIN,adservetx.media.net
+  - DOMAIN,partnerads.ysm.yahoo.com
   - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN,logservice.hicloud.com
   - DOMAIN,ads-dev.pinterest.com
   - DOMAIN,tpns.tencent.com
   - DOMAIN,notify.bugsnag.com
+  - DOMAIN,adfstat.yandex.ru
   - DOMAIN,abtest.alibaba.com
   - DOMAIN,adeventtracker.spotify.com
   - DOMAIN,data.mistat.india.xiaomi.com
@@ -159,6 +161,7 @@ payload:
   - DOMAIN,ubtlog.ctrip.com
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN-SUFFIX,crashlytics.com
+  - DOMAIN,appmetrica.yandex.ru
   - DOMAIN,global.adserver.yahoo.com
   - DOMAIN-SUFFIX,amazonclix.com
   - DOMAIN,cs.luckyorange.net
@@ -173,6 +176,7 @@ payload:
   - DOMAIN,umcdn.uc.cn
   - DOMAIN,s0.2mdn.net
   - DOMAIN,httpdns.alicdn.com
+  - DOMAIN,adfox.yandex.ru
   - DOMAIN,metrics4.data.hicloud.com
   - DOMAIN,metrics.icloud.com
   - DOMAIN-SUFFIX,assoc-amazon.com
