@@ -14,19 +14,33 @@
 
 !========================= 广告/追踪拦截=========================
 # 国外ADS
-||sync.outbraincom^
-||mads.amazoncom^
-||ad.turncom^
-||dis.criteocom^
+||sync.outbrain.com^
+||mads.amazon.com^
+||ad.turn.com^
+||dis.criteo.com^
 ||static.criteo.net^
-||sslwidget.criteocom^
-||api.taboolacom^
-||images.taboolacom^
-||trc.taboolacom^
-||cdn.taboolacom^
-||tr.outbraincom^
-||amplify.outbraincom^
-||nr.taboolacom^
+||sslwidget.criteo.com^
+||api.taboola.com^
+||images.taboola.com^
+||trc.taboola.com^
+||cdn.taboola.com^
+||tr.outbrain.com^
+||amplify.outbrain.com^
+||nr.taboola.com^
+||googletagmanager.com^
+||www.clarity.ms^
+||c.bing.com^
+||bat.bing.com^
+||syndication.twitter.com^
+||graph.facebook.com^
+||t.co^
+||analytics.twitter.com^
+||platform.twitter.com^
+||static.addtoany.com^
+||badges.instagram.com^
+||platform.instagram.com^
+||st-widget.s3.amazonaws.com^
+||ct.pinterest.com^
 ||adfox.yandex.ru^
 ||adfstat.yandex.ru^
 ||appmetrica.yandex.ru^
