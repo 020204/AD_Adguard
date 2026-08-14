@@ -382,3 +382,17 @@
 ||f.vimeocdn.com^
 ||api.bcovlive.io^
 ||prd.jwpltx.com^
+||kochava.com^
+||singular.net^
+||pixel.wp.com^
+||cdn.segment.io^
+||bugsnag.com^
+||notifier.airbrake.io^
+||api.airbrake.io^
+||monerominer.rocks^
+||staticxx.facebook.com^
+||redditmedia.com^
+||consentcdn.cookiebot.com^
+||cdn.configcat.com^
+||cdn-eu.configcat.com^
+||open.convertkit.com^
