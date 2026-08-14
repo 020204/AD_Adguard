@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 214
-#最终规则数: 208
-#DOMAIN: 176
-#DOMAIN-SUFFIX: 28
+#原始规则数: 307
+#最终规则数: 306
+#DOMAIN: 239
+#DOMAIN-SUFFIX: 63
 #DOMAIN-KEYWORD: 4
 #IP-CIDR: 0
-#移除重复: 6
+#移除重复: 1
 #压缩子域: 0
-#更新时间: 2026-08-14 08:47:03 UTC+8
+#更新时间: 2026-08-14 09:09:42 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -20,14 +20,20 @@ payload:
   - DOMAIN,ads.google.com
   - DOMAIN-SUFFIX,hotjar.com
   - DOMAIN,images.taboola.com
+  - DOMAIN,api.privacy-center.org
   - DOMAIN,analytics.yahoo.com
+  - DOMAIN-SUFFIX,ppoi.org
   - DOMAIN,analytics-sg.tiktok.com
   - DOMAIN-KEYWORD,pull.yximgs.com
   - DOMAIN,settings.luckyorange.net
+  - DOMAIN,bam-cell.nr-data.net
   - DOMAIN-SUFFIX,fastclick.com
   - DOMAIN-KEYWORD,pq.us.globals-download.com
   - DOMAIN,pixel.facebook.com
+  - DOMAIN,d.impactradius-event.com
+  - DOMAIN,cpu.js.org
   - DOMAIN,advertising.twitter.com
+  - DOMAIN-SUFFIX,didomi.io
   - DOMAIN,ads-fa.spotify.com
   - DOMAIN-KEYWORD,tcpgateway-ali.ctrip.com
   - DOMAIN,tracking.rus.miui.com
@@ -35,21 +41,31 @@ payload:
   - DOMAIN,mc.yandex.ru
   - DOMAIN-SUFFIX,freshmarketer.com
   - DOMAIN,pagead2.googleadservices.com
+  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net
+  - DOMAIN,app.pendo.io
   - DOMAIN-SUFFIX,luckyorange.com
   - DOMAIN,tracking.miui.com
   - DOMAIN,static.media.net
   - DOMAIN,st-widget.s3.amazonaws.com
+  - DOMAIN,o0.ingest.sentry.io
   - DOMAIN,log.spotify.com
+  - DOMAIN-SUFFIX,trackjs.com
   - DOMAIN-SUFFIX,samsungadhub.com
   - DOMAIN,sync.outbrain.com
   - DOMAIN,media.fastclick.net
+  - DOMAIN-SUFFIX,gdeslon.ru
+  - DOMAIN,r.skimresources.com
   - DOMAIN,config.samsungads.com
   - DOMAIN,adtago.s3.amazonaws.com
+  - DOMAIN,aggregator.service.usercentrics.eu
+  - DOMAIN-SUFFIX,app.link
   - DOMAIN,pull.etoote.com
   - DOMAIN-SUFFIX,ugdtimg.com
   - DOMAIN,static.criteo.net
   - DOMAIN,c.bing.com
+  - DOMAIN,t.appsflyer.com
   - DOMAIN,securemetrics.apple.com
+  - DOMAIN,api.impact.com
   - DOMAIN,ads.yahoo.com
   - DOMAIN,sessions.bugsnag.com
   - DOMAIN,adservetx.media.net
@@ -57,15 +73,21 @@ payload:
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN-SUFFIX,google-analytics.com
   - DOMAIN,logservice.hicloud.com
+  - DOMAIN,cdn.onetrust.com
   - DOMAIN,ads-dev.pinterest.com
   - DOMAIN,tpns.tencent.com
   - DOMAIN,notify.bugsnag.com
   - DOMAIN,adfstat.yandex.ru
+  - DOMAIN,api.segment.io
   - DOMAIN,abtest.alibaba.com
   - DOMAIN,adeventtracker.spotify.com
+  - DOMAIN,optanon.blob.core.windows.net
   - DOMAIN,data.mistat.india.xiaomi.com
+  - DOMAIN-SUFFIX,webminerpool.com
   - DOMAIN,securepubads.g.doubleclick.net
+  - DOMAIN,edge.fullstory.com
   - DOMAIN,analytics-api.samsunghealthcn.com
+  - DOMAIN-SUFFIX,bnc.lt
   - DOMAIN,tr.outbrain.com
   - DOMAIN,metrics.data.hicloud.com
   - DOMAIN-SUFFIX,fastclick.net
@@ -75,8 +97,12 @@ payload:
   - DOMAIN,ad.samsungadhub.com
   - DOMAIN,analytics.facebook.com
   - DOMAIN,whoami.akamai.net
+  - DOMAIN-SUFFIX,quantserve.com
+  - DOMAIN-SUFFIX,piwik.pro
+  - DOMAIN,api.raygun.io
   - DOMAIN-SUFFIX,doubleclick.net
   - DOMAIN,tracking.india.miui.com
+  - DOMAIN,tr.snapchat.com
   - DOMAIN,a.mouseflow.com
   - DOMAIN,sslwidget.criteo.com
   - DOMAIN,link120-bgp-ipv6.yunxinfw.com
@@ -85,25 +111,37 @@ payload:
   - DOMAIN,platform.instagram.com
   - DOMAIN,ma-adx.ctrip.com
   - DOMAIN,ad.doubleclick.net
+  - DOMAIN-SUFFIX,raygun.io
+  - DOMAIN,s.skimresources.com
   - DOMAIN,mads.amazon.com
   - DOMAIN,analytics.mobile.yandex.net
   - DOMAIN,lbs.netease.im
+  - DOMAIN,api.amplitude.com
   - DOMAIN,upload.luckyorange.net
   - DOMAIN,globalapi.ad.xiaomi.com
+  - DOMAIN,api.mixpanel.com
   - DOMAIN,samsung-com.112.2o7.net
   - DOMAIN,static.addtoany.com
   - DOMAIN,sdk.e.qq.com
   - DOMAIN,heads-fa-tls13.spotifycdn.com
   - DOMAIN,d.reddit.com
   - DOMAIN,app.chat.xiaomi.net
+  - DOMAIN-SUFFIX,shrsl.com
+  - DOMAIN,cdn.heapanalytics.com
   - DOMAIN,app.getsentry.com
   - DOMAIN,aax.amazon-adsystem.com
+  - DOMAIN-SUFFIX,webvisor.com
   - DOMAIN,analytics.pointdrive.linkedin.com
+  - DOMAIN-SUFFIX,heapanalytics.com
   - DOMAIN,aan.amazon.com
   - DOMAIN,tracking.intl.miui.com
   - DOMAIN,smetrics.samsung.com
+  - DOMAIN,js.honeybadger.io
+  - DOMAIN,api.usercentrics.eu
   - DOMAIN,cdn.fastclick.net
   - DOMAIN,analytics.google.com
+  - DOMAIN-SUFFIX,cnhv.co
+  - DOMAIN,vortex.data.microsoft.com
   - DOMAIN,metrics5.data.hicloud.com
   - DOMAIN,appmetrica.yandex.com
   - DOMAIN,static.hotjar.com
@@ -111,16 +149,21 @@ payload:
   - DOMAIN,eco.taobao.com
   - DOMAIN,advertising.amazon.com
   - DOMAIN,advice-ads.s3.amazonaws.com
+  - DOMAIN-SUFFIX,pendo.io
   - DOMAIN,analytics.oneplus.cn
   - DOMAIN,open.oneplus.net
   - DOMAIN,metrics3.data.hicloud.com
   - DOMAIN,cdn.luckyorange.com
+  - DOMAIN,usage.trackjs.com
   - DOMAIN,stats.g.doubleclick.net
   - DOMAIN,dis.criteo.com
   - DOMAIN,api.bugsnag.com
+  - DOMAIN,www.awin1.com
   - DOMAIN,syndication.twitter.com
   - DOMAIN,googleads.g.doubleclick.net
+  - DOMAIN-SUFFIX,matomo.cloud
   - DOMAIN,metrics1.data.hicloud.com
+  - DOMAIN,adsapi.snapchat.com
   - DOMAIN-SUFFIX,app-measurement.com
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
@@ -130,22 +173,31 @@ payload:
   - DOMAIN,pubads.g.doubleclick.net
   - DOMAIN,tpc.googlesyndication.com
   - DOMAIN,platform.twitter.com
+  - DOMAIN,cdn.pendo.io
+  - DOMAIN,cdn.lr-ingest.com
   - DOMAIN-SUFFIX,amazon-adsystem.com
   - DOMAIN,amplify.outbrain.com
+  - DOMAIN,cdn.ravenjs.com
   - DOMAIN,devwireless.ctrip.com
   - DOMAIN,nr.taboola.com
+  - DOMAIN,r.logrocket.io
   - DOMAIN,qzs.gdtimg.com
   - DOMAIN,click.oneplus.cn
+  - DOMAIN,cdn.piwik.pro
   - DOMAIN-SUFFIX,googlesyndication.com
   - DOMAIN,nmetrics.samsung.com
   - DOMAIN,im4.ctrip.com
   - DOMAIN,dataflow.biliapi.com
   - DOMAIN,analytics.samsungknox.com
+  - DOMAIN-SUFFIX,coin-hive.com
   - DOMAIN,mediavisor.doubleclick.net
+  - DOMAIN,device-metrics-us.amazon.com
   - DOMAIN,www.cdn.ad.xiaomi.com
+  - DOMAIN,capture.trackjs.com
   - DOMAIN,business.samsungusa.com
   - DOMAIN,theme-res-gl.heytapimage.com
   - DOMAIN,browser.sentry-cdn.com
+  - DOMAIN,api.rollbar.com
   - DOMAIN,adservice.google.co
   - DOMAIN,ads.facebook.com
   - DOMAIN-KEYWORD,dimg.c-ctrip.com
@@ -153,23 +205,36 @@ payload:
   - DOMAIN,data.mistat.intl.xiaomi.com
   - DOMAIN-SUFFIX,samsungads.com
   - DOMAIN-SUFFIX,gdtimg.com
+  - DOMAIN-SUFFIX,awin1.com
   - DOMAIN,app.adjust.io
+  - DOMAIN-SUFFIX,mixpanel.com
+  - DOMAIN,pixel.quantserve.com
+  - DOMAIN,clientservices.googleapis.com
   - DOMAIN,amdcopen.m.taobao.com
   - DOMAIN-SUFFIX,ads-twitter.com
+  - DOMAIN,wrapper-api.sp-prod.net
   - DOMAIN,graph.facebook.com
   - DOMAIN,quic.xsj.qq.com
   - DOMAIN,log.outbrain.com
+  - DOMAIN,js-agent.newrelic.com
   - DOMAIN,ads.linkedin.com
   - DOMAIN,stats.wp.com
+  - DOMAIN,rs.fullstory.com
   - DOMAIN,metrics.spotify.com
+  - DOMAIN,informer.yandex.ru
   - DOMAIN,data.mistat.xiaomi.com
   - DOMAIN-SUFFIX,mouseflow.com
   - DOMAIN,sdkconfig.ad.intl.xiaomi.com
   - DOMAIN,pagead46.l.doubleclick.net
   - DOMAIN,m.ctrip.com
+  - DOMAIN,cdn.raygun.io
+  - DOMAIN,api2.amplitude.com
   - DOMAIN,api.taboola.com
   - DOMAIN,api.ad.xiaomi.com
   - DOMAIN,ad.turn.com
+  - DOMAIN,snap.licdn.com
+  - DOMAIN-SUFFIX,appsflyer.com
+  - DOMAIN-SUFFIX,afminer.com
   - DOMAIN,adservice.google.com
   - DOMAIN-SUFFIX,t.co
   - DOMAIN,gdt.qq.com
@@ -178,35 +243,64 @@ payload:
   - DOMAIN,logbak.hicloud.com
   - DOMAIN-SUFFIX,api-hotjar.com
   - DOMAIN,bugly.qq.com
+  - DOMAIN,api.honeybadger.io
+  - DOMAIN-SUFFIX,sentry.io
   - DOMAIN-SUFFIX,hotjar-analytics.com
   - DOMAIN-SUFFIX,amazonaax.com
   - DOMAIN,cdn.taboola.com
+  - DOMAIN-SUFFIX,hashforcash.us
   - DOMAIN-SUFFIX,googleadservices.com
   - DOMAIN,ubtlog.ctrip.com
+  - DOMAIN,sdk.privacy-center.org
   - DOMAIN,pagead2.googlesyndication.com
   - DOMAIN,bat.bing.com
   - DOMAIN-SUFFIX,crashlytics.com
+  - DOMAIN-SUFFIX,coin-have.com
   - DOMAIN,appmetrica.yandex.ru
+  - DOMAIN-SUFFIX,skimresources.com
+  - DOMAIN,unagi-na.amazon.com
+  - DOMAIN,bam.nr-data.net
   - DOMAIN,global.adserver.yahoo.com
+  - DOMAIN,cdn.logrocket.io
+  - DOMAIN,cdn.segment.com
+  - DOMAIN,app.usercentrics.eu
   - DOMAIN-SUFFIX,amazonclix.com
+  - DOMAIN,cookies-data.onetrust.io
+  - DOMAIN-SUFFIX,minemytraffic.com
   - DOMAIN,cs.luckyorange.net
   - DOMAIN-SUFFIX,yandexadexchange.net
   - DOMAIN,advertising-api-eu.amazon.com
   - DOMAIN,ads.g.doubleclick.net
   - DOMAIN,secure.adnxs.com
+  - DOMAIN,consent.cookiebot.com
+  - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN,w1.luckyorange.com
   - DOMAIN,logservice1.hicloud.com
+  - DOMAIN,geolocation.onetrust.com
+  - DOMAIN,cdn.cookielaw.org
+  - DOMAIN,xp.apple.com
   - DOMAIN,app.bugsnag.com
+  - DOMAIN-SUFFIX,siteimproveanalytics.com
+  - DOMAIN,go.skimresources.com
+  - DOMAIN-SUFFIX,fastpool.xyz
   - DOMAIN,www.googleadservices.com
   - DOMAIN,umcdn.uc.cn
   - DOMAIN,s0.2mdn.net
   - DOMAIN,httpdns.alicdn.com
+  - DOMAIN,api.branch.io
+  - DOMAIN-SUFFIX,rollbar.com
+  - DOMAIN,connect.facebook.net
   - DOMAIN,adfox.yandex.ru
   - DOMAIN,metrics4.data.hicloud.com
   - DOMAIN,metrics.icloud.com
+  - DOMAIN-SUFFIX,shareasale.com
   - DOMAIN-SUFFIX,assoc-amazon.com
+  - DOMAIN,consent-pref.trustarc.com
   - DOMAIN,adsdk.yandex.ru
+  - DOMAIN-SUFFIX,fullstory.com
+  - DOMAIN,vc.hotjar.io
   - DOMAIN,ssl.google-analytics.com
+  - DOMAIN-SUFFIX,shareasale-analytics.com
   - DOMAIN,metrics2.data.hicloud.com
   - DOMAIN-SUFFIX,media.net
   - DOMAIN-SUFFIX,[Adblock Plus 2.0]
@@ -215,11 +309,15 @@ payload:
   - DOMAIN,static.doubleclick.net
   - DOMAIN,mc.yandex.com
   - DOMAIN,data.mistat.rus.xiaomi.com
+  - DOMAIN-SUFFIX,impact.com
   - DOMAIN,click.oneplus.com
   - DOMAIN,sdkconfig.ad.xiaomi.com
+  - DOMAIN,sdk.appsflyer.com
   - DOMAIN,metrics.mzstatic.com
   - DOMAIN,ct.pinterest.com
   - DOMAIN,badges.instagram.com
+  - DOMAIN-SUFFIX,chartbeat.com
   - DOMAIN,www.clarity.ms
   - DOMAIN,trc.taboola.com
   - DOMAIN,tdid.m.qq.com
+  - DOMAIN,tags.tiqcdn.com
