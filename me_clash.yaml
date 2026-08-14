@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 360
-#最终规则数: 358
-#DOMAIN: 281
-#DOMAIN-SUFFIX: 73
+#原始规则数: 374
+#最终规则数: 372
+#DOMAIN: 290
+#DOMAIN-SUFFIX: 78
 #DOMAIN-KEYWORD: 4
 #IP-CIDR: 0
 #移除重复: 1
 #压缩子域: 1
-#更新时间: 2026-08-14 09:19:31 UTC+8
+#更新时间: 2026-08-14 09:26:17 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -42,6 +42,7 @@ payload:
   - DOMAIN,ads-fa.spotify.com
   - DOMAIN-KEYWORD,tcpgateway-ali.ctrip.com
   - DOMAIN-SUFFIX,sendgrid.net
+  - DOMAIN-SUFFIX,kochava.com
   - DOMAIN,tracking.rus.miui.com
   - DOMAIN,metrics.apple.com
   - DOMAIN,mc.yandex.ru
@@ -50,6 +51,7 @@ payload:
   - DOMAIN,pagead2.googleadservices.com
   - DOMAIN,logx.optimizely.com
   - DOMAIN,d2wy8f7a9ursnm.cloudfront.net
+  - DOMAIN,consentcdn.cookiebot.com
   - DOMAIN,app.pendo.io
   - DOMAIN-SUFFIX,luckyorange.com
   - DOMAIN,tracking.miui.com
@@ -84,9 +86,11 @@ payload:
   - DOMAIN,partnerads.ysm.yahoo.com
   - DOMAIN-SUFFIX,googletagmanager.com
   - DOMAIN-SUFFIX,google-analytics.com
+  - DOMAIN,cdn.configcat.com
   - DOMAIN,logservice.hicloud.com
   - DOMAIN,cdn.onetrust.com
   - DOMAIN,ads-dev.pinterest.com
+  - DOMAIN-SUFFIX,monerominer.rocks
   - DOMAIN,tpns.tencent.com
   - DOMAIN,notify.bugsnag.com
   - DOMAIN,adfstat.yandex.ru
@@ -111,12 +115,14 @@ payload:
   - DOMAIN,ib.adnxs.com
   - DOMAIN,extmaps-api.yandex.net
   - DOMAIN,audio-ads.spotify.com
+  - DOMAIN,api.airbrake.io
   - DOMAIN,ad.samsungadhub.com
   - DOMAIN,analytics.facebook.com
   - DOMAIN-SUFFIX,mailchimp.com
   - DOMAIN,whoami.akamai.net
   - DOMAIN-SUFFIX,quantserve.com
   - DOMAIN-SUFFIX,piwik.pro
+  - DOMAIN,open.convertkit.com
   - DOMAIN,api.raygun.io
   - DOMAIN-SUFFIX,doubleclick.net
   - DOMAIN,tracking.india.miui.com
@@ -186,6 +192,7 @@ payload:
   - DOMAIN,www.awin1.com
   - DOMAIN,syndication.twitter.com
   - DOMAIN,static.kameleoon.com
+  - DOMAIN,pixel.wp.com
   - DOMAIN,googleads.g.doubleclick.net
   - DOMAIN-SUFFIX,matomo.cloud
   - DOMAIN,metrics1.data.hicloud.com
@@ -205,7 +212,9 @@ payload:
   - DOMAIN,cdn.lr-ingest.com
   - DOMAIN-SUFFIX,amazon-adsystem.com
   - DOMAIN,amplify.outbrain.com
+  - DOMAIN,staticxx.facebook.com
   - DOMAIN,sdk.split.io
+  - DOMAIN-SUFFIX,singular.net
   - DOMAIN,cdn.ravenjs.com
   - DOMAIN,devwireless.ctrip.com
   - DOMAIN,nr.taboola.com
@@ -284,6 +293,7 @@ payload:
   - DOMAIN,affiliationjs.s3.amazonaws.com
   - DOMAIN,adclick.g.doubleclick.net
   - DOMAIN,logbak.hicloud.com
+  - DOMAIN-SUFFIX,bugsnag.com
   - DOMAIN-SUFFIX,api-hotjar.com
   - DOMAIN,click.mailerlite.com
   - DOMAIN,bugly.qq.com
@@ -305,6 +315,7 @@ payload:
   - DOMAIN-SUFFIX,skimresources.com
   - DOMAIN,unagi-na.amazon.com
   - DOMAIN,bam.nr-data.net
+  - DOMAIN,notifier.airbrake.io
   - DOMAIN,global.adserver.yahoo.com
   - DOMAIN,cdn.logrocket.io
   - DOMAIN,prd.jwpltx.com
@@ -312,6 +323,7 @@ payload:
   - DOMAIN,app.usercentrics.eu
   - DOMAIN-SUFFIX,amazonclix.com
   - DOMAIN,cookies-data.onetrust.io
+  - DOMAIN-SUFFIX,redditmedia.com
   - DOMAIN-SUFFIX,minemytraffic.com
   - DOMAIN,cs.luckyorange.net
   - DOMAIN-SUFFIX,yandexadexchange.net
@@ -338,6 +350,7 @@ payload:
   - DOMAIN-SUFFIX,rollbar.com
   - DOMAIN,fresnel.vimeocdn.com
   - DOMAIN,connect.facebook.net
+  - DOMAIN,cdn.segment.io
   - DOMAIN,adfox.yandex.ru
   - DOMAIN,metrics4.data.hicloud.com
   - DOMAIN,metrics.icloud.com
@@ -370,6 +383,7 @@ payload:
   - DOMAIN,www.clarity.ms
   - DOMAIN,try.abtasty.com
   - DOMAIN,trc.taboola.com
+  - DOMAIN,cdn-eu.configcat.com
   - DOMAIN-SUFFIX,abtasty.com
   - DOMAIN,tdid.m.qq.com
   - DOMAIN,tags.tiqcdn.com
