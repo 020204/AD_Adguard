@@ -11,6 +11,8 @@
 @@||githubassets.com^
 @@||anti-ad.net^important
 @@||acs.m.taobao.com^
+@@||g.alicdn.com^$important
+@@||*.mt2.cn^
 
 !========================= 广告/追踪拦截=========================
 # 国外ADS
@@ -230,7 +232,7 @@
 ! 阿里巴巴
 ||amdcopen.m.taobao.com^
 ||httpdns.alicdn.com^
-
+||pro.m.jd.com^$important
 ||informer.yandex.ru^
 ||webvisor.com^
 ||vc.hotjar.io^
