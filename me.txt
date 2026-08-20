@@ -11,7 +11,6 @@
 @@||githubassets.com^
 @@||anti-ad.net^important
 @@||acs.m.taobao.com^
-@@||g.alicdn.com^$important
 @@||*.mt2.cn^
 
 !========================= 广告/追踪拦截=========================
