@@ -12,6 +12,7 @@
 @@||anti-ad.net^important
 @@||acs.m.taobao.com^
 @@||*.mt2.cn^
+@@||g.alicdn.com^$important
 
 !========================= 广告/追踪拦截=========================
 # 国外ADS
