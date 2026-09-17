@@ -5,14 +5,15 @@
 ! Last optimized: 2026-08-14
 !========================= 白名单=========================
 ! GitHub
-@@||github.com^
-@@||github.io^
-@@||githubusercontent.com^
-@@||githubassets.com^
+@@||github.com^important
+@@||github.io^important
+@@||githubusercontent.com^important
+@@||githubassets.com^important
 @@||anti-ad.net^important
-@@||acs.m.taobao.com^
-@@||*.mt2.cn^
+@@||acs.m.taobao.com^important
+@@||*.mt2.cn^important
 @@||g.alicdn.com^$important
+@@||api-htp.beizi.biz^$important
 
 !========================= 广告/追踪拦截=========================
 # 国外ADS
