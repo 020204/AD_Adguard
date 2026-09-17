@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/clash.yaml
 #--------------------------------------
-#原始规则数: 572
-#最终规则数: 546
-#DOMAIN: 502
+#原始规则数: 570
+#最终规则数: 544
+#DOMAIN: 500
 #DOMAIN-SUFFIX: 21
 #DOMAIN-KEYWORD: 23
 #IP-CIDR: 0
 #移除重复: 0
 #压缩子域: 23
-#更新时间: 2026-09-17 00:06:39 UTC+8
+#更新时间: 2026-09-17 05:11:13 UTC+8
 
 payload:
   - DOMAIN,p.l.qq.com
@@ -328,7 +328,6 @@ payload:
   - DOMAIN-KEYWORD,ads-.xhscdn.com
   - DOMAIN,sdk.adx.adwangmai.com
   - DOMAIN,isrpt-vn.gdt.qq.com
-  - DOMAIN,i.snssdk.com
   - DOMAIN,services.xiangji.qq.com
   - DOMAIN,zlink.toutiao.com
   - DOMAIN,isrpt-in.gdt.qq.com
@@ -413,7 +412,6 @@ payload:
   - DOMAIN,securemetrics.apple.com
   - DOMAIN,as.weixin.qq.com
   - DOMAIN,gecko5-lq.zijieapi.com
-  - DOMAIN,is.snssdk.com
   - DOMAIN,signaltower.gdt.qq.com
   - DOMAIN,adse.wsa.ximalaya.com
   - DOMAIN,guid.tpns.tencent.com
