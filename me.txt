@@ -233,7 +233,6 @@
 ! 阿里巴巴
 ||amdcopen.m.taobao.com^
 ||httpdns.alicdn.com^
-||pro.m.jd.com^$important
 ||informer.yandex.ru^
 ||webvisor.com^
 ||vc.hotjar.io^
