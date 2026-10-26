@@ -4,15 +4,15 @@
 #GitHub: https://github.com/020204/AD_Adguard
 #Update URL: https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
 #--------------------------------------
-#原始规则数: 374
-#最终规则数: 372
-#DOMAIN: 290
+#原始规则数: 379
+#最终规则数: 377
+#DOMAIN: 295
 #DOMAIN-SUFFIX: 78
 #DOMAIN-KEYWORD: 4
 #IP-CIDR: 0
 #移除重复: 1
 #压缩子域: 1
-#更新时间: 2026-10-25 23:49:21 UTC+8
+#更新时间: 2026-10-26 05:43:12 UTC+8
 
 payload:
   - DOMAIN,push.m.youku.com
@@ -101,6 +101,7 @@ payload:
   - DOMAIN,adeventtracker.spotify.com
   - DOMAIN,optanon.blob.core.windows.net
   - DOMAIN,data.mistat.india.xiaomi.com
+  - DOMAIN,ad-api.adn-plus.com.cn
   - DOMAIN-SUFFIX,webminerpool.com
   - DOMAIN,track.mailerlite.com
   - DOMAIN,securepubads.g.doubleclick.net
@@ -116,8 +117,9 @@ payload:
   - DOMAIN,extmaps-api.yandex.net
   - DOMAIN,audio-ads.spotify.com
   - DOMAIN,api.airbrake.io
-  - DOMAIN,ad.samsungadhub.com
   - DOMAIN,analytics.facebook.com
+  - DOMAIN,ads-bid.leadmoad.com
+  - DOMAIN,ad.samsungadhub.com
   - DOMAIN-SUFFIX,mailchimp.com
   - DOMAIN,whoami.akamai.net
   - DOMAIN-SUFFIX,quantserve.com
@@ -198,6 +200,7 @@ payload:
   - DOMAIN,metrics1.data.hicloud.com
   - DOMAIN,adsapi.snapchat.com
   - DOMAIN-SUFFIX,app-measurement.com
+  - DOMAIN,push-ads-cn.heytapmobi.com
   - DOMAIN,metrics-dra.dt.hicloud.com
   - DOMAIN,m.doubleclick.net
   - DOMAIN,analytics.twitter.com
@@ -331,6 +334,7 @@ payload:
   - DOMAIN,ads.g.doubleclick.net
   - DOMAIN,secure.adnxs.com
   - DOMAIN,consent.cookiebot.com
+  - DOMAIN,adx-track.adn-plus.com.cn
   - DOMAIN-SUFFIX,coinhive.com
   - DOMAIN,w1.luckyorange.com
   - DOMAIN,logservice1.hicloud.com
@@ -348,6 +352,7 @@ payload:
   - DOMAIN,assets.mailerlite.com
   - DOMAIN,api.branch.io
   - DOMAIN-SUFFIX,rollbar.com
+  - DOMAIN,ad-material.ys7.com
   - DOMAIN,fresnel.vimeocdn.com
   - DOMAIN,connect.facebook.net
   - DOMAIN,cdn.segment.io
