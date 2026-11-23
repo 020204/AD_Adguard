@@ -1,0 +1,41 @@
+name: Update Ads Rules (hourly)
+
+on:
+  schedule:
+    - cron: '0 * * * *'   # 每小时整点（UTC）
+  workflow_dispatch:      # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run convert script
+        run: python convert.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet; then
+            echo "No changes detected"
+            exit 0
+          fi
+
+          git add merged-ads-clash-classical.yaml
+          git commit -m "chore: update ads rules $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
