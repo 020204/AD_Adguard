@@ -2,7 +2,7 @@
 ! Title: Merged AdGuard Rules (me.txt + qy-Ads-Rule + Ads-Dns_Rule)
 ! Total rules: 950
 ! Removed by exception: 6
-! Update time: 2026-11-24 15:15:20 (UTC+8)
+! Update time: 2026-11-24 23:24:41 (UTC+8)
 ! Homepage: https://github.com/你的用户名/你的仓库名
 ! Expires: 2 hours
 
