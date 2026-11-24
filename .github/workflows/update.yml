@@ -3,7 +3,7 @@ name: Update Ads Rules (hourly)
 on:
   schedule:
     - cron: '0 * * * *'   # 每小时整点（UTC）
-  workflow_dispatch:      # 支持手动触发
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -36,6 +36,6 @@ jobs:
             exit 0
           fi
 
-          git add merged-ads-clash-classical.yaml
+          git add merged-ads-clash-classical.yaml merged-ads-adguard.txt
           git commit -m "chore: update ads rules $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
