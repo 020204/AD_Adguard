@@ -26,12 +26,12 @@ https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/clas
 # mine规则订阅📃
 Adguard
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/me.txt
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/merged-ads-adguard.txt
 ```
 
 clash
 ```
-https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/me_clash.yaml
+https://ghfast.top/https://raw.githubusercontent.com/020204/AD_Adguard/main/merged-ads-clash-classical.yaml
 ```
 
 # AWAvenue规则订阅📃
